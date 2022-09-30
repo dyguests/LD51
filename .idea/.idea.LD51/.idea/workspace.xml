@@ -1,11 +1,32 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="a13c8a84-d1f4-49cf-adec-02808396d102" name="Default Changelist" comment="Init.">
-      <change afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+    <list default="true" id="a13c8a84-d1f4-49cf-adec-02808396d102" name="Default Changelist" comment="game scene.">
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Entities.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Entities/Tile.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Entities/Tile.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Scenes/Games/Entities.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Scenes/Games/Entities/Map.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Scenes/Games/Entities/Map.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Scenes/Games/Models.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Scenes/Workshops.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Scenes/Workshops/Entities.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Scenes/Workshops/Entities/Mold.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Scenes/Workshops/Entities/Mold.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Scenes/Workshops/Models.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Tools/GameCtlr.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Tools/GameCtlr.cs.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.LD51/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.LD51/.idea/contentModel.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.LD51/.idea/indexLayout.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.LD51/.idea/indexLayout.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.LD51/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.LD51/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/SampleScene.unity" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/SampleScene.unity.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Game.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Game.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Tests/Scenes/Test.unity" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Tests/Scenes/Test.unity.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Packages/manifest.json" beforeDir="false" afterPath="$PROJECT_DIR$/Packages/manifest.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Packages/packages-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/Packages/packages-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProjectSettings/ProjectSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/ProjectSettings.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/UserSettings/EditorUserSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/UserSettings/EditorUserSettings.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/UserSettings/Layouts/default-2021.dwlt" beforeDir="false" afterPath="$PROJECT_DIR$/UserSettings/Layouts/default-2021.dwlt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -19,6 +40,12 @@
     <changedPaths>
       <option value="$PROJECT_DIR$/Assets/Scripts/App.cs" />
       <option value="$PROJECT_DIR$/README.md" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/Entities/Map.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/Entities/Tile.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/Scenes/Games/Entities/Map.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/Scenes/Workshops/Models/MoldCtlr.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/Scenes/Workshops/Entites/Mold.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/Scenes/Workshops/WorkshopCtlr.cs" />
     </changedPaths>
   </component>
   <component name="ProjectId" id="2FVREpCwaKszvdF2CvzY1OD9OH9" />
@@ -64,7 +91,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1664575155949</updated>
-      <workItem from="1664575160683" duration="1511000" />
+      <workItem from="1664575160683" duration="2664000" />
     </task>
     <task id="LOCAL-00001" summary="Init.">
       <created>1664575238165</created>
@@ -73,7 +100,14 @@
       <option name="project" value="LOCAL" />
       <updated>1664575238165</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="game scene.">
+      <created>1664580780011</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1664580780011</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -95,6 +129,7 @@
   <component name="VcsManagerConfiguration">
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
     <MESSAGE value="Init." />
-    <option name="LAST_COMMIT_MESSAGE" value="Init." />
+    <MESSAGE value="game scene." />
+    <option name="LAST_COMMIT_MESSAGE" value="game scene." />
   </component>
 </project>
