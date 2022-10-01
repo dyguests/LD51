@@ -13,13 +13,14 @@ namespace Cores.Entities
 
     public abstract class Area<T> : IArea<T>
     {
+        protected const int MaxFrames = 8;
+
         private Vector2Int size;
         /// <summary>
         /// how many frames used.
         /// length in [1,8]
         /// </summary>
         private int frameLength;
-        private int cycle = 10;
 
         public Vector2Int Size => size;
         public int FrameLength
@@ -27,10 +28,23 @@ namespace Cores.Entities
             get => frameLength;
             set => frameLength = value;
         }
+
+        private int cycle = 10;
         public int Cycle
         {
             get => cycle;
             set => cycle = value;
+        }
+
+        private int currentFrame = 0;
+        public int CurrentFrame
+        {
+            get => currentFrame;
+            set
+            {
+                currentFrame = value;
+                Debug.Log("currentFrame:" + currentFrame);
+            }
         }
 
         protected readonly SortedList<int, T>[,] tileRings;

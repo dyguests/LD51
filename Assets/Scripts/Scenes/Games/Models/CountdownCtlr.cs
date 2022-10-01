@@ -27,6 +27,7 @@ namespace Scenes.Games.Models
                 if (countdown <= 0f)
                 {
                     countdown += cycle;
+                    map.NextFrame();
                 }
 
                 countdown -= Time.fixedDeltaTime;
