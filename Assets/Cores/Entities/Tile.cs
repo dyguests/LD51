@@ -14,8 +14,13 @@ namespace Cores.Entities
         /// frames.y in [1,8]
         /// </summary>
         protected Vector2Int frames;
-        
+
         public Vector2Int Pos => pos;
         public Vector2Int Frames => frames;
+
+        public void Inserted(in int x, in int y)
+        {
+            pos = new Vector2Int(x, y);
+        }
     }
 }

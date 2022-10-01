@@ -20,7 +20,7 @@ namespace Models
             }
 
             var instantiate = Instantiate(sPrefab, moldCtlr.Pos2Position(ground.Pos), Quaternion.identity, moldCtlr.transform);
-            instantiate.name = "Indicator";
+            instantiate.name = "Ground" + ground.Pos;
             instantiate.ground = ground;
             instantiate.moldCtlr = moldCtlr;
 

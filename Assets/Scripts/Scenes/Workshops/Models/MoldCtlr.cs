@@ -39,11 +39,13 @@ namespace Scenes.Workshops.Models
             this.mold = mold;
 
             inputCtlr.inputHandler = inputHandler;
+            mold.AddObserver(moldObserver);
         }
 
         public async UniTask UnloadMold()
         {
             inputCtlr.inputHandler = null;
+            mold.RemoveObserver(moldObserver);
         }
 
         private Vector2Int Position2Pos(Vector2 position)
@@ -90,6 +92,7 @@ namespace Scenes.Workshops.Models
 
                 if (currentToolType == ToolType.Ground)
                 {
+                    Debug.Log("Insert ground pos:" + pos);
                     moldCtlr.mold.Insert(pos.x, pos.y, new Ground(currentFrame));
                 }
             }

@@ -32,6 +32,8 @@ namespace Cores.Scenes.Workshops.Entities
 
         public void Insert(int x, int y, [NotNull] Tile tile)
         {
+            Remove(x, y, tile.Frames.x, tile.Frames.y);
+
             var tileRing = tileRings[x, y];
             if (tileRing == null)
             {
@@ -40,9 +42,29 @@ namespace Cores.Scenes.Workshops.Entities
             }
 
             tileRing.Add(tile.Frames.x, tile);
-            // todo Exclude adjacent duplicates
+            tile.Inserted(x, y);
 
             subjectImplementation.NotifyObserver(updater => updater.OnTileInserted(tile));
+        }
+
+        private void Remove(in int x, in int y, in int framesStart, in int framesLength)
+        {
+            var tileRing = tileRings[x, y];
+            if (tileRing == null)
+            {
+                return;
+            }
+
+            for (var i = 0; i < tileRing.Count; i++)
+            {
+                var tile = tileRing[i];
+                if (tile == null) continue;
+
+                // tile.Frames.x
+                // todo remove
+                // tile.Removed();
+                // tile.Changed();
+            }
         }
 
         public bool Contains(int x, int y)
