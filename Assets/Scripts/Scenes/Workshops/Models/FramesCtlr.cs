@@ -1,18 +1,12 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
-public class FramesCtlr : MonoBehaviour
+namespace Scenes.Workshops.Models
 {
-    // Start is called before the first frame update
-    void Start()
+    public class FramesCtlr : MonoBehaviour
     {
-        
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
+        public void OnFrameClick(int index, bool on)
+        {
+            Debug.Log("OnFrameClick " + " index:" + index + "on:" + on);
+        }
     }
 }

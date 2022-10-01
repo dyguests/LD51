@@ -1,3 +1,4 @@
+using Cores.Entities;
 using Cores.Scenes.Workshops.Entities;
 using Cysharp.Threading.Tasks;
 using Tools;
@@ -65,7 +66,7 @@ namespace Scenes.Workshops.Models
                     ctlr => ctlr.Released(),
                     ctlr => ctlr.Destroyed(),
                     defaultCapacity: 4,
-                    maxSize: 8
+                    maxSize: 16
                 );
             }
 
@@ -75,6 +76,8 @@ namespace Scenes.Workshops.Models
 
                 currIndicatorCtlr = indicatorCtlrPool.Get();
                 currIndicatorCtlr.Appear(pos);
+
+                moldCtlr.mold.Insert(pos.x, pos.y, new Ground(0));
             }
 
             public void OnMove(Vector3 position)
