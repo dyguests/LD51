@@ -365,23 +365,6 @@ MonoBehaviour:
   m_DeselectOnBackgroundClick: 1
   m_PointerBehavior: 0
   m_CursorLockBehavior: 0
---- !u!1 &1249085462 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 8340277440375532807, guid: da4608d40ed3d9a49aa753c8896e015f, type: 3}
-  m_PrefabInstance: {fileID: 8340277440537240515}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &1249085465
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1249085462}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 89cc32608bd8a8746a7f1c1f0d41fa25, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &1270784063
 GameObject:
   m_ObjectHideFlags: 0

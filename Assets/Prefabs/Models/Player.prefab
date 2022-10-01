@@ -161,9 +161,37 @@ MonoBehaviour:
       m_Calls: []
   m_ActionEvents:
   - m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1249085465}
+        m_TargetAssemblyTypeName: Scenes.Games.Models.PlayerCtlr, Assembly-CSharp
+        m_MethodName: HandleMoveInput
+        m_Mode: 0
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
     m_ActionId: dd873254-9b37-46b3-8420-8326d7c054f4
     m_ActionName: Player/New action
+  - m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 1249085465}
+        m_TargetAssemblyTypeName: Scenes.Games.Models.PlayerCtlr, Assembly-CSharp
+        m_MethodName: HandleJumpInput
+        m_Mode: 0
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+    m_ActionId: 2f63be25-e668-4837-b5fe-56719478b486
+    m_ActionName: Player/Jump[/Keyboard/j,/Keyboard/z]
   m_NeverAutoSwitchControlSchemes: 0
   m_DefaultControlScheme: 
   m_DefaultActionMap: Player
@@ -181,3 +209,20 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 89cc32608bd8a8746a7f1c1f0d41fa25, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  rb: {fileID: 9165461313485706858}
+  cd: {fileID: 4873166532986835289}
+  sr: {fileID: 8340277440375532806}
+  moveSpeed: 9
+  moveAccelerationTime: 0.12
+  moveDecelerationTime: 0.06
+  jumpHeight: 3.2
+  jumpSpoolTime: 0.06
+  jumpCoyoteTime: 0.06
+  jumpMaxTimes: 1
+  jumpCost: 25
+  jumpInterpolator:
+    serializedVersion: 2
+    m_Curve: []
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
