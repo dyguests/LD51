@@ -1,5 +1,7 @@
 using Cores.Scenes.Workshops.Entities;
+using Cores.Scenes.Workshops.Tools;
 using Scenes.Workshops.Models;
+using Tools;
 using UnityEngine;
 
 namespace Scenes.Workshops
@@ -32,6 +34,15 @@ namespace Scenes.Workshops
         public void StartWorkshop() { }
 
         public void EndWorkshop() { }
+
+        public void OnPlayClick()
+        {
+            Debug.Log("OnPlayClick");
+
+            App.Instance.map = mold.ToMap();
+
+            SceneStacker.LoadScene(SceneNames.Game);
+        }
     }
 
     interface IWorkshopFlow

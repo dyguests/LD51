@@ -1,19 +1,23 @@
+using Cores.Scenes.Games.Entities;
 using UnityEngine;
 
 namespace Scenes.Games.Models
 {
-    public class MapCtlr : MonoBehaviour
+    public class MapCtlr : MonoBehaviour, IMapFlow
     {
-        // Start is called before the first frame update
-        void Start()
+        private Map map;
+
+        public void LoadMap(Map map)
         {
-        
+            this.map = map;
         }
 
-        // Update is called once per frame
-        void Update()
-        {
-        
-        }
+        public void UnloadMap() { }
+    }
+
+    public interface IMapFlow
+    {
+        void LoadMap(Map map);
+        void UnloadMap();
     }
 }

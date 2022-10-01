@@ -2304,7 +2304,6 @@ GameObject:
   m_Component:
   - component: {fileID: 1907271268}
   - component: {fileID: 1907271269}
-  - component: {fileID: 1907271270}
   m_Layer: 5
   m_Name: Menu
   m_TagString: Untagged
@@ -2359,18 +2358,6 @@ MonoBehaviour:
   m_ChildScaleWidth: 0
   m_ChildScaleHeight: 0
   m_ReverseArrangement: 0
---- !u!114 &1907271270
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1907271267}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 905637b9b2290f74785dd288c2fdf6b9, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1001 &2009878361
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2574,7 +2561,15 @@ PrefabInstance:
     - target: {fileID: 1221451084616853370, guid: fca6423becf07b544845c282dfa729a8, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
-      objectReference: {fileID: 1907271270}
+      objectReference: {fileID: 567361310}
+    - target: {fileID: 1221451084616853370, guid: fca6423becf07b544845c282dfa729a8, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: OnPlayClick
+      objectReference: {fileID: 0}
+    - target: {fileID: 1221451084616853370, guid: fca6423becf07b544845c282dfa729a8, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: Scenes.Workshops.WorkshopCtlr, Assembly-CSharp
+      objectReference: {fileID: 0}
     - target: {fileID: 1221451084616853371, guid: fca6423becf07b544845c282dfa729a8, type: 3}
       propertyPath: m_Pivot.x
       value: 0.5

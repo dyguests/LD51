@@ -1,17 +1,22 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="a13c8a84-d1f4-49cf-adec-02808396d102" name="Default Changelist" comment="frames slider works.">
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Tools/SceneNames.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Tools/SceneNames.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Tools/SceneStacker.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Tools/SceneStacker.cs.meta" afterDir="false" />
+    <list default="true" id="a13c8a84-d1f4-49cf-adec-02808396d102" name="Default Changelist" comment="play.">
+      <change afterPath="$PROJECT_DIR$/Assets/Cores/Scenes/Workshops/Tools.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Cores/Scenes/Workshops/Tools/MoldEx.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Cores/Scenes/Workshops/Tools/MoldEx.cs.meta" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.LD51/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.LD51/.idea/contentModel.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.LD51/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.LD51/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Cores/Scenes/Games/Entities/Map.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Cores/Scenes/Games/Entities/Map.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Game.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Game.unity" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scenes/Workshop.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Workshop.unity" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/App.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/App.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Scenes/Workshops/Models/FramesCtlr.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Scenes/Workshops/Models/FramesCtlr.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Sprites/frame_toggle-Sheet.png" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Sprites/frame_toggle-Sheet.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Scenes/Games/Models/MapCtlr.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Scenes/Games/Models/MapCtlr.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Scenes/Workshops/MenuCtlr.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Scenes/Workshops/MenuCtlr.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Scenes/Workshops/WorkshopCtlr.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Scenes/Workshops/WorkshopCtlr.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Tools/GameCtlr.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Scenes/Games/GameCtlr.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Tools/GameCtlr.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Scenes/Games/GameCtlr.cs.meta" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -24,15 +29,18 @@
   <component name="HighlightingSettingsPerFile">
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/10B6135E-6343-4FDB-A4FC-6C109928AB3B/ae/0860b2b0/Assert.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="mock://E:/UnityProjects/LD51/Assets/Scenes/Workshop.unity" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock://E:/UnityProjects/LD51/UserSettings/EditorUserSettings.asset" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Models/GroundCtlr.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/861E23C6-7270-4A4A-8ECA-9C234AF0CAC5/fa/d11280e0/Single.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Scenes/Workshops/MoldInputCtlr.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/C6B52566-F59B-49FC-861A-7812A1EA2F6B/10/b6c5ef13/Vector2Int.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/NUnits/Scenes/Workshops/Entities/MoldTest.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Scenes/Workshops/Models/FrameToggleCtlr.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/898512DD-B9B7-4303-996C-5D2E8D378F73/41/39b6fe53/SortedList`2.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/861E23C6-7270-4A4A-8ECA-9C234AF0CAC5/2b/5aee02e2/Int32.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Models/GroundCtlr.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/861E23C6-7270-4A4A-8ECA-9C234AF0CAC5/fa/d11280e0/Single.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Scenes/Workshops/MoldInputCtlr.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="mock://E:/UnityProjects/LD51/Assets/Scripts/App.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="mock://E:/UnityProjects/LD51/Assets/Scenes/Workshop.unity" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/C6B52566-F59B-49FC-861A-7812A1EA2F6B/10/b6c5ef13/Vector2Int.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock://E:/UnityProjects/LD51/UserSettings/EditorUserSettings.asset" root0="SKIP_HIGHLIGHTING" />
   </component>
   <component name="IdeDocumentHistory">
     <changedPaths>
@@ -41,9 +49,7 @@
       <option value="$PROJECT_DIR$/Assets/Scripts/Scenes/Games/Entities/Map.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/Scenes/Workshops/Entites/Mold.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/Scenes/Workshops/Entities/Mold.cs" />
-      <option value="$PROJECT_DIR$/Assets/Cores/Scenes/Games/Entities/Map.cs" />
       <option value="$PROJECT_DIR$/Assets/IndicatorCtlr.cs" />
-      <option value="$PROJECT_DIR$/Assets/Scripts/Scenes/Workshops/WorkshopCtlr.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/Tools/FloatEx.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/Cores/Entities/IPoolElement.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/Scenes/Workshops/Models/IndicatorCtlr.cs" />
@@ -57,7 +63,6 @@
       <option value="$PROJECT_DIR$/Assets/GroundCtlr.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/Models/TileCtlr.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/Models/GroundCtlr.cs" />
-      <option value="$PROJECT_DIR$/Assets/Scripts/Scenes/Games/Models/MapCtlr.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/Scenes/Workshops/Entities/ToolType.cs" />
       <option value="$PROJECT_DIR$/Assets/Cores/Entities/Ground.cs" />
       <option value="$PROJECT_DIR$/Assets/Cores/Entities/Tile.cs" />
@@ -69,8 +74,13 @@
       <option value="$PROJECT_DIR$/Assets/Scripts/Scenes/Workshops/Models/MoldCtlr.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/Tools/SceneNames.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/Tools/SceneStacker.cs" />
-      <option value="$PROJECT_DIR$/Assets/Scripts/App.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/Scenes/Workshops/MenuCtlr.cs" />
+      <option value="$PROJECT_DIR$/Assets/Cores/Scenes/Workshops/Tools/MoldEx.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/App.cs" />
+      <option value="$PROJECT_DIR$/Assets/Cores/Scenes/Games/Entities/Map.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/Scenes/Workshops/WorkshopCtlr.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/Scenes/Games/GameCtlr.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/Scenes/Games/Models/MapCtlr.cs" />
     </changedPaths>
   </component>
   <component name="ProjectId" id="2FVREpCwaKszvdF2CvzY1OD9OH9" />
@@ -119,7 +129,7 @@
       <option name="presentableId" value="Default" />
       <updated>1664575155949</updated>
       <workItem from="1664575160683" duration="2683000" />
-      <workItem from="1664582240199" duration="24628000" />
+      <workItem from="1664582240199" duration="25726000" />
     </task>
     <task id="LOCAL-00001" summary="Init.">
       <created>1664575238165</created>
@@ -296,7 +306,14 @@
       <option name="project" value="LOCAL" />
       <updated>1664611034057</updated>
     </task>
-    <option name="localTasksCounter" value="26" />
+    <task id="LOCAL-00026" summary="play.">
+      <created>1664612926542</created>
+      <option name="number" value="00026" />
+      <option name="presentableId" value="LOCAL-00026" />
+      <option name="project" value="LOCAL" />
+      <updated>1664612926542</updated>
+    </task>
+    <option name="localTasksCounter" value="27" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -339,6 +356,7 @@
     <MESSAGE value="frames." />
     <MESSAGE value="frames handle." />
     <MESSAGE value="frames slider works." />
-    <option name="LAST_COMMIT_MESSAGE" value="frames slider works." />
+    <MESSAGE value="play." />
+    <option name="LAST_COMMIT_MESSAGE" value="play." />
   </component>
 </project>

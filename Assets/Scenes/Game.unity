@@ -406,9 +406,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 1270784063}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 22265aadb6bb39a44ab1fd4030f5a6c0, type: 3}
+  m_Script: {fileID: 11500000, guid: 35a53eb1ab624468b37eb5bd9a089f6b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  mapCtlr: {fileID: 581159462}
 --- !u!1001 &1579915077
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -526,8 +527,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: 9.999
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
-  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 47d0dc0c28e70a444af08b965e668bdf, type: 2}
+  m_sharedMaterial: {fileID: 6081260647145834869, guid: 47d0dc0c28e70a444af08b965e668bdf, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
