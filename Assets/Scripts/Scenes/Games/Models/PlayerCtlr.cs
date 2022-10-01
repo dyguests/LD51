@@ -223,5 +223,9 @@ namespace Scenes.Games.Models
         }
     }
 
-    public interface IPlayerInputActions { }
+    public interface IPlayerInputActions
+    {
+        void HandleMoveInput(InputAction.CallbackContext ctx);
+        void HandleJumpInput(InputAction.CallbackContext ctx);
+    }
 }
