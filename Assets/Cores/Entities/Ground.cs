@@ -1,6 +1,4 @@
-﻿using UnityEngine;
-
-namespace Cores.Entities
+﻿namespace Cores.Entities
 {
     public class Ground : Tile
     {
@@ -8,5 +6,7 @@ namespace Cores.Entities
         {
             frames = new Seg(frameStart, frameLength);
         }
+
+        public override string Type { get; } = "G";
     }
 }

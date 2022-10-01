@@ -1,11 +1,30 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="a13c8a84-d1f4-49cf-adec-02808396d102" name="Default Changelist" comment="game load grounds works.">
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Databases/Datas.meta" afterDir="false" />
+    <list default="true" id="a13c8a84-d1f4-49cf-adec-02808396d102" name="Default Changelist" comment="Mold Element.">
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Ciphers.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Ciphers/MapEncoder.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Ciphers/MapEncoder.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Databases/Converters.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Databases/Converters/MapConverter.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Databases/Converters/MapConverter.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Databases/MapCiphers.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Databases/MapCiphers.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Databases/Tables.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Databases/Tables/MapTable.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Databases/Tables/MapTable.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Tools/StringEx.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Tools/StringEx.cs.meta" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.LD51/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.LD51/.idea/contentModel.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.LD51/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.LD51/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Scenes/Workshops/Models/MoldCtlr.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Scenes/Workshops/Models/MoldCtlr.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Cores/Entities/Ground.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Cores/Entities/Ground.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Cores/Entities/Tile.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Cores/Entities/Tile.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Cores/Scenes/Games/Entities/Map.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Cores/Scenes/Games/Entities/Map.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/Prefabs/Models/Ground.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/Prefabs/Models/Ground.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Scenes/Games/GameCtlr.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Scenes/Games/GameCtlr.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Scenes/Workshops/WorkshopCtlr.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Scenes/Workshops/WorkshopCtlr.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/UserSettings/EditorUserSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/UserSettings/EditorUserSettings.asset" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -22,6 +41,7 @@
     <setting file="mock://E:/UnityProjects/LD51/UserSettings/EditorUserSettings.asset" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Models/GroundCtlr.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/861E23C6-7270-4A4A-8ECA-9C234AF0CAC5/fa/d11280e0/Single.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock://E:/UnityProjects/LD51/Assets/Resources/Prefabs/Models/Ground.prefab" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Scenes/Workshops/MoldInputCtlr.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/C6B52566-F59B-49FC-861A-7812A1EA2F6B/10/b6c5ef13/Vector2Int.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/NUnits/Scenes/Workshops/Entities/MoldTest.cs" root0="FORCE_HIGHLIGHTING" />
@@ -32,6 +52,7 @@
     <setting file="mock://E:/UnityProjects/LD51/Assets/Scenes/Workshop.unity" root0="SKIP_HIGHLIGHTING" />
     <setting file="mock://E:/UnityProjects/LD51/UserSettings/EditorUserSettings.asset" root0="SKIP_HIGHLIGHTING" />
     <setting file="mock://E:/UnityProjects/LD51/UserSettings/EditorUserSettings.asset" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock://E:/UnityProjects/LD51/Assets/Resources/Prefabs/Models/Ground.prefab" root0="SKIP_HIGHLIGHTING" />
   </component>
   <component name="IdeDocumentHistory">
     <changedPaths>
@@ -53,22 +74,16 @@
       <option value="$PROJECT_DIR$/Assets/GroundCtlr.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/Models/TileCtlr.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/Scenes/Workshops/Entities/ToolType.cs" />
-      <option value="$PROJECT_DIR$/Assets/Cores/Entities/Ground.cs" />
-      <option value="$PROJECT_DIR$/Assets/Cores/Entities/Tile.cs" />
       <option value="$PROJECT_DIR$/Assets/Cores/Seg.cs" />
       <option value="$PROJECT_DIR$/Assets/NUnits/SegTest.cs" />
-      <option value="$PROJECT_DIR$/README.md" />
       <option value="$PROJECT_DIR$/Assets/Scripts/Scenes/Workshops/Models/FramesCtlr.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/Tools/SceneNames.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/Tools/SceneStacker.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/Scenes/Workshops/MenuCtlr.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/App.cs" />
-      <option value="$PROJECT_DIR$/Assets/Scripts/Scenes/Workshops/WorkshopCtlr.cs" />
-      <option value="$PROJECT_DIR$/Assets/Scripts/Scenes/Games/GameCtlr.cs" />
       <option value="$PROJECT_DIR$/Assets/NUnits/Scenes/Workshops/Entities/MoldTest.cs" />
       <option value="$PROJECT_DIR$/Assets/Cores/Scenes/Workshops/Entities/Mold.cs" />
       <option value="$PROJECT_DIR$/Assets/Cores/Entities/Area.cs" />
-      <option value="$PROJECT_DIR$/Assets/Cores/Scenes/Games/Entities/Map.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/Scenes/Games/Models/AreaCtlr.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/Models/GroundCtlr.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/Models/AreaCtlr.cs" />
@@ -76,6 +91,20 @@
       <option value="$PROJECT_DIR$/Assets/Cores/Scenes/Workshops/Tools/MoldEx.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/Scenes/Workshops/Models/MoldCtlr.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/Scenes/Workshops/Models/MoldElementCtlr.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/Databases/Converters/MapConverter.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/Databases/Tables.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/Databases/Tables/MapTable.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/Databases/Ciphers.cs" />
+      <option value="$PROJECT_DIR$/Assets/Cores/Entities/Ground.cs" />
+      <option value="$PROJECT_DIR$/README.md" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/Scenes/Workshops/WorkshopCtlr.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/Ciphers/MapCipher.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/Scenes/Games/GameCtlr.cs" />
+      <option value="$PROJECT_DIR$/Assets/Cores/Scenes/Games/Entities/Map.cs" />
+      <option value="$PROJECT_DIR$/Assets/Cores/Entities/Tile.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/Databases/MapCiphers.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/Tools/StringEx.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/Ciphers/MapEncoder.cs" />
     </changedPaths>
   </component>
   <component name="ProjectId" id="2FVREpCwaKszvdF2CvzY1OD9OH9" />
@@ -124,7 +153,7 @@
       <option name="presentableId" value="Default" />
       <updated>1664575155949</updated>
       <workItem from="1664575160683" duration="2683000" />
-      <workItem from="1664582240199" duration="29802000" />
+      <workItem from="1664582240199" duration="36817000" />
     </task>
     <task id="LOCAL-00001" summary="Init.">
       <created>1664575238165</created>
@@ -343,7 +372,14 @@
       <option name="project" value="LOCAL" />
       <updated>1664617768253</updated>
     </task>
-    <option name="localTasksCounter" value="32" />
+    <task id="LOCAL-00032" summary="Mold Element.">
+      <created>1664618424073</created>
+      <option name="number" value="00032" />
+      <option name="presentableId" value="LOCAL-00032" />
+      <option name="project" value="LOCAL" />
+      <updated>1664618424073</updated>
+    </task>
+    <option name="localTasksCounter" value="33" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -365,7 +401,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
-    <MESSAGE value="workshop flow." />
     <MESSAGE value="mold" />
     <MESSAGE value="nunit works." />
     <MESSAGE value="mold input." />
@@ -390,6 +425,7 @@
     <MESSAGE value="map." />
     <MESSAGE value="map insert works." />
     <MESSAGE value="game load grounds works." />
-    <option name="LAST_COMMIT_MESSAGE" value="game load grounds works." />
+    <MESSAGE value="Mold Element." />
+    <option name="LAST_COMMIT_MESSAGE" value="Mold Element." />
   </component>
 </project>

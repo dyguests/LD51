@@ -1,4 +1,6 @@
+using Ciphers;
 using Cores.Scenes.Games.Entities;
+using Databases;
 using Scenes.Games.Models;
 using UnityEngine;
 
@@ -22,6 +24,13 @@ namespace Scenes.Games
         public async void PrepareGame()
         {
             map = App.Instance.map;
+
+#if UNITY_EDITOR
+            if (map == null)
+            {
+                map = MapEncoder.Decode(MapCiphers.Test);
+            }
+#endif
 
             mapCtlr.LoadMap(map);
 

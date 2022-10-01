@@ -1,3 +1,4 @@
+using Ciphers;
 using Cores.Scenes.Workshops.Entities;
 using Cores.Scenes.Workshops.Tools;
 using Scenes.Workshops.Models;
@@ -40,7 +41,7 @@ namespace Scenes.Workshops
             Debug.Log("OnPlayClick");
 
             App.Instance.map = mold.ToMap();
-
+            Debug.Log("Play map cipher:\n" + MapEncoder.Encode(App.Instance.map));
             SceneStacker.LoadScene(SceneNames.Game);
         }
     }

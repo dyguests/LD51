@@ -15,6 +15,11 @@ namespace Cores.Entities
         /// </summary>
         protected Seg frames;
 
+        /// <summary>
+        /// MapCipher 编码 解码 用
+        /// </summary>
+        public abstract string Type { get; }
+
         public Vector2Int Pos => pos;
         public Seg Frames
         {

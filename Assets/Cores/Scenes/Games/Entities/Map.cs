@@ -1,5 +1,6 @@
 ﻿using System.Collections.Generic;
 using Cores.Entities;
+using UnityEngine;
 
 namespace Cores.Scenes.Games.Entities
 {
@@ -9,6 +10,20 @@ namespace Cores.Scenes.Games.Entities
     /// </summary>
     public class Map : Area<Tile>
     {
+        private Vector2Int startPoint;
+        private Vector2Int endPoint;
+
+        public Vector2Int StartPoint
+        {
+            get => startPoint;
+            set => startPoint = value;
+        }
+        public Vector2Int EndPoint
+        {
+            get => endPoint;
+            set => endPoint = value;
+        }
+
         public Map(in int width, in int height, int frameLength) : base(width, height, frameLength) { }
 
         public override void Insert(in int x, in int y, Tile tile)
