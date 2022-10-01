@@ -2,7 +2,7 @@
 
 namespace Cores.Entities
 {
-    public abstract class Tile
+    public abstract class Tile : IElement
     {
         protected Vector2Int pos;
         /// <summary>
@@ -21,7 +21,9 @@ namespace Cores.Entities
             get => frames;
             set
             {
+                var oldFrames = frames;
                 frames = value;
+
                 // todo on frame truncated
             }
         }
@@ -32,5 +34,11 @@ namespace Cores.Entities
         }
 
         public void Removed() { }
+    }
+
+    public interface IElement
+    {
+        void Inserted(in int x, in int y);
+        void Removed();
     }
 }

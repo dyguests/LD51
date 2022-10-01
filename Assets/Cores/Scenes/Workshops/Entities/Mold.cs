@@ -64,26 +64,30 @@ namespace Cores.Scenes.Workshops.Entities
                 var tile = tileRing[i];
                 if (tile == null) continue;
 
-                if (tile.Frames == removingFrames)
+                var removedFrames = tile.Frames - removingFrames;
+
+                if (tile.Frames == removedFrames)
+                {
+                    continue;
+                }
+
+                if (removedFrames == Seg.Empty)
                 {
                     tileRing[framesStart] = null;
                     tile.Removed();
-                    break;
-                }
-                else if (tile.Frames.start < framesStart && framesStart < tile.Frames.start + tile.Frames.length)
-                {
-                    tile.Frames = new Seg(tile.Frames.start, framesStart - tile.Frames.start);
                     continue;
                 }
-                else if (tile.Frames.start < framesStart + MaxFrames && framesStart + MaxFrames < tile.Frames.start + tile.Frames.length)
+
+                if (tile.Frames.start == removedFrames.start)
                 {
-                    tile.Frames = new Seg(tile.Frames.start, framesStart + MaxFrames - tile.Frames.start);
-                    continue;
+                    tile.Frames = removedFrames;
                 }
-                else if (tile.Frames.start < framesStart + framesLength && framesStart + framesLength < tile.Frames.start + tile.Frames.length)
+                else
                 {
-                    var left = (framesStart + framesLength) % MaxFrames;
-                    tile.Frames = new Seg(left, tile.Frames.start + tile.Frames.length - left);
+                    tileRing.Remove(tile.Frames.start);
+                    tile.Frames = removedFrames;
+                    tileRing.Add(tile.Frames.start, tile);
+                    // todo notify tile start changed.
                 }
 
                 // tile.Frames.x
