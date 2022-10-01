@@ -32,6 +32,10 @@ namespace Scenes.Games.Models
         [SerializeField] private float jumpCost = 25f;
         [SerializeField] private AnimationCurve jumpInterpolator;
 
+        // --------------- limit ---------------
+
+        [SerializeField] private float dropSpeed = 20f;
+
         #endregion
 
         #region Input Variants
@@ -40,6 +44,22 @@ namespace Scenes.Games.Models
 
         private bool jumpInput;
         private float lastJumpDownInputTime = float.MinValue;
+
+        #endregion
+
+        #region temp variants
+
+        /// <summary>
+        /// 当前是否在跳跃状态
+        /// </summary>
+        private bool jumping;
+        /// <summary>
+        /// 无操作时的速度
+        /// 注：在有风等情况下，不一定为0
+        /// </summary>
+        private float idleVelocityX = 0f;
+
+        public float LastGroundedTime { get; private set; }
 
         #endregion
 
@@ -57,9 +77,95 @@ namespace Scenes.Games.Models
             }
         }
 
-        protected override void HandleKinematics() { }
+        protected override void HandleKinematics()
+        {
+            if (jumping && Grounded)
+            {
+                jumping = false;
+            }
 
-        protected override void UpdateGrounded(bool grounded) { }
+            var velocity = Velocity;
+
+            // accept input
+            if (moveInput.x > Epsilon)
+            {
+                if (velocity.x < idleVelocityX - Epsilon)
+                {
+                    velocity.x += moveDeceleration * Time.fixedDeltaTime;
+                }
+                else if (velocity.x < idleVelocityX + moveSpeed)
+                {
+                    velocity.x = Mathf.Min(idleVelocityX + moveSpeed, velocity.x + moveAcceleration * Time.fixedDeltaTime);
+                }
+                else
+                {
+                    velocity.x = Mathf.Max(idleVelocityX + moveSpeed, velocity.x - moveDeceleration * Time.fixedDeltaTime);
+                }
+            }
+            else if (moveInput.x < -Epsilon)
+            {
+                if (velocity.x > idleVelocityX + Epsilon)
+                {
+                    velocity.x -= moveDeceleration * Time.fixedDeltaTime;
+                }
+                else if (velocity.x > idleVelocityX - moveSpeed)
+                {
+                    velocity.x = Mathf.Max(idleVelocityX - moveSpeed, velocity.x - moveAcceleration * Time.fixedDeltaTime);
+                }
+                else
+                {
+                    velocity.x = Mathf.Min(idleVelocityX - moveSpeed, velocity.x + moveDeceleration * Time.fixedDeltaTime);
+                }
+            }
+            else
+            {
+                var offsetVelocityX = velocity.x - idleVelocityX;
+                velocity.x = idleVelocityX + Math.Sign(offsetVelocityX) * Mathf.Max(0, offsetVelocityX - moveDeceleration * Time.fixedDeltaTime);
+            }
+
+            // accept jump
+            var groundedRecent = Grounded || Time.fixedTime - LastGroundedTime < jumpCoyoteTime + Epsilon;
+            var jumpDownRecent = (jumpInput && Time.fixedTime - lastJumpDownInputTime < jumpSpoolTime + Epsilon);
+            if (groundedRecent && jumpRemainingTimes > 0 && jumpDownRecent)
+            {
+                velocity.y = jumpSpeed;
+
+                jumping = true;
+
+                jumpRemainingTimes--;
+                lastJumpDownInputTime = 0f;
+            }
+            // else if (jumping && !Grounded && jumpInput)
+            // {
+            //     // accept jump hold gravity
+            //     velocity.y += player.JumpHoldGravityScale * Time.fixedDeltaTime * Physics2D.gravity.y;
+            // }
+            else
+            {
+                // accept gravity
+                velocity.y += Time.fixedDeltaTime * Physics2D.gravity.y;
+            }
+
+            // clamp velocity(Y)
+            if (velocity.y < -dropSpeed)
+            {
+                velocity.y = -dropSpeed;
+            }
+
+            Velocity = velocity;
+            // Debug.Log("player.Velocity" + player.Velocity);
+        }
+
+        protected override void UpdateGrounded(bool grounded)
+        {
+            if (grounded)
+            {
+                // energy = energyMax;
+                jumpRemainingTimes = jumpMaxTimes;
+                // dashRemainingTimes = dashMaxTimes;
+                LastGroundedTime = Time.fixedTime;
+            }
+        }
 
         public void HandleMoveInput(InputAction.CallbackContext ctx)
         {
