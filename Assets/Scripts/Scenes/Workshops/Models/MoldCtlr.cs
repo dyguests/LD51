@@ -4,7 +4,7 @@ using Cores.Scenes.Workshops.Entities;
 using Cysharp.Threading.Tasks;
 using Models;
 using Scenes.Workshops.Entities;
-using Tools;
+using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.Pool;
 
@@ -148,7 +148,8 @@ namespace Scenes.Workshops.Models
         {
             if (tile is Ground ground)
             {
-                GroundCtlr.Generate(ground, this);
+                var groundCtlr = GroundCtlr.Generate(ground, this);
+                groundCtlr.AddComponent<MoldElementCtlr>();
             }
         }
     }
