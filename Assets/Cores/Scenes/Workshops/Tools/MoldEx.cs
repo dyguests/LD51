@@ -7,7 +7,11 @@ namespace Cores.Scenes.Workshops.Tools
     {
         public static Map ToMap(this Mold mold)
         {
-            return new Map();
+            var size = mold.Size;
+
+            var map = new Map(size.x, size.y, mold.FrameLength);
+
+            return map;
         }
     }
 }

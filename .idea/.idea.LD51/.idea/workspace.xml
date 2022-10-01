@@ -1,22 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="a13c8a84-d1f4-49cf-adec-02808396d102" name="Default Changelist" comment="play.">
-      <change afterPath="$PROJECT_DIR$/Assets/Cores/Scenes/Workshops/Tools.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Cores/Scenes/Workshops/Tools/MoldEx.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Cores/Scenes/Workshops/Tools/MoldEx.cs.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.LD51/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.LD51/.idea/contentModel.xml" afterDir="false" />
+    <list default="true" id="a13c8a84-d1f4-49cf-adec-02808396d102" name="Default Changelist" comment="load map.">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.LD51/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.LD51/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Cores/Scenes/Games/Entities/Map.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Cores/Scenes/Games/Entities/Map.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Game.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Game.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Workshop.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Workshop.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/App.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/App.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Scenes/Games/Models/MapCtlr.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Scenes/Games/Models/MapCtlr.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Scenes/Workshops/MenuCtlr.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Scenes/Workshops/MenuCtlr.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Scenes/Workshops/WorkshopCtlr.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Scenes/Workshops/WorkshopCtlr.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Tools/GameCtlr.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Scenes/Games/GameCtlr.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Tools/GameCtlr.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Scenes/Games/GameCtlr.cs.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Cores/Scenes/Workshops/Entities/Mold.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Cores/Scenes/Workshops/Entities/Mold.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Cores/Scenes/Workshops/Tools/MoldEx.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Cores/Scenes/Workshops/Tools/MoldEx.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -66,7 +55,6 @@
       <option value="$PROJECT_DIR$/Assets/Scripts/Scenes/Workshops/Entities/ToolType.cs" />
       <option value="$PROJECT_DIR$/Assets/Cores/Entities/Ground.cs" />
       <option value="$PROJECT_DIR$/Assets/Cores/Entities/Tile.cs" />
-      <option value="$PROJECT_DIR$/Assets/Cores/Scenes/Workshops/Entities/Mold.cs" />
       <option value="$PROJECT_DIR$/Assets/Cores/Seg.cs" />
       <option value="$PROJECT_DIR$/Assets/NUnits/SegTest.cs" />
       <option value="$PROJECT_DIR$/README.md" />
@@ -75,12 +63,13 @@
       <option value="$PROJECT_DIR$/Assets/Scripts/Tools/SceneNames.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/Tools/SceneStacker.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/Scenes/Workshops/MenuCtlr.cs" />
-      <option value="$PROJECT_DIR$/Assets/Cores/Scenes/Workshops/Tools/MoldEx.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/App.cs" />
-      <option value="$PROJECT_DIR$/Assets/Cores/Scenes/Games/Entities/Map.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/Scenes/Workshops/WorkshopCtlr.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/Scenes/Games/GameCtlr.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/Scenes/Games/Models/MapCtlr.cs" />
+      <option value="$PROJECT_DIR$/Assets/Cores/Scenes/Workshops/Tools/MoldEx.cs" />
+      <option value="$PROJECT_DIR$/Assets/Cores/Scenes/Workshops/Entities/Mold.cs" />
+      <option value="$PROJECT_DIR$/Assets/Cores/Scenes/Games/Entities/Map.cs" />
     </changedPaths>
   </component>
   <component name="ProjectId" id="2FVREpCwaKszvdF2CvzY1OD9OH9" />
@@ -129,7 +118,7 @@
       <option name="presentableId" value="Default" />
       <updated>1664575155949</updated>
       <workItem from="1664575160683" duration="2683000" />
-      <workItem from="1664582240199" duration="25726000" />
+      <workItem from="1664582240199" duration="26864000" />
     </task>
     <task id="LOCAL-00001" summary="Init.">
       <created>1664575238165</created>
@@ -313,7 +302,14 @@
       <option name="project" value="LOCAL" />
       <updated>1664612926542</updated>
     </task>
-    <option name="localTasksCounter" value="27" />
+    <task id="LOCAL-00027" summary="load map.">
+      <created>1664613991889</created>
+      <option name="number" value="00027" />
+      <option name="presentableId" value="LOCAL-00027" />
+      <option name="project" value="LOCAL" />
+      <updated>1664613991889</updated>
+    </task>
+    <option name="localTasksCounter" value="28" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -357,6 +353,7 @@
     <MESSAGE value="frames handle." />
     <MESSAGE value="frames slider works." />
     <MESSAGE value="play." />
-    <option name="LAST_COMMIT_MESSAGE" value="play." />
+    <MESSAGE value="load map." />
+    <option name="LAST_COMMIT_MESSAGE" value="load map." />
   </component>
 </project>

@@ -16,19 +16,22 @@ namespace Cores.Scenes.Workshops.Entities
         /// how many frames used.
         /// length in [1,8]
         /// </summary>
-        private int length = 1;
+        private int frameLength;
+
         public Vector2Int Size => size;
-        public int Length
+        public int FrameLength
         {
-            get => length;
-            set => length = value;
+            get => frameLength;
+            set => frameLength = value;
         }
 
         private readonly SortedList<int, Tile>[,] tileRings;
 
-        public Mold(int width = 32, int height = 18)
+        public Mold(int width = 32, int height = 18, int frameLength = 2)
         {
             size = new Vector2Int(width, height);
+            this.frameLength = frameLength;
+
             tileRings = new SortedList<int, Tile>[size.x, size.y];
         }
 
