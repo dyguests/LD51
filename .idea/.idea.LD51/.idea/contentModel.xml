@@ -312,6 +312,7 @@
             <e p="Games" t="Include">
               <e p="GameCtlr.cs" t="Include" />
               <e p="Models" t="Include">
+                <e p="CountdownCtlr.cs" t="Include" />
                 <e p="MapCtlr.cs" t="Include" />
                 <e p="PlayerCtlr.cs" t="Include" />
               </e>

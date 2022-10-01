@@ -9,6 +9,8 @@ namespace Scenes.Games
     public class GameCtlr : MonoBehaviour, IGameFlow
     {
         [SerializeField] private MapCtlr mapCtlr;
+        [SerializeField] private CountdownCtlr countdownCtlr;
+
         private Map map;
 
         private void Start()
@@ -33,6 +35,7 @@ namespace Scenes.Games
 #endif
 
             mapCtlr.LoadMap(map);
+            countdownCtlr.LoadMap(map);
 
             StartGame();
         }

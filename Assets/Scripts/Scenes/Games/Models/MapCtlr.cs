@@ -11,7 +11,7 @@ namespace Scenes.Games.Models
 
         protected override Vector2Int Size => map.Size;
 
-        public void LoadMap(Map map)
+        public async void LoadMap(Map map)
         {
             this.map = map;
 
