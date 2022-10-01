@@ -1,4 +1,3 @@
-using Scenes.Workshops.Models;
 using UnityEngine;
 using UnityEngine.EventSystems;
 
@@ -16,6 +15,7 @@ namespace Scenes.Workshops
 
         public void OnPointerMove(PointerEventData eventData)
         {
+            if (!eventData.eligibleForClick) return;
             inputHandler?.OnMove(GetLocalPosition(eventData));
         }
 
@@ -35,5 +35,12 @@ namespace Scenes.Workshops
             // Debug.Log("screenPoint:" + screenPoint + " worldPoint:" + worldPoint + " localPoint:" + localPoint + " pos:" + pos);
             return localPoint;
         }
+    }
+
+    public interface IMoldInputHandler
+    {
+        void OnPress(Vector3 position);
+        void OnMove(Vector3 position);
+        void OnRelease(Vector3 position);
     }
 }

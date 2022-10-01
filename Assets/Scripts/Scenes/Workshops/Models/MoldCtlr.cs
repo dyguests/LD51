@@ -1,7 +1,8 @@
-using System;
 using Cores.Scenes.Workshops.Entities;
 using Cysharp.Threading.Tasks;
+using Tools;
 using UnityEngine;
+using UnityEngine.Pool;
 
 namespace Scenes.Workshops.Models
 {
@@ -16,7 +17,7 @@ namespace Scenes.Workshops.Models
 
         private void OnEnable()
         {
-            inputHandler = new InputHandler();
+            inputHandler = new InputHandler(this);
         }
 
         private void OnDisable()
@@ -36,21 +37,60 @@ namespace Scenes.Workshops.Models
             inputCtlr.inputHandler = null;
         }
 
+        private Vector2Int Position2Pos(Vector2 position)
+        {
+            return new(
+                (position.x + (mold.Size.x - 1) / 2f).ClampInt(),
+                (position.y + (mold.Size.y - 1) / 2f).ClampInt()
+            );
+        }
+
+        public Vector2 Pos2Position(Vector2Int pos) => new(pos.x - (mold.Size.x - 1) / 2f, pos.y - (mold.Size.y - 1) / 2f);
+
+
         private class InputHandler : IMoldInputHandler
         {
-            public void OnPress(Vector3 getLocalPosition)
+            private readonly MoldCtlr moldCtlr;
+
+            private readonly IObjectPool<IndicatorCtlr> indicatorCtlrPool;
+            private IndicatorCtlr currIndicatorCtlr;
+
+            public InputHandler(MoldCtlr moldCtlr)
             {
-                throw new NotImplementedException();
+                this.moldCtlr = moldCtlr;
+
+                indicatorCtlrPool = new ObjectPool<IndicatorCtlr>(
+                    () => IndicatorCtlr.Generate(this.moldCtlr, indicatorCtlrPool),
+                    ctlr => ctlr.Acquired(),
+                    ctlr => ctlr.Released(),
+                    ctlr => ctlr.Destroyed(),
+                    defaultCapacity: 4,
+                    maxSize: 8
+                );
             }
 
-            public void OnMove(Vector3 getLocalPosition)
+            public void OnPress(Vector3 position)
             {
-                throw new NotImplementedException();
+                var pos = moldCtlr.Position2Pos(position);
+
+                currIndicatorCtlr = indicatorCtlrPool.Get();
+                currIndicatorCtlr.Appear(pos);
             }
 
-            public void OnRelease(Vector3 getLocalPosition)
+            public void OnMove(Vector3 position)
             {
-                throw new NotImplementedException();
+                var pos = moldCtlr.Position2Pos(position);
+
+                if (currIndicatorCtlr.Pos == pos) return;
+                currIndicatorCtlr.Disappear();
+                currIndicatorCtlr = indicatorCtlrPool.Get();
+                currIndicatorCtlr.Appear(pos);
+            }
+
+            public void OnRelease(Vector3 position)
+            {
+                currIndicatorCtlr.Disappear();
+                currIndicatorCtlr = null;
             }
         }
     }
@@ -59,12 +99,5 @@ namespace Scenes.Workshops.Models
     {
         UniTask LoadMold(Mold mold);
         UniTask UnloadMold();
-    }
-
-    public interface IMoldInputHandler
-    {
-        void OnPress(Vector3 getLocalPosition);
-        void OnMove(Vector3 getLocalPosition);
-        void OnRelease(Vector3 getLocalPosition);
     }
 }

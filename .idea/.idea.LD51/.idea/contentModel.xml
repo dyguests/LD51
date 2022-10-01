@@ -271,6 +271,11 @@
         </e>
         <e p="Scripts" t="Include">
           <e p="App.cs" t="Include" />
+          <e p="Cores" t="Include">
+            <e p="Entities" t="Include">
+              <e p="IPoolElement.cs" t="Include" />
+            </e>
+          </e>
           <e p="Scenes" t="Include">
             <e p="Games" t="Include">
               <e p="Models" t="Include">
@@ -287,6 +292,8 @@
             </e>
           </e>
           <e p="Tools" t="Include">
+            <e p="ColorEx.cs" t="Include" />
+            <e p="FloatEx.cs" t="Include" />
             <e p="GameCtlr.cs" t="Include" />
             <e p="SizePerfectCamera.cs" t="Include" />
             <e p="SizePerfectCanvas.cs" t="Include" />
