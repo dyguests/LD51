@@ -2,7 +2,6 @@
 using System.Collections.Generic;
 using System.Linq;
 using Cores.Entities;
-using UnityEngine;
 
 namespace Cores.Scenes.Workshops.Entities
 {
@@ -10,13 +9,7 @@ namespace Cores.Scenes.Workshops.Entities
     {
         private const int MaxFrames = 8;
 
-        public Mold(int width = 32, int height = 18, int frameLength = 2)
-        {
-            size = new Vector2Int(width, height);
-            this.frameLength = frameLength;
-
-            tileRings = new SortedList<int, Tile>[size.x, size.y];
-        }
+        public Mold(int width = 32, int height = 18, int frameLength = 2) : base(width, height, frameLength) { }
 
         public override void Insert(in int x, in int y, Tile tile)
         {
@@ -90,11 +83,6 @@ namespace Cores.Scenes.Workshops.Entities
                     (tile.Frames.start <= frame && frame < tile.Frames.start + tile.Frames.length)
                     || (tile.Frames.start <= frame + MaxFrames && frame + MaxFrames < tile.Frames.start + tile.Frames.length)
                 );
-        }
-
-        public IReadOnlyDictionary<int, Tile> GetRing(int x, int y)
-        {
-            return tileRings[x, y];
         }
 
         public interface IUpdater

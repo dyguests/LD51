@@ -4,16 +4,21 @@ using UnityEngine;
 
 namespace Cores.Entities
 {
-    public interface IArea<T> { }
+    public interface IArea<T>
+    {
+        void Insert(in int x, in int y, [NotNull] T t);
+        bool Contains(int x, int y);
+        IReadOnlyDictionary<int, T> GetRing(int x, int y);
+    }
 
     public abstract class Area<T> : IArea<T>
     {
-        protected Vector2Int size;
+        private Vector2Int size;
         /// <summary>
         /// how many frames used.
         /// length in [1,8]
         /// </summary>
-        protected int frameLength;
+        private int frameLength;
 
         public Vector2Int Size => size;
         public int FrameLength
@@ -22,13 +27,26 @@ namespace Cores.Entities
             set => frameLength = value;
         }
 
-        protected SortedList<int, Tile>[,] tileRings;
+        protected readonly SortedList<int, T>[,] tileRings;
+
+        protected Area(in int width, in int height, in int frameLength)
+        {
+            size = new Vector2Int(width, height);
+            this.frameLength = frameLength;
+
+            tileRings = new SortedList<int, T>[size.x, size.y];
+        }
 
         public abstract void Insert(in int x, in int y, [NotNull] T t);
 
         public bool Contains(int x, int y)
         {
             return x >= 0 && x < size.x && y >= 0 && y < size.y;
+        }
+
+        public IReadOnlyDictionary<int, T> GetRing(int x, int y)
+        {
+            return tileRings[x, y];
         }
     }
 }
