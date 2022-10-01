@@ -11,6 +11,7 @@
         <e p="Cores" t="Include">
           <e p="Cores.asmdef" t="Include" />
           <e p="Entities" t="Include">
+            <e p="Ground.cs" t="Include" />
             <e p="Tile.cs" t="Include" />
           </e>
           <e p="Scenes" t="Include">
@@ -27,8 +28,14 @@
           </e>
         </e>
         <e p="NUnits" t="Include">
-          <e p="MoldTest.cs" t="Include" />
           <e p="NUnits.asmdef" t="Include" />
+          <e p="Scenes" t="Include">
+            <e p="Workshops" t="Include">
+              <e p="Entities" t="Include">
+                <e p="MoldTest.cs" t="Include" />
+              </e>
+            </e>
+          </e>
         </e>
         <e p="Plugins" t="Include">
           <e p="Demigiant" t="Include">
@@ -284,6 +291,7 @@
             </e>
             <e p="Workshops" t="Include">
               <e p="Models" t="Include">
+                <e p="FramesCtlr.cs" t="Include" />
                 <e p="IndicatorCtlr.cs" t="Include" />
                 <e p="MoldCtlr.cs" t="Include" />
               </e>
