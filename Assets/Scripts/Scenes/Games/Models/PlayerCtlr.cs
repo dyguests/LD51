@@ -7,6 +7,8 @@ namespace Scenes.Games.Models
 {
     public class PlayerCtlr : PhysicsObject, IPlayerInputActions
     {
+        private const float Epsilon = 0.001f;
+
         [Space] [SerializeField] private SpriteRenderer sr;
 
         #region Define Variants
@@ -43,7 +45,17 @@ namespace Scenes.Games.Models
 
         public override Vector2 Velocity { get; set; }
 
-        protected override void HandleGraphics() { }
+        protected override void HandleGraphics()
+        {
+            if (moveInput.x > Epsilon && sr.flipX)
+            {
+                sr.flipX = false;
+            }
+            else if (moveInput.x < -Epsilon && !sr.flipX)
+            {
+                sr.flipX = true;
+            }
+        }
 
         protected override void HandleKinematics() { }
 
