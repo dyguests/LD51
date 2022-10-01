@@ -1,4 +1,6 @@
+using Tools;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class App : MonoBehaviour
 {
@@ -18,5 +20,7 @@ public class App : MonoBehaviour
             Destroy(gameObject);
             return;
         }
+
+        SceneStacker.InitScene(SceneManager.GetActiveScene().name);
     }
 }

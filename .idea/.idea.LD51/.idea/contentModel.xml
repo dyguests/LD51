@@ -301,6 +301,7 @@
               <e p="Entities" t="Include">
                 <e p="ToolType.cs" t="Include" />
               </e>
+              <e p="MenuCtlr.cs" t="Include" />
               <e p="Models" t="Include">
                 <e p="FramesCtlr.cs" t="Include" />
                 <e p="FrameToggleCtlr.cs" t="Include" />
@@ -316,6 +317,8 @@
             <e p="ColorEx.cs" t="Include" />
             <e p="FloatEx.cs" t="Include" />
             <e p="GameCtlr.cs" t="Include" />
+            <e p="SceneNames.cs" t="Include" />
+            <e p="SceneStacker.cs" t="Include" />
             <e p="SizePerfectCamera.cs" t="Include" />
             <e p="SizePerfectCanvas.cs" t="Include" />
           </e>
