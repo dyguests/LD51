@@ -8,7 +8,7 @@ namespace NUnits
     public class MoldTest
     {
         [Test]
-        public void MoldTestSimplePasses()
+        public void NewMold()
         {
             var mold = new Mold();
         }

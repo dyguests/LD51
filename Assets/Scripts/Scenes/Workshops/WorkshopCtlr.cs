@@ -1,9 +1,15 @@
+using Cores.Scenes.Workshops.Entities;
+using Scenes.Workshops.Models;
 using UnityEngine;
 
 namespace Scenes.Workshops
 {
     public class WorkshopCtlr : MonoBehaviour, IWorkshopFlow
     {
+        [SerializeField] private MoldCtlr moldCtlr;
+
+        private Mold mold;
+
         private void Start()
         {
             RunWorkshopFlow();
@@ -16,6 +22,10 @@ namespace Scenes.Workshops
 
         public async void PrepareWorkshop()
         {
+            mold = new Mold();
+
+            await moldCtlr.LoadMold(mold);
+
             StartWorkshop();
         }
 

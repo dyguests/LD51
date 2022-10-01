@@ -279,6 +279,7 @@
             </e>
             <e p="Workshops" t="Include">
               <e p="Models" t="Include">
+                <e p="IndicatorCtlr.cs" t="Include" />
                 <e p="MoldCtlr.cs" t="Include" />
               </e>
               <e p="MoldInputCtlr.cs" t="Include" />

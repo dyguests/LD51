@@ -1,3 +1,4 @@
+using Scenes.Workshops.Models;
 using UnityEngine;
 using UnityEngine.EventSystems;
 
@@ -6,11 +7,22 @@ namespace Scenes.Workshops
     public class MoldInputCtlr : MonoBehaviour,
         IPointerDownHandler, IPointerMoveHandler, IPointerUpHandler
     {
-        public void OnPointerDown(PointerEventData eventData) { }
+        public IMoldInputHandler inputHandler;
 
-        public void OnPointerMove(PointerEventData eventData) { }
+        public void OnPointerDown(PointerEventData eventData)
+        {
+            inputHandler?.OnPress(GetLocalPosition(eventData));
+        }
 
-        public void OnPointerUp(PointerEventData eventData) { }
+        public void OnPointerMove(PointerEventData eventData)
+        {
+            inputHandler?.OnMove(GetLocalPosition(eventData));
+        }
+
+        public void OnPointerUp(PointerEventData eventData)
+        {
+            inputHandler?.OnRelease(GetLocalPosition(eventData));
+        }
 
 
         private Vector3 GetLocalPosition(PointerEventData eventData)
