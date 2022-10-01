@@ -7,6 +7,11 @@ namespace Models
     {
         private static GroundCtlr sPrefab;
 
+        [Space] [SerializeField] private Sprite prePreviousSprite;
+        [SerializeField] private Sprite previousSprite;
+        [SerializeField] private Sprite currentSprite;
+        [SerializeField] private Sprite keepSprite;
+
         private Ground ground;
 
         private AreaCtlr areaCtlr;
