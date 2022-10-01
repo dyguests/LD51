@@ -2421,6 +2421,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   inputCtlr: {fileID: 1348589736}
   framesCtlr: {fileID: 2064377095}
+  cyclesCtlr: {fileID: 1853227085}
   toolsCtlr: {fileID: 525164643}
 --- !u!61 &1348589735
 BoxCollider2D:
