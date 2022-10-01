@@ -1,19 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="a13c8a84-d1f4-49cf-adec-02808396d102" name="Default Changelist" comment="frames">
-      <change afterPath="$PROJECT_DIR$/Assets/Cores/Entities/Ground.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Cores/Entities/Ground.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/NUnits/Scenes.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/NUnits/Scenes/Workshops.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/NUnits/Scenes/Workshops/Entities.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.LD51/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.LD51/.idea/contentModel.xml" afterDir="false" />
+    <list default="true" id="a13c8a84-d1f4-49cf-adec-02808396d102" name="Default Changelist" comment="mold get test.">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.LD51/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.LD51/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Cores/Entities/Tile.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Cores/Entities/Tile.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Cores/Scenes/Workshops/Entities/Mold.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Cores/Scenes/Workshops/Entities/Mold.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/NUnits/MoldTest.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/NUnits/Scenes/Workshops/Entities/MoldTest.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/NUnits/MoldTest.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/NUnits/Scenes/Workshops/Entities/MoldTest.cs.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Workshop.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Workshop.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/NUnits/Scenes/Workshops/Entities/MoldTest.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/NUnits/Scenes/Workshops/Entities/MoldTest.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -50,9 +41,9 @@
       <option value="$PROJECT_DIR$/Assets/NUnits/MoldTest.cs" />
       <option value="$PROJECT_DIR$/Assets/NUnits/Scenes/Workshops/Entities/Ground.cs" />
       <option value="$PROJECT_DIR$/Assets/Cores/Entities/Tile.cs" />
-      <option value="$PROJECT_DIR$/Assets/NUnits/Scenes/Workshops/Entities/MoldTest.cs" />
       <option value="$PROJECT_DIR$/Assets/Cores/Entities/Ground.cs" />
       <option value="$PROJECT_DIR$/Assets/Cores/Scenes/Workshops/Entities/Mold.cs" />
+      <option value="$PROJECT_DIR$/Assets/NUnits/Scenes/Workshops/Entities/MoldTest.cs" />
     </changedPaths>
   </component>
   <component name="ProjectId" id="2FVREpCwaKszvdF2CvzY1OD9OH9" />
@@ -99,7 +90,7 @@
       <option name="presentableId" value="Default" />
       <updated>1664575155949</updated>
       <workItem from="1664575160683" duration="2683000" />
-      <workItem from="1664582240199" duration="8284000" />
+      <workItem from="1664582240199" duration="8616000" />
     </task>
     <task id="LOCAL-00001" summary="Init.">
       <created>1664575238165</created>
@@ -164,7 +155,21 @@
       <option name="project" value="LOCAL" />
       <updated>1664589700263</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="mold get.">
+      <created>1664592294826</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1664592294826</updated>
+    </task>
+    <task id="LOCAL-00011" summary="mold get test.">
+      <created>1664592474425</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1664592474425</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -194,6 +199,8 @@
     <MESSAGE value="mold input." />
     <MESSAGE value="mold indicator works." />
     <MESSAGE value="frames" />
-    <option name="LAST_COMMIT_MESSAGE" value="frames" />
+    <MESSAGE value="mold get." />
+    <MESSAGE value="mold get test." />
+    <option name="LAST_COMMIT_MESSAGE" value="mold get test." />
   </component>
 </project>

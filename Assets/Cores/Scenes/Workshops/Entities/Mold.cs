@@ -1,4 +1,5 @@
 ﻿using System.Collections.Generic;
+using System.Linq;
 using Cores.Entities;
 using UnityEngine;
 
@@ -19,11 +20,12 @@ namespace Cores.Scenes.Workshops.Entities
             set => length = value;
         }
 
-        private SortedList<int, Tile>[,] tileRings;
+        private readonly SortedList<int, Tile>[,] tileRings;
 
         public Mold(int width = 32, int height = 18)
         {
             size = new Vector2Int(width, height);
+            tileRings = new SortedList<int, Tile>[size.x, size.y];
         }
 
         public void Insert(int x, int y, Ground ground)
@@ -36,6 +38,7 @@ namespace Cores.Scenes.Workshops.Entities
             }
 
             tileRing.Add(ground.Frames.x, ground);
+            // todo Exclude adjacent duplicates
         }
 
         public bool Contains(int x, int y)
@@ -45,22 +48,11 @@ namespace Cores.Scenes.Workshops.Entities
 
         public Tile Get(int x, int y, int frame)
         {
-            var tileRing = tileRings[x, y];
-            if (tileRing == null) return null;
-            foreach (var pair in tileRing)
-            {
-                var tile = pair.Value;
-
-                if (
+            return tileRings[x, y]?.Select(pair => pair.Value)
+                .FirstOrDefault(tile =>
                     (tile.Frames.x <= frame && frame < tile.Frames.x + tile.Frames.y)
                     || (tile.Frames.x - 8 <= frame && frame < tile.Frames.x + tile.Frames.y - 8)
-                )
-                {
-                    return tile;
-                }
-            }
-
-            return null;
+                );
         }
     }
 }

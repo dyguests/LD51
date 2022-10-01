@@ -12,9 +12,12 @@ namespace NUnits.Scenes.Workshops.Entities
         public void NewMold()
         {
             var mold = new Mold();
-            mold.Insert(0, 0, new Ground(0));
+            var ground = new Ground(0);
+            mold.Insert(0, 0, ground);
 
-            mold.Get(0, 0, 0);
+            var tile = mold.Get(0, 0, 0);
+
+            Assert.AreEqual(ground, tile);
         }
 
         [UnityTest]
