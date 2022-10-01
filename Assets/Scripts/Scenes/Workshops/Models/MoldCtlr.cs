@@ -10,7 +10,7 @@ using UnityEngine.Pool;
 
 namespace Scenes.Workshops.Models
 {
-    public class MoldCtlr : MonoBehaviour,
+    public class MoldCtlr : AreaCtlr,
         IMoldFlow, IMoldAction
     {
         [SerializeField] private MoldInputCtlr inputCtlr;
@@ -34,6 +34,8 @@ namespace Scenes.Workshops.Models
             inputHandler = null;
         }
 
+        protected override Vector2Int Size => mold.Size;
+
         public async UniTask LoadMold(Mold mold)
         {
             this.mold = mold;
@@ -47,17 +49,6 @@ namespace Scenes.Workshops.Models
             inputCtlr.inputHandler = null;
             mold.RemoveObserver(moldObserver);
         }
-
-        private Vector2Int Position2Pos(Vector2 position)
-        {
-            return new(
-                (position.x + (mold.Size.x - 1) / 2f).ClampInt(),
-                (position.y + (mold.Size.y - 1) / 2f).ClampInt()
-            );
-        }
-
-        public Vector2 Pos2Position(Vector2Int pos) => new(pos.x - (mold.Size.x - 1) / 2f, pos.y - (mold.Size.y - 1) / 2f);
-
 
         private class InputHandler : IMoldInputHandler
         {

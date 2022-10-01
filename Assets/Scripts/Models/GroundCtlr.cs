@@ -1,5 +1,4 @@
 using Cores.Entities;
-using Scenes.Workshops.Models;
 using UnityEngine;
 
 namespace Models
@@ -10,9 +9,9 @@ namespace Models
 
         private Ground ground;
 
-        private MoldCtlr moldCtlr;
+        private AreaCtlr areaCtlr;
 
-        public static GroundCtlr Generate(Ground ground, MoldCtlr moldCtlr)
+        public static GroundCtlr Generate(Ground ground, AreaCtlr moldCtlr)
         {
             if (sPrefab == null)
             {
@@ -22,7 +21,7 @@ namespace Models
             var instantiate = Instantiate(sPrefab, moldCtlr.Pos2Position(ground.Pos), Quaternion.identity, moldCtlr.transform);
             instantiate.name = "Ground" + ground.Pos;
             instantiate.ground = ground;
-            instantiate.moldCtlr = moldCtlr;
+            instantiate.areaCtlr = moldCtlr;
 
             instantiate.Created();
 
