@@ -16,3 +16,5 @@ Theme: Every 10 seconds
 
 -[ ] mold undo
 -[ ] map undo
+-[ ] background countdown format type.
+-[ ] countdown 10 shown too short.

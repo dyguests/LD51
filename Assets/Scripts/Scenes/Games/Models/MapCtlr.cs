@@ -29,9 +29,14 @@ namespace Scenes.Games.Models
                     }
                 }
             }
+
+            await UniTask.Delay(250);
         }
 
-        public async UniTask UnloadMap() { }
+        public async UniTask UnloadMap()
+        {
+            await UniTask.Delay(250);
+        }
 
         private void InsertTile(Tile tile)
         {
