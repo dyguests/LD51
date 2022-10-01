@@ -1,4 +1,3 @@
-using System;
 using UnityEngine;
 
 namespace Scenes.Workshops
@@ -20,15 +19,9 @@ namespace Scenes.Workshops
             StartWorkshop();
         }
 
-        public void StartWorkshop()
-        {
-            
-        }
+        public void StartWorkshop() { }
 
-        public void EndWorkshop()
-        {
-            
-        }
+        public void EndWorkshop() { }
     }
 
     interface IWorkshopFlow

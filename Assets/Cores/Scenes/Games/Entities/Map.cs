@@ -1,4 +1,4 @@
-﻿namespace Scenes.Games.Entities
+﻿namespace Cores.Scenes.Games.Entities
 {
     /// <summary>
     /// game map

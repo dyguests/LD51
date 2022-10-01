@@ -8,7 +8,23 @@
       <e p="Assembly-CSharp-firstpass.csproj" t="IncludeRecursive" />
       <e p="Assembly-CSharp.csproj" t="IncludeRecursive" />
       <e p="Assets" t="Include">
-        <e p="GameCtlr.cs" t="Include" />
+        <e p="Cores" t="Include">
+          <e p="Entities" t="Include">
+            <e p="Tile.cs" t="Include" />
+          </e>
+          <e p="Scenes" t="Include">
+            <e p="Games" t="Include">
+              <e p="Entities" t="Include">
+                <e p="Map.cs" t="Include" />
+              </e>
+            </e>
+            <e p="Workshops" t="Include">
+              <e p="Entities" t="Include">
+                <e p="Mold.cs" t="Include" />
+              </e>
+            </e>
+          </e>
+        </e>
         <e p="Plugins" t="Include">
           <e p="Demigiant" t="Include">
             <e p="DOTween" t="Include">
@@ -250,25 +266,17 @@
         </e>
         <e p="Scripts" t="Include">
           <e p="App.cs" t="Include" />
-          <e p="Entities" t="Include">
-            <e p="Tile.cs" t="Include" />
-          </e>
           <e p="Scenes" t="Include">
             <e p="Games" t="Include">
-              <e p="Entities" t="Include">
-                <e p="Map.cs" t="Include" />
-              </e>
               <e p="Models" t="Include">
                 <e p="MapCtlr.cs" t="Include" />
               </e>
             </e>
             <e p="Workshops" t="Include">
-              <e p="Entities" t="Include">
-                <e p="Mold.cs" t="Include" />
-              </e>
               <e p="Models" t="Include">
                 <e p="MoldCtlr.cs" t="Include" />
               </e>
+              <e p="MoldInputCtlr.cs" t="Include" />
               <e p="WorkshopCtlr.cs" t="Include" />
             </e>
           </e>
