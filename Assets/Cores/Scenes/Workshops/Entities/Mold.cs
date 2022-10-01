@@ -9,6 +9,8 @@ namespace Cores.Scenes.Workshops.Entities
 {
     public class Mold : ISubject<Mold.IUpdater>
     {
+        private const int MaxFrames = 8;
+
         private Vector2Int size;
         /// <summary>
         /// how many frames used.
@@ -32,7 +34,7 @@ namespace Cores.Scenes.Workshops.Entities
 
         public void Insert(int x, int y, [NotNull] Tile tile)
         {
-            Remove(x, y, tile.Frames.x, tile.Frames.y);
+            Remove(x, y, tile.Frames.start, tile.Frames.length);
 
             var tileRing = tileRings[x, y];
             if (tileRing == null)
@@ -41,10 +43,10 @@ namespace Cores.Scenes.Workshops.Entities
                 tileRings[x, y] = tileRing;
             }
 
-            tileRing.Add(tile.Frames.x, tile);
+            tileRing.Add(tile.Frames.start, tile);
             tile.Inserted(x, y);
 
-            subjectImplementation.NotifyObserver(updater => updater.OnTileInserted(tile));
+            subjectImplementation.NotifyObserver(updater => updater.OnTileInserted(tile)); //todo ? 把监听 移动到 Tile.inserted中去?
         }
 
         private void Remove(in int x, in int y, in int framesStart, in int framesLength)
@@ -55,10 +57,34 @@ namespace Cores.Scenes.Workshops.Entities
                 return;
             }
 
+            var removingFrames = new Seg(framesStart, framesLength);
+
             for (var i = 0; i < tileRing.Count; i++)
             {
                 var tile = tileRing[i];
                 if (tile == null) continue;
+
+                if (tile.Frames == removingFrames)
+                {
+                    tileRing[framesStart] = null;
+                    tile.Removed();
+                    break;
+                }
+                else if (tile.Frames.start < framesStart && framesStart < tile.Frames.start + tile.Frames.length)
+                {
+                    tile.Frames = new Seg(tile.Frames.start, framesStart - tile.Frames.start);
+                    continue;
+                }
+                else if (tile.Frames.start < framesStart + MaxFrames && framesStart + MaxFrames < tile.Frames.start + tile.Frames.length)
+                {
+                    tile.Frames = new Seg(tile.Frames.start, framesStart + MaxFrames - tile.Frames.start);
+                    continue;
+                }
+                else if (tile.Frames.start < framesStart + framesLength && framesStart + framesLength < tile.Frames.start + tile.Frames.length)
+                {
+                    var left = (framesStart + framesLength) % MaxFrames;
+                    tile.Frames = new Seg(left, tile.Frames.start + tile.Frames.length - left);
+                }
 
                 // tile.Frames.x
                 // todo remove
@@ -76,8 +102,8 @@ namespace Cores.Scenes.Workshops.Entities
         {
             return tileRings[x, y]?.Select(pair => pair.Value)
                 .FirstOrDefault(tile =>
-                    (tile.Frames.x <= frame && frame < tile.Frames.x + tile.Frames.y)
-                    || (tile.Frames.x - 8 <= frame && frame < tile.Frames.x + tile.Frames.y - 8)
+                    (tile.Frames.start <= frame && frame < tile.Frames.start + tile.Frames.length)
+                    || (tile.Frames.start <= frame + MaxFrames && frame + MaxFrames < tile.Frames.start + tile.Frames.length)
                 );
         }
 

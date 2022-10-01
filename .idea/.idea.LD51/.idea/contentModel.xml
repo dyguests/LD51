@@ -28,6 +28,7 @@
               </e>
             </e>
           </e>
+          <e p="Seg.cs" t="Include" />
         </e>
         <e p="NUnits" t="Include">
           <e p="NUnits.asmdef" t="Include" />

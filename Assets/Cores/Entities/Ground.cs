@@ -6,7 +6,7 @@ namespace Cores.Entities
     {
         public Ground(int frameStart, int frameLength = 1)
         {
-            frames = new Vector2Int(frameStart, frameLength);
+            frames = new Seg(frameStart, frameLength);
         }
     }
 }
