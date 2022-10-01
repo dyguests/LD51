@@ -1,11 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="a13c8a84-d1f4-49cf-adec-02808396d102" name="Default Changelist" comment="load map.">
+    <list default="true" id="a13c8a84-d1f4-49cf-adec-02808396d102" name="Default Changelist" comment="Mold2Map.">
+      <change afterPath="$PROJECT_DIR$/Assets/Cores/Entities/Area.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Cores/Entities/Area.cs.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.LD51/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.LD51/.idea/contentModel.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.LD51/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.LD51/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Cores/Scenes/Games/Entities/Map.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Cores/Scenes/Games/Entities/Map.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Cores/Scenes/Workshops/Entities/Mold.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Cores/Scenes/Workshops/Entities/Mold.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Cores/Scenes/Workshops/Tools/MoldEx.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Cores/Scenes/Workshops/Tools/MoldEx.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/NUnits/Scenes/Workshops/Entities/MoldTest.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/NUnits/Scenes/Workshops/Entities/MoldTest.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -48,7 +52,6 @@
       <option value="$PROJECT_DIR$/Assets/Scripts/Scenes/Workshops/Models/FrameToggleCtlr.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/Scenes/Workshops/Entites/ToolType.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/Scenes/Workshops/Models/ToolsCtlr.cs" />
-      <option value="$PROJECT_DIR$/Assets/NUnits/Scenes/Workshops/Entities/MoldTest.cs" />
       <option value="$PROJECT_DIR$/Assets/GroundCtlr.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/Models/TileCtlr.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/Models/GroundCtlr.cs" />
@@ -67,8 +70,10 @@
       <option value="$PROJECT_DIR$/Assets/Scripts/Scenes/Workshops/WorkshopCtlr.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/Scenes/Games/GameCtlr.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/Scenes/Games/Models/MapCtlr.cs" />
+      <option value="$PROJECT_DIR$/Assets/NUnits/Scenes/Workshops/Entities/MoldTest.cs" />
       <option value="$PROJECT_DIR$/Assets/Cores/Scenes/Workshops/Tools/MoldEx.cs" />
       <option value="$PROJECT_DIR$/Assets/Cores/Scenes/Workshops/Entities/Mold.cs" />
+      <option value="$PROJECT_DIR$/Assets/Cores/Entities/Area.cs" />
       <option value="$PROJECT_DIR$/Assets/Cores/Scenes/Games/Entities/Map.cs" />
     </changedPaths>
   </component>
@@ -118,7 +123,7 @@
       <option name="presentableId" value="Default" />
       <updated>1664575155949</updated>
       <workItem from="1664575160683" duration="2683000" />
-      <workItem from="1664582240199" duration="26864000" />
+      <workItem from="1664582240199" duration="27857000" />
     </task>
     <task id="LOCAL-00001" summary="Init.">
       <created>1664575238165</created>
@@ -309,7 +314,14 @@
       <option name="project" value="LOCAL" />
       <updated>1664613991889</updated>
     </task>
-    <option name="localTasksCounter" value="28" />
+    <task id="LOCAL-00028" summary="Mold2Map.">
+      <created>1664615464645</created>
+      <option name="number" value="00028" />
+      <option name="presentableId" value="LOCAL-00028" />
+      <option name="project" value="LOCAL" />
+      <updated>1664615464645</updated>
+    </task>
+    <option name="localTasksCounter" value="29" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -354,6 +366,7 @@
     <MESSAGE value="frames slider works." />
     <MESSAGE value="play." />
     <MESSAGE value="load map." />
-    <option name="LAST_COMMIT_MESSAGE" value="load map." />
+    <MESSAGE value="Mold2Map." />
+    <option name="LAST_COMMIT_MESSAGE" value="Mold2Map." />
   </component>
 </project>

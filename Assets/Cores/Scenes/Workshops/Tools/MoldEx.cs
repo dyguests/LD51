@@ -11,6 +11,18 @@ namespace Cores.Scenes.Workshops.Tools
 
             var map = new Map(size.x, size.y, mold.FrameLength);
 
+            for (int mX = 0; mX < size.x; mX++)
+            {
+                for (int mY = 0; mY < size.y; mY++)
+                {
+                    var tileRings = mold.GetRing(mX, mY);
+                    foreach (var pair in tileRings)
+                    {
+                        map.Insert(mX, mY, pair.Value);
+                    }
+                }
+            }
+
             return map;
         }
     }

@@ -2,30 +2,13 @@
 using System.Collections.Generic;
 using System.Linq;
 using Cores.Entities;
-using JetBrains.Annotations;
 using UnityEngine;
 
 namespace Cores.Scenes.Workshops.Entities
 {
-    public class Mold : ISubject<Mold.IUpdater>
+    public class Mold : Area<Tile>, ISubject<Mold.IUpdater>
     {
         private const int MaxFrames = 8;
-
-        private Vector2Int size;
-        /// <summary>
-        /// how many frames used.
-        /// length in [1,8]
-        /// </summary>
-        private int frameLength;
-
-        public Vector2Int Size => size;
-        public int FrameLength
-        {
-            get => frameLength;
-            set => frameLength = value;
-        }
-
-        private readonly SortedList<int, Tile>[,] tileRings;
 
         public Mold(int width = 32, int height = 18, int frameLength = 2)
         {
@@ -35,7 +18,7 @@ namespace Cores.Scenes.Workshops.Entities
             tileRings = new SortedList<int, Tile>[size.x, size.y];
         }
 
-        public void Insert(int x, int y, [NotNull] Tile tile)
+        public override void Insert(in int x, in int y, Tile tile)
         {
             Remove(x, y, tile.Frames.start, tile.Frames.length);
 
@@ -100,11 +83,6 @@ namespace Cores.Scenes.Workshops.Entities
             }
         }
 
-        public bool Contains(int x, int y)
-        {
-            return x >= 0 && x < size.x && y >= 0 && y < size.y;
-        }
-
         public Tile Get(int x, int y, int frame)
         {
             return tileRings[x, y]?.Select(pair => pair.Value)
@@ -112,6 +90,11 @@ namespace Cores.Scenes.Workshops.Entities
                     (tile.Frames.start <= frame && frame < tile.Frames.start + tile.Frames.length)
                     || (tile.Frames.start <= frame + MaxFrames && frame + MaxFrames < tile.Frames.start + tile.Frames.length)
                 );
+        }
+
+        public IReadOnlyDictionary<int, Tile> GetRing(int x, int y)
+        {
+            return tileRings[x, y];
         }
 
         public interface IUpdater

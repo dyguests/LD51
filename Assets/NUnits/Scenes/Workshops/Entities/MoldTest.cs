@@ -53,6 +53,17 @@ namespace NUnits.Scenes.Workshops.Entities
             mold.RemoveObserver(moldObserver);
         }
 
+        [Test]
+        public void InsertMold2()
+        {
+            var mold = new Mold();
+            mold.Insert(0, 0, new Ground(0));
+            mold.Insert(0, 0, new Ground(4));
+
+            var tileRing = mold.GetRing(0, 0);
+            Assert.AreEqual(2, tileRing.Count);
+        }
+
         [UnityTest]
         public IEnumerator MoldTestWithEnumeratorPasses()
         {
