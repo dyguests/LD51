@@ -63,6 +63,37 @@ namespace Scenes.Games.Models
 
         #endregion
 
+#if UNITY_EDITOR
+        private void OnValidate()
+        {
+            SetDirty();
+        }
+#endif
+        private void SetDirty()
+        {
+            moveAcceleration = moveSpeed / moveAccelerationTime;
+            moveDeceleration = moveSpeed / moveDecelerationTime;
+
+            jumpSpeed = Mathf.Sqrt(2 * -Physics2D.gravity.y * jumpHeight);
+
+            // climbUpAcceleration = climbUpSpeed / climbUpAccelerationTime;
+            // climbUpDeceleration = climbUpSpeed / climbUpDecelerationTime;
+            // climbDownAcceleration = -Physics2D.gravity.y * climbDownGravityScale;
+            // climbDownDeceleration = climbDownSpeed / climbDownDecelerationTime;
+            // climbJumpSpeed = Mathf.Sqrt(2 * -Physics2D.gravity.y * climbJumpHeight);
+            //
+            // dashSpeed = dashDistance / dashTime;
+            //
+            // if (afterimageTimes.Length != 3)
+            // {
+            //     var wrongAfterimageTimes = afterimageTimes;
+            //     afterimageTimes = new float[3];
+            //     afterimageTimes[0] = wrongAfterimageTimes.Length > 0 ? wrongAfterimageTimes[0] : 0f;
+            //     afterimageTimes[1] = wrongAfterimageTimes.Length > 1 ? wrongAfterimageTimes[1] : 0f;
+            //     afterimageTimes[2] = wrongAfterimageTimes.Length > 2 ? wrongAfterimageTimes[2] : 0f;
+            // }
+        }
+
         public override Vector2 Velocity { get; set; }
 
         protected override void HandleGraphics()
@@ -153,7 +184,7 @@ namespace Scenes.Games.Models
             }
 
             Velocity = velocity;
-            // Debug.Log("player.Velocity" + player.Velocity);
+            // Debug.Log("player.Velocity" + Velocity);
         }
 
         protected override void UpdateGrounded(bool grounded)
@@ -169,25 +200,25 @@ namespace Scenes.Games.Models
 
         public void HandleMoveInput(InputAction.CallbackContext ctx)
         {
-            Debug.Log("HandleMoveInput ctx:" + ctx);
+            // Debug.Log("HandleMoveInput ctx:" + ctx);
             if (ctx.phase == InputActionPhase.Performed || ctx.phase == InputActionPhase.Canceled)
             {
                 var value = ctx.ReadValue<Vector2>();
-                Debug.Log("HandleMoveInput value:" + value);
+                // Debug.Log("HandleMoveInput value:" + value);
                 moveInput = value;
             }
         }
 
         public void HandleJumpInput(InputAction.CallbackContext ctx)
         {
-            Debug.Log("HandleJumpInput ctx:" + ctx);
+            // Debug.Log("HandleJumpInput ctx:" + ctx);
             if (ctx.phase == InputActionPhase.Started || ctx.phase == InputActionPhase.Canceled)
             {
                 var value = ctx.ReadValue<float>();
                 var jump = Math.Abs(value - 1) < 0.001f;
                 jumpInput = jump;
                 if (jump) lastJumpDownInputTime = Time.fixedTime;
-                Debug.Log("HandleJumpInput jump:" + jump);
+                // Debug.Log("HandleJumpInput jump:" + jump);
             }
         }
     }
