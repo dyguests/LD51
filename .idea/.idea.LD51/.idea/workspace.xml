@@ -1,13 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="a13c8a84-d1f4-49cf-adec-02808396d102" name="Default Changelist" comment="map encoder.">
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.LD51/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.LD51/.idea/contentModel.xml" afterDir="false" />
+    <list default="true" id="a13c8a84-d1f4-49cf-adec-02808396d102" name="Default Changelist" comment="mold.cycle.">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.LD51/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.LD51/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Cores/Entities/Area.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Cores/Entities/Area.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Workshop.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Workshop.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Scenes/Workshops/Models/MoldCtlr.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Scenes/Workshops/Models/MoldCtlr.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/UserSettings/EditorUserSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/UserSettings/EditorUserSettings.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Ciphers/MapEncoder.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Ciphers/MapEncoder.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -33,6 +29,7 @@
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/898512DD-B9B7-4303-996C-5D2E8D378F73/41/39b6fe53/SortedList`2.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/861E23C6-7270-4A4A-8ECA-9C234AF0CAC5/2b/5aee02e2/Int32.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="mock://E:/UnityProjects/LD51/Assets/Scripts/App.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock://E:/UnityProjects/LD51/Assets/Cores/Entities/Area.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="mock://E:/UnityProjects/LD51/Assets/Scenes/Workshop.unity" root0="SKIP_HIGHLIGHTING" />
     <setting file="mock://E:/UnityProjects/LD51/UserSettings/EditorUserSettings.asset" root0="SKIP_HIGHLIGHTING" />
     <setting file="mock://E:/UnityProjects/LD51/UserSettings/EditorUserSettings.asset" root0="SKIP_HIGHLIGHTING" />
@@ -86,11 +83,11 @@
       <option value="$PROJECT_DIR$/Assets/Cores/Entities/Tile.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/Databases/MapCiphers.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/Tools/StringEx.cs" />
-      <option value="$PROJECT_DIR$/Assets/Scripts/Ciphers/MapEncoder.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/Scenes/Workshops/Models/CyclesToggleCtlr.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/Scenes/Workshops/Models/MoldCtlr.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/Scenes/Workshops/Models/CyclesCtlr.cs" />
       <option value="$PROJECT_DIR$/Assets/Cores/Entities/Area.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/Ciphers/MapEncoder.cs" />
     </changedPaths>
   </component>
   <component name="ProjectId" id="2FVREpCwaKszvdF2CvzY1OD9OH9" />
@@ -139,7 +136,7 @@
       <option name="presentableId" value="Default" />
       <updated>1664575155949</updated>
       <workItem from="1664575160683" duration="2683000" />
-      <workItem from="1664582240199" duration="38452000" />
+      <workItem from="1664582240199" duration="38514000" />
     </task>
     <task id="LOCAL-00001" summary="Init.">
       <created>1664575238165</created>
@@ -372,7 +369,14 @@
       <option name="project" value="LOCAL" />
       <updated>1664636933016</updated>
     </task>
-    <option name="localTasksCounter" value="34" />
+    <task id="LOCAL-00034" summary="mold.cycle.">
+      <created>1664638508045</created>
+      <option name="number" value="00034" />
+      <option name="presentableId" value="LOCAL-00034" />
+      <option name="project" value="LOCAL" />
+      <updated>1664638508045</updated>
+    </task>
+    <option name="localTasksCounter" value="35" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -394,7 +398,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
-    <MESSAGE value="nunit works." />
     <MESSAGE value="mold input." />
     <MESSAGE value="mold indicator works." />
     <MESSAGE value="frames" />
@@ -419,6 +422,7 @@
     <MESSAGE value="game load grounds works." />
     <MESSAGE value="Mold Element." />
     <MESSAGE value="map encoder." />
-    <option name="LAST_COMMIT_MESSAGE" value="map encoder." />
+    <MESSAGE value="mold.cycle." />
+    <option name="LAST_COMMIT_MESSAGE" value="mold.cycle." />
   </component>
 </project>

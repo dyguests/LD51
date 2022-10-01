@@ -17,7 +17,7 @@ namespace Ciphers
             sb.Append("V1"); // cipher version
             sb.Append("|");
             var size = map.Size;
-            sb.Append(size.x + "x" + size.y + "x" + map.FrameLength); // size
+            sb.Append(size.x + "x" + size.y + "x" + map.FrameLength + "x" + map.Cycle); // size
             sb.Append("|");
             sb.Append(EncodePos(map.StartPoint));
             sb.Append("|");
@@ -65,6 +65,7 @@ namespace Ciphers
             var whf = partsA[1].Split("x"); // size.x + "x" + size.y + "x" + map.FrameLength
             var map = new Map(Int32.Parse(whf[0]), Int32.Parse(whf[1]), Int32.Parse(whf[2]))
             {
+                Cycle = whf[3].ParseInt(),
                 StartPoint = DecodePos(partsA[2]),
                 EndPoint = DecodePos(partsA[3])
             };
