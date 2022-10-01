@@ -1,6 +1,7 @@
 using Cores.Entities;
 using Cores.Scenes.Workshops.Entities;
 using Cysharp.Threading.Tasks;
+using Scenes.Workshops.Entities;
 using Tools;
 using UnityEngine;
 using UnityEngine.Pool;
@@ -11,6 +12,9 @@ namespace Scenes.Workshops.Models
         IMoldFlow
     {
         [SerializeField] private MoldInputCtlr inputCtlr;
+
+        [Space] [SerializeField] private FramesCtlr framesCtlr;
+        [SerializeField] private ToolsCtlr toolsCtlr;
 
         private InputHandler inputHandler;
 
@@ -77,7 +81,13 @@ namespace Scenes.Workshops.Models
                 currIndicatorCtlr = indicatorCtlrPool.Get();
                 currIndicatorCtlr.Appear(pos);
 
-                moldCtlr.mold.Insert(pos.x, pos.y, new Ground(0));
+                var currentFrame = moldCtlr.framesCtlr.CurrentFrame;
+                var currentToolType = moldCtlr.toolsCtlr.CurrentToolType;
+
+                if (currentToolType == ToolType.Ground)
+                {
+                    moldCtlr.mold.Insert(pos.x, pos.y, new Ground(currentFrame));
+                }
             }
 
             public void OnMove(Vector3 position)

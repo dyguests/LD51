@@ -290,6 +290,9 @@
               </e>
             </e>
             <e p="Workshops" t="Include">
+              <e p="Entities" t="Include">
+                <e p="ToolType.cs" t="Include" />
+              </e>
               <e p="Models" t="Include">
                 <e p="FramesCtlr.cs" t="Include" />
                 <e p="FrameToggleCtlr.cs" t="Include" />

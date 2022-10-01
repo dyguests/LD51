@@ -4,9 +4,15 @@ namespace Scenes.Workshops.Models
 {
     public class FramesCtlr : MonoBehaviour
     {
+        private int currentFrame = 0;
+        public int CurrentFrame => currentFrame;
+
         public void OnFrameClick(int index, bool on)
         {
-            Debug.Log("OnFrameClick " + " index:" + index + "on:" + on);
+            if (on)
+            {
+                currentFrame = index;
+            }
         }
     }
 }
