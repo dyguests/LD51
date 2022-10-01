@@ -320,6 +320,8 @@
                 <e p="ToolType.cs" t="Include" />
               </e>
               <e p="Models" t="Include">
+                <e p="CyclesCtlr.cs" t="Include" />
+                <e p="CyclesToggleCtlr.cs" t="Include" />
                 <e p="FramesCtlr.cs" t="Include" />
                 <e p="FrameToggleCtlr.cs" t="Include" />
                 <e p="IndicatorCtlr.cs" t="Include" />

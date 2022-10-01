@@ -19,12 +19,18 @@ namespace Cores.Entities
         /// length in [1,8]
         /// </summary>
         private int frameLength;
+        private int cycle = 10;
 
         public Vector2Int Size => size;
         public int FrameLength
         {
             get => frameLength;
             set => frameLength = value;
+        }
+        public int Cycle
+        {
+            get => cycle;
+            set => cycle = value;
         }
 
         protected readonly SortedList<int, T>[,] tileRings;
