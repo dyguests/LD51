@@ -90,11 +90,7 @@ namespace Scenes.Workshops.Models
                 var currentFrame = moldCtlr.framesCtlr.CurrentFrame;
                 var currentToolType = moldCtlr.toolsCtlr.CurrentToolType;
 
-                if (currentToolType == ToolType.Ground)
-                {
-                    Debug.Log("Insert ground pos:" + pos);
-                    moldCtlr.mold.Insert(pos.x, pos.y, new Ground(currentFrame));
-                }
+                Insert(pos, currentFrame, 1, currentToolType);
             }
 
             public void OnMove(Vector3 position)
@@ -105,12 +101,35 @@ namespace Scenes.Workshops.Models
                 currIndicatorCtlr.Disappear();
                 currIndicatorCtlr = indicatorCtlrPool.Get();
                 currIndicatorCtlr.Appear(pos);
+
+                var currentFrame = moldCtlr.framesCtlr.CurrentFrame;
+                var currentToolType = moldCtlr.toolsCtlr.CurrentToolType;
+
+                Insert(pos, currentFrame, 1, currentToolType);
             }
 
             public void OnRelease(Vector3 position)
             {
                 currIndicatorCtlr.Disappear();
                 currIndicatorCtlr = null;
+            }
+
+            private void Insert(Vector2Int pos, int frameStart, int frameLength, ToolType toolType)
+            {
+                if (toolType == ToolType.Ground)
+                {
+                    Debug.Log("Insert ground pos:" + pos);
+                    var tile = moldCtlr.mold.Get(pos.x, pos.y, frameStart);
+                    if (tile is Ground ground)
+                    {
+                        if (ground.Frames.start == frameStart && ground.Frames.length == frameLength)
+                        {
+                            return;
+                        }
+                    }
+
+                    moldCtlr.mold.Insert(pos.x, pos.y, new Ground(frameStart));
+                }
             }
         }
 
