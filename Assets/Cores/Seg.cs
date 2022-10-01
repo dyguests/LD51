@@ -30,6 +30,11 @@ namespace Cores
         public override bool Equals(object obj) => obj is Seg other && Equals(other);
         public override int GetHashCode() => HashCode.Combine(start, length);
 
+        public override string ToString()
+        {
+            return "Seq(" + start + "," + length + ")";
+        }
+
 
         private static Seg OpSubtraction(Seg lhs, Seg rhs, int cycle = 8)
         {
