@@ -1,5 +1,6 @@
 using Ciphers;
 using Cores.Scenes.Games.Entities;
+using Cysharp.Threading.Tasks;
 using Databases;
 using Scenes.Games.Models;
 using UnityEngine;
@@ -34,15 +35,25 @@ namespace Scenes.Games
             }
 #endif
 
-            mapCtlr.LoadMap(map);
-            countdownCtlr.LoadMap(map);
+            // await mapCtlr.LoadMap(map);
+            // await countdownCtlr.LoadMap(map);
+            await UniTask.WhenAll(
+                mapCtlr.LoadMap(map),
+                countdownCtlr.LoadMap(map)
+            );
 
             StartGame();
         }
 
-        public void StartGame() { }
+        public void StartGame()
+        {
+            countdownCtlr.StartCountdown();
+        }
 
-        public void EndGame() { }
+        public void EndGame()
+        {
+            countdownCtlr.EndCountdown();
+        }
     }
 
     public interface IGameFlow

@@ -1,5 +1,6 @@
 using Cores.Entities;
 using Cores.Scenes.Games.Entities;
+using Cysharp.Threading.Tasks;
 using Models;
 using UnityEngine;
 
@@ -11,7 +12,7 @@ namespace Scenes.Games.Models
 
         protected override Vector2Int Size => map.Size;
 
-        public async void LoadMap(Map map)
+        public async UniTask LoadMap(Map map)
         {
             this.map = map;
 
@@ -30,7 +31,7 @@ namespace Scenes.Games.Models
             }
         }
 
-        public void UnloadMap() { }
+        public async UniTask UnloadMap() { }
 
         private void InsertTile(Tile tile)
         {
@@ -43,7 +44,7 @@ namespace Scenes.Games.Models
 
     public interface IMapFlow
     {
-        void LoadMap(Map map);
-        void UnloadMap();
+        UniTask LoadMap(Map map);
+        UniTask UnloadMap();
     }
 }

@@ -410,6 +410,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   mapCtlr: {fileID: 581159462}
+  countdownCtlr: {fileID: 1640091166}
 --- !u!1001 &1579915077
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -526,7 +527,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 9.999
+  m_text: ' 9.999'
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 47d0dc0c28e70a444af08b965e668bdf, type: 2}
   m_sharedMaterial: {fileID: 6081260647145834869, guid: 47d0dc0c28e70a444af08b965e668bdf, type: 2}
@@ -615,6 +616,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cae94ad289251364695529b851d9e56b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  text: {fileID: 1640091164}
 --- !u!1001 &8340277440537240515
 PrefabInstance:
   m_ObjectHideFlags: 0
