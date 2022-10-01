@@ -97,7 +97,7 @@ namespace Scenes.Workshops.Models
             {
                 var pos = moldCtlr.Position2Pos(position);
 
-                if (currIndicatorCtlr.Pos == pos) return;
+                if (currIndicatorCtlr == null || currIndicatorCtlr.Pos == pos) return;
                 currIndicatorCtlr.Disappear();
                 currIndicatorCtlr = indicatorCtlrPool.Get();
                 currIndicatorCtlr.Appear(pos);
@@ -110,6 +110,7 @@ namespace Scenes.Workshops.Models
 
             public void OnRelease(Vector3 position)
             {
+                if (currIndicatorCtlr == null) return;
                 currIndicatorCtlr.Disappear();
                 currIndicatorCtlr = null;
             }
