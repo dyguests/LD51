@@ -1,11 +1,13 @@
-﻿using System.Collections.Generic;
+﻿using System;
+using System.Collections.Generic;
 using System.Linq;
 using Cores.Entities;
+using JetBrains.Annotations;
 using UnityEngine;
 
 namespace Cores.Scenes.Workshops.Entities
 {
-    public class Mold
+    public class Mold : ISubject<Mold.IUpdater>
     {
         private Vector2Int size;
         /// <summary>
@@ -28,7 +30,7 @@ namespace Cores.Scenes.Workshops.Entities
             tileRings = new SortedList<int, Tile>[size.x, size.y];
         }
 
-        public void Insert(int x, int y, Ground ground)
+        public void Insert(int x, int y, [NotNull] Tile tile)
         {
             var tileRing = tileRings[x, y];
             if (tileRing == null)
@@ -37,8 +39,10 @@ namespace Cores.Scenes.Workshops.Entities
                 tileRings[x, y] = tileRing;
             }
 
-            tileRing.Add(ground.Frames.x, ground);
+            tileRing.Add(tile.Frames.x, tile);
             // todo Exclude adjacent duplicates
+
+            subjectImplementation.NotifyObserver(updater => updater.OnTileInserted(tile));
         }
 
         public bool Contains(int x, int y)
@@ -54,5 +58,14 @@ namespace Cores.Scenes.Workshops.Entities
                     || (tile.Frames.x - 8 <= frame && frame < tile.Frames.x + tile.Frames.y - 8)
                 );
         }
+
+        public interface IUpdater
+        {
+            void OnTileInserted(Tile tile);
+        }
+        private readonly ISubject<IUpdater> subjectImplementation = new DefaultSubject<IUpdater>();
+        public void AddObserver(IObserver<IUpdater> observer) => subjectImplementation.AddObserver(observer);
+        public void RemoveObserver(IObserver<IUpdater> observer) => subjectImplementation.RemoveObserver(observer);
+        public void NotifyObserver(Action<IUpdater> action) => subjectImplementation.NotifyObserver(action);
     }
 }

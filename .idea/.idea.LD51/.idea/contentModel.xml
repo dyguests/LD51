@@ -14,6 +14,8 @@
             <e p="Ground.cs" t="Include" />
             <e p="Tile.cs" t="Include" />
           </e>
+          <e p="IObserver.cs" t="Include" />
+          <e p="ISubject.cs" t="Include" />
           <e p="Scenes" t="Include">
             <e p="Games" t="Include">
               <e p="Entities" t="Include">
