@@ -1,15 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="a13c8a84-d1f4-49cf-adec-02808396d102" name="Default Changelist" comment="add tile when onPress.">
-      <change afterPath="$PROJECT_DIR$/Assets/Cores/IObserver.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Cores/IObserver.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Cores/ISubject.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Cores/ISubject.cs.meta" afterDir="false" />
+    <list default="true" id="a13c8a84-d1f4-49cf-adec-02808396d102" name="Default Changelist" comment="test insert mold with observer.">
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Models.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Models/TileCtlr.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Models/TileCtlr.cs.meta" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.LD51/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.LD51/.idea/contentModel.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.LD51/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.LD51/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Cores/Scenes/Workshops/Entities/Mold.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Cores/Scenes/Workshops/Entities/Mold.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/NUnits/Scenes/Workshops/Entities/MoldTest.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/NUnits/Scenes/Workshops/Entities/MoldTest.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Workshop.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Workshop.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Scenes/Workshops/Models/MoldCtlr.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Scenes/Workshops/Models/MoldCtlr.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -24,6 +24,7 @@
     <setting file="file://$PROJECT_DIR$/Assets/NUnits/Scenes/Workshops/Entities/MoldTest.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Scenes/Workshops/Models/FrameToggleCtlr.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/898512DD-B9B7-4303-996C-5D2E8D378F73/41/39b6fe53/SortedList`2.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Models/GroundCtlr.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Scenes/Workshops/MoldInputCtlr.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="mock://E:/UnityProjects/LD51/Assets/Scenes/Workshop.unity" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/C6B52566-F59B-49FC-861A-7812A1EA2F6B/10/b6c5ef13/Vector2Int.cs" root0="SKIP_HIGHLIGHTING" />
@@ -53,9 +54,12 @@
       <option value="$PROJECT_DIR$/Assets/Scripts/Scenes/Workshops/Entities/ToolType.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/Scenes/Workshops/Models/ToolsCtlr.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/Scenes/Workshops/Models/FramesCtlr.cs" />
-      <option value="$PROJECT_DIR$/Assets/Scripts/Scenes/Workshops/Models/MoldCtlr.cs" />
-      <option value="$PROJECT_DIR$/Assets/Cores/Scenes/Workshops/Entities/Mold.cs" />
       <option value="$PROJECT_DIR$/Assets/NUnits/Scenes/Workshops/Entities/MoldTest.cs" />
+      <option value="$PROJECT_DIR$/Assets/Cores/Scenes/Workshops/Entities/Mold.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/Scenes/Workshops/Models/MoldCtlr.cs" />
+      <option value="$PROJECT_DIR$/Assets/GroundCtlr.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/Models/GroundCtlr.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/Models/TileCtlr.cs" />
     </changedPaths>
   </component>
   <component name="ProjectId" id="2FVREpCwaKszvdF2CvzY1OD9OH9" />
@@ -102,7 +106,7 @@
       <option name="presentableId" value="Default" />
       <updated>1664575155949</updated>
       <workItem from="1664575160683" duration="2683000" />
-      <workItem from="1664582240199" duration="11793000" />
+      <workItem from="1664582240199" duration="12817000" />
     </task>
     <task id="LOCAL-00001" summary="Init.">
       <created>1664575238165</created>
@@ -202,7 +206,14 @@
       <option name="project" value="LOCAL" />
       <updated>1664595006090</updated>
     </task>
-    <option name="localTasksCounter" value="15" />
+    <task id="LOCAL-00015" summary="test insert mold with observer.">
+      <created>1664595843745</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1664595843745</updated>
+    </task>
+    <option name="localTasksCounter" value="16" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -236,6 +247,7 @@
     <MESSAGE value="mold get test." />
     <MESSAGE value="frames tools." />
     <MESSAGE value="add tile when onPress." />
-    <option name="LAST_COMMIT_MESSAGE" value="add tile when onPress." />
+    <MESSAGE value="test insert mold with observer." />
+    <option name="LAST_COMMIT_MESSAGE" value="test insert mold with observer." />
   </component>
 </project>

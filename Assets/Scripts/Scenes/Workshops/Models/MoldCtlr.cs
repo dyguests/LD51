@@ -1,6 +1,8 @@
+using Cores;
 using Cores.Entities;
 using Cores.Scenes.Workshops.Entities;
 using Cysharp.Threading.Tasks;
+using Models;
 using Scenes.Workshops.Entities;
 using Tools;
 using UnityEngine;
@@ -9,7 +11,7 @@ using UnityEngine.Pool;
 namespace Scenes.Workshops.Models
 {
     public class MoldCtlr : MonoBehaviour,
-        IMoldFlow
+        IMoldFlow, IMoldAction
     {
         [SerializeField] private MoldInputCtlr inputCtlr;
 
@@ -17,12 +19,14 @@ namespace Scenes.Workshops.Models
         [SerializeField] private ToolsCtlr toolsCtlr;
 
         private InputHandler inputHandler;
+        private MoldObserver moldObserver;
 
         private Mold mold;
 
         private void OnEnable()
         {
             inputHandler = new InputHandler(this);
+            moldObserver = new MoldObserver(this);
         }
 
         private void OnDisable()
@@ -106,6 +110,33 @@ namespace Scenes.Workshops.Models
                 currIndicatorCtlr = null;
             }
         }
+
+        private class MoldObserver : IObserver<Mold.IUpdater>, Mold.IUpdater
+        {
+            private readonly MoldCtlr moldCtlr;
+
+            public MoldObserver(MoldCtlr moldCtlr)
+            {
+                this.moldCtlr = moldCtlr;
+
+                Updater = this;
+            }
+
+            public Mold.IUpdater Updater { get; }
+
+            public void OnTileInserted(Tile tile)
+            {
+                moldCtlr.InsertTile(tile);
+            }
+        }
+
+        private void InsertTile(Tile tile)
+        {
+            if (tile is Ground ground)
+            {
+                GroundCtlr.Generate(ground, this);
+            }
+        }
     }
 
     public interface IMoldFlow
@@ -113,4 +144,6 @@ namespace Scenes.Workshops.Models
         UniTask LoadMold(Mold mold);
         UniTask UnloadMold();
     }
+
+    public interface IMoldAction { }
 }

@@ -285,6 +285,10 @@
               <e p="IPoolElement.cs" t="Include" />
             </e>
           </e>
+          <e p="Models" t="Include">
+            <e p="GroundCtlr.cs" t="Include" />
+            <e p="TileCtlr.cs" t="Include" />
+          </e>
           <e p="Scenes" t="Include">
             <e p="Games" t="Include">
               <e p="Models" t="Include">

@@ -14,7 +14,7 @@ namespace Cores.Scenes.Workshops.Entities
         /// how many frames used.
         /// length in [1,8]
         /// </summary>
-        public int length = 1;
+        private int length = 1;
         public Vector2Int Size => size;
         public int Length
         {
@@ -63,6 +63,7 @@ namespace Cores.Scenes.Workshops.Entities
         {
             void OnTileInserted(Tile tile);
         }
+
         private readonly ISubject<IUpdater> subjectImplementation = new DefaultSubject<IUpdater>();
         public void AddObserver(IObserver<IUpdater> observer) => subjectImplementation.AddObserver(observer);
         public void RemoveObserver(IObserver<IUpdater> observer) => subjectImplementation.RemoveObserver(observer);
