@@ -36,7 +36,7 @@ namespace Cores
         }
 
 
-        private static Seg OpSubtraction(Seg lhs, Seg rhs, int cycle = 8)
+        private static Seg OpSubtraction(Seg lhs, Seg rhs, int cycle = 10)
         {
             var lhsArray = Seg2Array(lhs, cycle);
             var rhsArray = Seg2Array(rhs, cycle);

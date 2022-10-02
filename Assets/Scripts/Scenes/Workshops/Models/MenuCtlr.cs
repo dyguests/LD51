@@ -22,7 +22,7 @@ namespace Scenes.Workshops.Models
             Debug.Log("OnPlayClick");
 
             App.Instance.map = mold.ToMap();
-            App.Instance.mold = mold;
+            App.Instance.mold = App.Instance.map.ToMold();
             Debug.Log("Play map cipher:\n" + MapEncoder.Encode(App.Instance.map));
             SceneStacker.LoadScene(SceneNames.Game);
         }

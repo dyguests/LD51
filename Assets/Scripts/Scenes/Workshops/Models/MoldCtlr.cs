@@ -59,6 +59,8 @@ namespace Scenes.Workshops.Models
             StartPointCtlr.Generate(mold, this);
             EndPointCtlr.Generate(mold, this);
 
+            await UniTask.Delay(250);
+
             inputCtlr.inputHandler = inputHandler;
             mold.AddObserver(moldObserver);
         }
@@ -199,6 +201,7 @@ namespace Scenes.Workshops.Models
         {
             if (tile is Ground ground)
             {
+                tile.UpdateFrameState(mold.CurrentFrame, mold.FrameLength);
                 var groundCtlr = GroundCtlr.Generate(ground, this);
                 groundCtlr.AddComponent<MoldElementCtlr>();
             }

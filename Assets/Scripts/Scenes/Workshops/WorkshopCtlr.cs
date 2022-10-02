@@ -32,10 +32,10 @@ namespace Scenes.Workshops
             }
 
 
+            await moldCtlr.LoadMold(mold);
             await framesCtlr.LoadMold(mold);
             await cyclesCtlr.LoadMold(mold);
             await menuCtlr.LoadMold(mold);
-            await moldCtlr.LoadMold(mold);
 
             StartWorkshop();
         }
