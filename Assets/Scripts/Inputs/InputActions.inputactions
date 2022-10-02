@@ -2,6 +2,34 @@
     "name": "InputActions",
     "maps": [
         {
+            "name": "Global",
+            "id": "a052ff6d-0d8e-4613-8d08-bfc7dcad6757",
+            "actions": [
+                {
+                    "name": "Back",
+                    "type": "Button",
+                    "id": "de138df0-103e-46e5-b29c-4523205f5970",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
+                }
+            ],
+            "bindings": [
+                {
+                    "name": "",
+                    "id": "6d8c1413-bce3-4652-8f40-5e04b473570f",
+                    "path": "<Keyboard>/escape",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Back",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                }
+            ]
+        },
+        {
             "name": "Player",
             "id": "3a655073-f1d7-4cee-876b-e7d6797c68f9",
             "actions": [

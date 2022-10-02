@@ -1,6 +1,7 @@
 using Cores.Scenes.Games.Entities;
 using Tools;
 using UnityEngine;
+using UnityEngine.InputSystem;
 using UnityEngine.SceneManagement;
 
 public class App : MonoBehaviour
@@ -25,5 +26,14 @@ public class App : MonoBehaviour
         }
 
         SceneStacker.InitScene(SceneManager.GetActiveScene().name);
+    }
+
+    public void OnBackClick(InputAction.CallbackContext ctx)
+    {
+        if (ctx.phase == InputActionPhase.Performed)
+        {
+            Debug.Log("OnBackClick");
+            SceneStacker.BackScene();
+        }
     }
 }
