@@ -59,7 +59,19 @@ namespace Cores.Entities
                 }
             }
         }
+        public Vector2Int StartPoint
+        {
+            get => startPoint;
+            set => startPoint = value;
+        }
+        public Vector2Int EndPoint
+        {
+            get => endPoint;
+            set => endPoint = value;
+        }
 
+        protected Vector2Int startPoint = new Vector2Int(11, 8);
+        protected Vector2Int endPoint = new Vector2Int(21, 8);
         protected readonly SortedList<int, T>[,] tileRings;
 
         protected Area(in int width, in int height, in int frameLength)

@@ -16,7 +16,6 @@ namespace Scenes.Workshops.Models
         [SerializeField] private MoldInputCtlr inputCtlr;
 
         [Space] [SerializeField] private FramesCtlr framesCtlr;
-        [SerializeField] private CyclesCtlr cyclesCtlr;
         [SerializeField] private ToolsCtlr toolsCtlr;
 
         private InputHandler inputHandler;
@@ -41,16 +40,12 @@ namespace Scenes.Workshops.Models
         {
             this.mold = mold;
 
-            cyclesCtlr.LoadMold(mold);
-
             inputCtlr.inputHandler = inputHandler;
             mold.AddObserver(moldObserver);
         }
 
         public async UniTask UnloadMold()
         {
-            cyclesCtlr.UnloadMold();
-
             inputCtlr.inputHandler = null;
             mold.RemoveObserver(moldObserver);
         }

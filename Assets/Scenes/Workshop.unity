@@ -1259,6 +1259,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3d73018c8dd87fc4184542d6172b80c6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  cyclesCtlr: {fileID: 1853227085}
   moldCtlr: {fileID: 1348589734}
 --- !u!1001 &660183800
 PrefabInstance:
@@ -2421,7 +2422,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   inputCtlr: {fileID: 1348589736}
   framesCtlr: {fileID: 2064377095}
-  cyclesCtlr: {fileID: 1853227085}
   toolsCtlr: {fileID: 525164643}
 --- !u!61 &1348589735
 BoxCollider2D:

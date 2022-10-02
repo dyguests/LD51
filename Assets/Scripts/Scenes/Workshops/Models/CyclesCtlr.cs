@@ -1,4 +1,5 @@
 using Cores.Scenes.Workshops.Entities;
+using Cysharp.Threading.Tasks;
 using UnityEngine;
 
 namespace Scenes.Workshops.Models
@@ -27,7 +28,7 @@ namespace Scenes.Workshops.Models
             }
         }
 
-        public void LoadMold(Mold mold)
+        public async UniTask LoadMold(Mold mold)
         {
             this.mold = mold;
 

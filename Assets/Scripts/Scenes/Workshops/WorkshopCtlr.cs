@@ -9,6 +9,7 @@ namespace Scenes.Workshops
 {
     public class WorkshopCtlr : MonoBehaviour, IWorkshopFlow
     {
+        [SerializeField] private CyclesCtlr cyclesCtlr;
         [SerializeField] private MoldCtlr moldCtlr;
 
         private Mold mold;
@@ -27,6 +28,7 @@ namespace Scenes.Workshops
         {
             mold = new Mold();
 
+            await  cyclesCtlr.LoadMold(mold);
             await moldCtlr.LoadMold(mold);
 
             StartWorkshop();
