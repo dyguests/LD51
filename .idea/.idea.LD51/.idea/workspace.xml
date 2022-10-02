@@ -1,13 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="a13c8a84-d1f4-49cf-adec-02808396d102" name="Default Changelist" comment="next frame.">
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.LD51/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.LD51/.idea/contentModel.xml" afterDir="false" />
+    <list default="true" id="a13c8a84-d1f4-49cf-adec-02808396d102" name="Default Changelist" comment="tile frameLength.">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.LD51/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.LD51/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Cores/Scenes/Workshops/Entities/Mold.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Cores/Scenes/Workshops/Entities/Mold.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scenes/Workshop.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Workshop.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Scenes/Workshops/Models/FramesCtlr.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Scenes/Workshops/Models/FramesCtlr.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Scenes/Workshops/Models/LengthCtlr.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Scenes/Workshops/Models/LengthCtlr.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/Scenes/Workshops/Models/MoldCtlr.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Scenes/Workshops/Models/MoldCtlr.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Scenes/Workshops/WorkshopCtlr.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Scenes/Workshops/WorkshopCtlr.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -80,7 +79,6 @@
       <option value="$PROJECT_DIR$/Assets/Scripts/Scenes/Workshops/Models/CyclesCtlr.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/Scenes/Workshops/Entities/ToolType.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/Scenes/Workshops/Models/ToolsCtlr.cs" />
-      <option value="$PROJECT_DIR$/Assets/Cores/Scenes/Workshops/Entities/Mold.cs" />
       <option value="$PROJECT_DIR$/Assets/Cores/Scenes/Workshops/Tools/MoldEx.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/Databases/Encoders/MapEncoder.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/Models/StartPointCtlr.cs" />
@@ -97,6 +95,7 @@
       <option value="$PROJECT_DIR$/Assets/Scripts/Scenes/Workshops/Models/FramesCtlr.cs" />
       <option value="$PROJECT_DIR$/README.md" />
       <option value="$PROJECT_DIR$/Assets/Scripts/Scenes/Workshops/Models/LengthCtlr.cs" />
+      <option value="$PROJECT_DIR$/Assets/Cores/Scenes/Workshops/Entities/Mold.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/Scenes/Workshops/Models/MoldCtlr.cs" />
     </changedPaths>
   </component>
@@ -127,10 +126,10 @@
       </option>
       <method v="2" />
     </configuration>
-    <configuration name="Attach to Unity Editor" type="UNITY_DEBUG_RUN_CONFIGURATION" factoryName="Unity Debug" show_console_on_std_err="false" show_console_on_std_out="false" port="50000" address="localhost">
+    <configuration name="Attach to Unity Editor" type="UNITY_DEBUG_RUN_CONFIGURATION" factoryName="Unity Debug" show_console_on_std_err="false" show_console_on_std_out="false" port="50000" address="localhost" ignored-value-for-modified-check="62268">
       <option name="allowRunningInParallel" value="false" />
       <option name="listenPortForConnections" value="false" />
-      <option name="pid" />
+      <option name="pid" value="62268" />
       <option name="selectedOptions">
         <list />
       </option>
@@ -149,14 +148,7 @@
       <workItem from="1664582240199" duration="39067000" />
       <workItem from="1664639650102" duration="5714000" />
       <workItem from="1664665722532" duration="8475000" />
-      <workItem from="1664675899925" duration="13038000" />
-    </task>
-    <task id="LOCAL-00016" summary="insert tile.">
-      <created>1664596888241</created>
-      <option name="number" value="00016" />
-      <option name="presentableId" value="LOCAL-00016" />
-      <option name="project" value="LOCAL" />
-      <updated>1664596888241</updated>
+      <workItem from="1664675899925" duration="14415000" />
     </task>
     <task id="LOCAL-00017" summary="insert tile.">
       <created>1664596895176</created>
@@ -494,7 +486,14 @@
       <option name="project" value="LOCAL" />
       <updated>1664706871924</updated>
     </task>
-    <option name="localTasksCounter" value="65" />
+    <task id="LOCAL-00065" summary="tile frameLength.">
+      <created>1664709414284</created>
+      <option name="number" value="00065" />
+      <option name="presentableId" value="LOCAL-00065" />
+      <option name="project" value="LOCAL" />
+      <updated>1664709414285</updated>
+    </task>
+    <option name="localTasksCounter" value="66" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -526,7 +525,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
-    <MESSAGE value="HandleGraphics." />
     <MESSAGE value="HandleKinematics." />
     <MESSAGE value="player move success." />
     <MESSAGE value="player IPlayerInputActions." />
@@ -551,6 +549,7 @@
     <MESSAGE value="template." />
     <MESSAGE value="win." />
     <MESSAGE value="next frame." />
-    <option name="LAST_COMMIT_MESSAGE" value="next frame." />
+    <MESSAGE value="tile frameLength." />
+    <option name="LAST_COMMIT_MESSAGE" value="tile frameLength." />
   </component>
 </project>

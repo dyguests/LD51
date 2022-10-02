@@ -85,10 +85,7 @@ namespace Scenes.Workshops.Models
                 currIndicatorCtlr = indicatorCtlrPool.Get();
                 currIndicatorCtlr.Appear(pos);
 
-                var currentFrame = moldCtlr.framesCtlr.CurrentFrame;
-                var currentToolType = moldCtlr.toolsCtlr.CurrentToolType;
-
-                Insert(pos, currentFrame, 1, currentToolType);
+                Insert(pos);
             }
 
             public void OnMove(Vector3 position)
@@ -100,11 +97,7 @@ namespace Scenes.Workshops.Models
                 currIndicatorCtlr = indicatorCtlrPool.Get();
                 currIndicatorCtlr.Appear(pos);
 
-                var currentFrame = moldCtlr.framesCtlr.CurrentFrame;
-                var currentToolType = moldCtlr.toolsCtlr.CurrentToolType;
-                var frameLength = moldCtlr.lengthCtlr.FrameLength;
-
-                Insert(pos, currentFrame, frameLength, currentToolType);
+                Insert(pos);
             }
 
             public void OnRelease(Vector3 position)
@@ -112,6 +105,15 @@ namespace Scenes.Workshops.Models
                 if (currIndicatorCtlr == null) return;
                 currIndicatorCtlr.Disappear();
                 currIndicatorCtlr = null;
+            }
+
+            private void Insert(Vector2Int pos)
+            {
+                var currentFrame = moldCtlr.framesCtlr.CurrentFrame;
+                var currentToolType = moldCtlr.toolsCtlr.CurrentToolType;
+                var frameLength = moldCtlr.lengthCtlr.FrameLength;
+
+                Insert(pos, currentFrame, frameLength, currentToolType);
             }
 
             private void Insert(Vector2Int pos, int frameStart, int frameLength, ToolType toolType)
@@ -156,7 +158,7 @@ namespace Scenes.Workshops.Models
                         }
                     }
 
-                    moldCtlr.mold.Insert(pos.x, pos.y, new Ground(frameStart));
+                    moldCtlr.mold.Insert(pos.x, pos.y, new Ground(frameStart, frameLength));
                     return;
                 }
             }

@@ -1,3 +1,4 @@
+using System;
 using TMPro;
 using UnityEngine;
 using UnityEngine.UI;
@@ -15,6 +16,21 @@ namespace Scenes.Workshops.Models
 
         private int frameLength = 1;
 
-        public int FrameLength => frameLength;
+        public int FrameLength
+        {
+            get => frameLength;
+            set
+            {
+                frameLength = value;
+                text.text = "len: " + frameLength;
+            }
+        }
+
+        public void OnFrameLengthChanged(Single single)
+        {
+            FrameLength = (int) single;
+
+            Debug.Log("frameLength:" + frameLength);
+        }
     }
 }

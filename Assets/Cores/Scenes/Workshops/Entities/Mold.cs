@@ -51,7 +51,8 @@ namespace Cores.Scenes.Workshops.Entities
 
                 if (removedFrames == Seg.Empty)
                 {
-                    tileRing[framesStart] = null;
+                    // tileRing[framesStart] = null;
+                    tileRing.Remove(framesStart);
                     tile.Removed();
                     continue;
                 }
