@@ -1,8 +1,9 @@
-﻿using UnityEngine;
+﻿using System;
+using UnityEngine;
 
 namespace Cores.Entities
 {
-    public abstract class Tile : IElement
+    public abstract class Tile : IElement, ISubject<Tile.IUpdater>
     {
         private Vector2Int pos;
         /// <summary>
@@ -45,7 +46,12 @@ namespace Cores.Entities
         public FrameState FrameState
         {
             get => frameState;
-            set { frameState = value; }
+            set
+            {
+                var oldFrameState = frameState;
+                frameState = value;
+                NotifyObserver(updater => updater.OnFrameStateChanged(oldFrameState, frameState));
+            }
         }
 
         public void Inserted(in int x, in int y)
@@ -62,8 +68,8 @@ namespace Cores.Entities
         /// <param name="frameLength">map的总帧数</param>
         public void UpdateFrameState(in int currentFrame, in int frameLength)
         {
-            // todo 此方法在 map 中 currentFrame 变化时也应用被调用。
-            // todo 此方法在 mold 中 currentFrame 变化时也应用被调用。
+            // todo 此方法在 map 中 currentFrame 变化时也应用被调用。 done
+            // todo 此方法在 mold 中 currentFrame 变化时也应用被调用。 done
             // todo 此方法在 mold 中 frameLength 变化时也应用被调用。
 
             var nextFrame = (currentFrame + 1) % frameLength;
@@ -108,11 +114,15 @@ namespace Cores.Entities
 
             FrameState = FrameState.None;
         }
-    }
 
-    public interface IElement
-    {
-        void Inserted(in int x, in int y);
-        void Removed();
+        public interface IUpdater
+        {
+            void OnFrameStateChanged(FrameState oldFrameState, FrameState newFrameState);
+        }
+
+        internal readonly ISubject<IUpdater> subjectImplementation = new DefaultSubject<IUpdater>();
+        public void AddObserver(IObserver<IUpdater> observer) => subjectImplementation.AddObserver(observer);
+        public void RemoveObserver(IObserver<IUpdater> observer) => subjectImplementation.RemoveObserver(observer);
+        public void NotifyObserver(Action<IUpdater> action) => subjectImplementation.NotifyObserver(action);
     }
 }

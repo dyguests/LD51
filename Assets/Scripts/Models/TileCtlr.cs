@@ -5,7 +5,7 @@ namespace Models
 {
     public abstract class TileCtlr : MonoBehaviour
     {
-        [SerializeField] private SpriteRenderer sr;
+        [SerializeField] protected SpriteRenderer sr;
 
         [Space] [SerializeField] private float fadeTime = 0.25f;
 

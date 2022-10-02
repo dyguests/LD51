@@ -126,6 +126,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   sr: {fileID: 7517204541689894707}
   fadeTime: 0.25
+  cd: {fileID: 5971608098916908610}
   prePreviousSprite: {fileID: 378045278, guid: a1db2676cbb956f4c9c50bc6d37bfb4f, type: 3}
   previousSprite: {fileID: 1585417143, guid: a1db2676cbb956f4c9c50bc6d37bfb4f, type: 3}
   currentSprite: {fileID: -1309675040, guid: a1db2676cbb956f4c9c50bc6d37bfb4f, type: 3}

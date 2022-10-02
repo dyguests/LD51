@@ -12,6 +12,7 @@ namespace Cores.Entities
     }
 
     public abstract class Area<T> : IArea<T>
+        where T : IElement
     {
         protected const int MaxFrames = 8;
 
@@ -44,6 +45,18 @@ namespace Cores.Entities
             {
                 currentFrame = value;
                 Debug.Log("currentFrame:" + currentFrame);
+                foreach (var tileRing in tileRings)
+                {
+                    if (tileRing == null)
+                    {
+                        continue;
+                    }
+
+                    foreach (var tile in tileRing.Values)
+                    {
+                        tile.UpdateFrameState(currentFrame, frameLength);
+                    }
+                }
             }
         }
 
