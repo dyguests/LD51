@@ -357,6 +357,7 @@
             <e p="Mains" t="Include">
               <e p="MainCtlr.cs" t="Include" />
               <e p="Models" t="Include">
+                <e p="LevelItemCtlr.cs" t="Include" />
                 <e p="LevelsCtlr.cs" t="Include" />
               </e>
             </e>
