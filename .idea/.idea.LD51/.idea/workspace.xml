@@ -1,8 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="a13c8a84-d1f4-49cf-adec-02808396d102" name="Default Changelist" comment="update sprites.">
+    <list default="true" id="a13c8a84-d1f4-49cf-adec-02808396d102" name="Default Changelist" comment="moldCtlr change point.">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.LD51/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.LD51/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Cores/Entities/Area.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Cores/Entities/Area.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Cores/Scenes/Workshops/Entities/Mold.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Cores/Scenes/Workshops/Entities/Mold.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Models/EndPointCtlr.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Models/EndPointCtlr.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Models/StartPointCtlr.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Models/StartPointCtlr.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/Scenes/Workshops/Models/MoldCtlr.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Scenes/Workshops/Models/MoldCtlr.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -20,6 +24,7 @@
   </component>
   <component name="HighlightingSettingsPerFile">
     <setting file="mock://E:/UnityProjects/LD51/Assets/Resources/Prefabs/Models/EndPoint.prefab" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock://E:/UnityProjects/LD51/Assets/Scripts/Scenes/Workshops/Models/MoldCtlr.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/10B6135E-6343-4FDB-A4FC-6C109928AB3B/ae/0860b2b0/Assert.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/NUnits/Scenes/Workshops/Entities/MoldTest.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Scenes/Workshops/Models/FrameToggleCtlr.cs" root0="FORCE_HIGHLIGHTING" />
@@ -65,7 +70,6 @@
       <option value="$PROJECT_DIR$/Assets/Scripts/Scenes/Games/Models/MapCtlr.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/Scenes/Games/Models/CountdownCtlr.cs" />
       <option value="$PROJECT_DIR$/Assets/Cores/Entities/FrameState.cs" />
-      <option value="$PROJECT_DIR$/Assets/Cores/Scenes/Workshops/Entities/Mold.cs" />
       <option value="$PROJECT_DIR$/README.md" />
       <option value="$PROJECT_DIR$/Assets/Cores/Entities/IElement.cs" />
       <option value="$PROJECT_DIR$/Assets/Cores/Entities/Ground.cs" />
@@ -75,15 +79,16 @@
       <option value="$PROJECT_DIR$/Assets/Scripts/Models/EndPoint.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/Models/StartPoint.cs" />
       <option value="$PROJECT_DIR$/Assets/Cores/Scenes/Games/Entities/Map.cs" />
-      <option value="$PROJECT_DIR$/Assets/Cores/Entities/Area.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/Scenes/Workshops/WorkshopCtlr.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/Scenes/Workshops/Models/CyclesCtlr.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/Models/GroundCtlr.cs" />
-      <option value="$PROJECT_DIR$/Assets/Scripts/Models/EndPointCtlr.cs" />
-      <option value="$PROJECT_DIR$/Assets/Scripts/Models/StartPointCtlr.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/Scenes/Workshops/Entities/ToolType.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/Scenes/Workshops/Models/ToolsCtlr.cs" />
+      <option value="$PROJECT_DIR$/Assets/Cores/Scenes/Workshops/Entities/Mold.cs" />
+      <option value="$PROJECT_DIR$/Assets/Cores/Entities/Area.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/Scenes/Workshops/Models/MoldCtlr.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/Models/StartPointCtlr.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/Models/EndPointCtlr.cs" />
     </changedPaths>
   </component>
   <component name="ProjectId" id="2FVREpCwaKszvdF2CvzY1OD9OH9" />
@@ -135,14 +140,7 @@
       <workItem from="1664582240199" duration="39067000" />
       <workItem from="1664639650102" duration="5714000" />
       <workItem from="1664665722532" duration="8475000" />
-      <workItem from="1664675899925" duration="3906000" />
-    </task>
-    <task id="LOCAL-00008" summary="mold indicator works.">
-      <created>1664587319658</created>
-      <option name="number" value="00008" />
-      <option name="presentableId" value="LOCAL-00008" />
-      <option name="project" value="LOCAL" />
-      <updated>1664587319658</updated>
+      <workItem from="1664675899925" duration="5683000" />
     </task>
     <task id="LOCAL-00009" summary="frames">
       <created>1664589700263</created>
@@ -480,7 +478,14 @@
       <option name="project" value="LOCAL" />
       <updated>1664697718193</updated>
     </task>
-    <option name="localTasksCounter" value="57" />
+    <task id="LOCAL-00057" summary="moldCtlr change point.">
+      <created>1664697995131</created>
+      <option name="number" value="00057" />
+      <option name="presentableId" value="LOCAL-00057" />
+      <option name="project" value="LOCAL" />
+      <updated>1664697995131</updated>
+    </task>
+    <option name="localTasksCounter" value="58" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -502,7 +507,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
-    <MESSAGE value="game load grounds works." />
     <MESSAGE value="Mold Element." />
     <MESSAGE value="map encoder." />
     <MESSAGE value="mold.cycle." />
@@ -527,6 +531,7 @@
     <MESSAGE value="insert ground skip start end point." />
     <MESSAGE value="tools click." />
     <MESSAGE value="update sprites." />
-    <option name="LAST_COMMIT_MESSAGE" value="update sprites." />
+    <MESSAGE value="moldCtlr change point." />
+    <option name="LAST_COMMIT_MESSAGE" value="moldCtlr change point." />
   </component>
 </project>

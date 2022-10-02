@@ -1,4 +1,5 @@
-﻿using System.Collections.Generic;
+﻿using System;
+using System.Collections.Generic;
 using JetBrains.Annotations;
 using UnityEngine;
 
@@ -11,7 +12,7 @@ namespace Cores.Entities
         IReadOnlyDictionary<int, T> GetRing(int x, int y);
     }
 
-    public abstract class Area<T> : IArea<T>
+    public abstract class Area<T> : IArea<T>, ISubject<Area<T>.IUpdater>
         where T : IElement
     {
         protected const int MaxFrames = 8;
@@ -62,16 +63,26 @@ namespace Cores.Entities
         public Vector2Int StartPoint
         {
             get => startPoint;
-            set => startPoint = value;
+            set
+            {
+                var oldStartPoint = startPoint;
+                startPoint = value;
+                NotifyObserver(updater => updater.OnStartPointChanged(oldStartPoint, startPoint));
+            }
         }
         public Vector2Int EndPoint
         {
             get => endPoint;
-            set => endPoint = value;
+            set
+            {
+                var oldEndPoint = endPoint;
+                endPoint = value;
+                NotifyObserver(updater => updater.OnEndPointChanged(oldEndPoint, endPoint));
+            }
         }
 
-        protected Vector2Int startPoint = new Vector2Int(11, 8);
-        protected Vector2Int endPoint = new Vector2Int(21, 8);
+        protected Vector2Int startPoint = new(11, 8);
+        protected Vector2Int endPoint = new(21, 8);
         protected readonly SortedList<int, T>[,] tileRings;
 
         protected Area(in int width, in int height, in int frameLength)
@@ -93,5 +104,16 @@ namespace Cores.Entities
         {
             return tileRings[x, y];
         }
+
+        public interface IUpdater
+        {
+            void OnStartPointChanged(Vector2Int oldStartPoint, Vector2Int newStartPoint) { }
+            void OnEndPointChanged(Vector2Int oldEndPoint, Vector2Int newEndPoint) { }
+        }
+
+        internal readonly ISubject<IUpdater> subjectImplementation = new DefaultSubject<IUpdater>();
+        public void AddObserver(IObserver<IUpdater> observer) => subjectImplementation.AddObserver(observer);
+        public void RemoveObserver(IObserver<IUpdater> observer) => subjectImplementation.RemoveObserver(observer);
+        public void NotifyObserver(Action<IUpdater> action) => subjectImplementation.NotifyObserver(action);
     }
 }

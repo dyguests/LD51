@@ -84,14 +84,25 @@ namespace Cores.Scenes.Workshops.Entities
                 );
         }
 
-        public interface IUpdater
+        public new interface IUpdater : Area<Tile>.IUpdater
         {
             void OnTileInserted(Tile tile);
         }
 
-        private readonly ISubject<IUpdater> subjectImplementation = new DefaultSubject<IUpdater>();
-        public void AddObserver(IObserver<IUpdater> observer) => subjectImplementation.AddObserver(observer);
-        public void RemoveObserver(IObserver<IUpdater> observer) => subjectImplementation.RemoveObserver(observer);
+        private new readonly ISubject<IUpdater> subjectImplementation = new DefaultSubject<IUpdater>();
+
+        public void AddObserver(IObserver<IUpdater> observer)
+        {
+            (this as Area<Tile>).subjectImplementation.AddObserver(observer);
+            subjectImplementation.AddObserver(observer);
+        }
+
+        public void RemoveObserver(IObserver<IUpdater> observer)
+        {
+            (this as Area<Tile>).subjectImplementation.RemoveObserver(observer);
+            subjectImplementation.RemoveObserver(observer);
+        }
+
         public void NotifyObserver(Action<IUpdater> action) => subjectImplementation.NotifyObserver(action);
     }
 }

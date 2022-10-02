@@ -20,3 +20,4 @@ Theme: Every 10 seconds
 -[ ] countdown 10 shown too short.
 -[ ] workshop input
   - arrow to next/previous frame.
+-[ ] workshop start/end point can move over on ground.
