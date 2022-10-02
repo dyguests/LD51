@@ -276,6 +276,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   tick: {fileID: 3300774310743733143}
+  text: {fileID: 3461902418819661204}
 --- !u!1 &3461902418819661206
 GameObject:
   m_ObjectHideFlags: 0

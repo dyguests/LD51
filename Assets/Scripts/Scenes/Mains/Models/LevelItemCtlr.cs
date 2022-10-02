@@ -1,5 +1,6 @@
 using Databases.Datas;
 using Databases.Encoders;
+using TMPro;
 using Tools;
 using UnityEngine;
 using UnityEngine.UI;
@@ -9,6 +10,7 @@ namespace Scenes.Mains.Models
     public class LevelItemCtlr : MonoBehaviour
     {
         [SerializeField] private Image tick;
+        [SerializeField] private TMP_Text text;
 
         private int index;
 
@@ -16,6 +18,8 @@ namespace Scenes.Mains.Models
 
         private void Start()
         {
+            text.text = "" + (index + 1);
+
             completed = CacheUtils.GetLevelCompleted(index);
             Debug.Log("LevelItemCtlr completed:" + completed);
             tick.enabled = completed;
