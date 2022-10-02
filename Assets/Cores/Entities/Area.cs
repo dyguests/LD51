@@ -82,7 +82,7 @@ namespace Cores.Entities
         }
 
         protected Vector2Int startPoint = new(11, 8);
-        protected Vector2Int endPoint = new(21, 8);
+        protected Vector2Int endPoint = new(20, 8);
         protected readonly SortedList<int, T>[,] tileRings;
 
         protected Area(in int width, in int height, in int frameLength)

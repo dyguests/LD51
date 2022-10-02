@@ -13,6 +13,8 @@ namespace Cores.Scenes.Workshops.Tools
             {
                 Cycle = mold.Cycle,
             };
+            map.StartPoint = mold.StartPoint;
+            map.EndPoint = mold.EndPoint;
 
             for (int mX = 0; mX < size.x; mX++)
             {

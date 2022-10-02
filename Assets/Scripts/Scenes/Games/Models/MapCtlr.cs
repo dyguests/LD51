@@ -26,9 +26,16 @@ namespace Scenes.Games.Models
                     foreach (var tile in tileRings.Values)
                     {
                         InsertTile(tile);
+                        await UniTask.DelayFrame(1);
                     }
                 }
             }
+
+            var startPoint = map.StartPoint;
+            StartPointCtlr.Generate(map, this);
+
+            var endPoint = map.EndPoint;
+            EndPointCtlr.Generate(map, this);
 
             await UniTask.Delay(250);
         }

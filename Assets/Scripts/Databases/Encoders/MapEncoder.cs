@@ -7,7 +7,7 @@ using Cores.Scenes.Games.Entities;
 using Tools;
 using UnityEngine;
 
-namespace Ciphers
+namespace Databases.Encoders
 {
     public static class MapEncoder
     {

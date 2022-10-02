@@ -288,19 +288,18 @@
         </e>
         <e p="Scripts" t="Include">
           <e p="App.cs" t="Include" />
-          <e p="Ciphers" t="Include">
-            <e p="MapEncoder.cs" t="Include" />
-          </e>
           <e p="Cores" t="Include">
             <e p="Entities" t="Include">
               <e p="IPoolElement.cs" t="Include" />
             </e>
           </e>
           <e p="Databases" t="Include">
-            <e p="Converters" t="Include">
-              <e p="MapConverter.cs" t="Include" />
+            <e p="Datas" t="Include">
+              <e p="MapCiphers.cs" t="Include" />
             </e>
-            <e p="MapCiphers.cs" t="Include" />
+            <e p="Encoders" t="Include">
+              <e p="MapEncoder.cs" t="Include" />
+            </e>
             <e p="Tables" t="Include">
               <e p="MapTable.cs" t="Include" />
             </e>
