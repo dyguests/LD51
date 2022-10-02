@@ -5,5 +5,7 @@
         None,
         Clear,
         Ground,
+        StartPoint,
+        EndPoint,
     }
 }

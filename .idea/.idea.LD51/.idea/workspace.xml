@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="a13c8a84-d1f4-49cf-adec-02808396d102" name="Default Changelist" comment="gen start point in mold.">
+    <list default="true" id="a13c8a84-d1f4-49cf-adec-02808396d102" name="Default Changelist" comment="insert ground skip start end point.">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.LD51/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.LD51/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Resources/Prefabs/Models/EndPoint.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/Prefabs/Models/EndPoint.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Resources/Prefabs/Models/StartPoint.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/Prefabs/Models/StartPoint.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Scenes/Workshops/Models/MoldCtlr.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Scenes/Workshops/Models/MoldCtlr.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Workshop.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Workshop.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Scenes/Workshops/Entities/ToolType.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Scenes/Workshops/Entities/ToolType.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Scenes/Workshops/Models/ToolsCtlr.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Scenes/Workshops/Models/ToolsCtlr.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -21,6 +21,7 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="HighlightingSettingsPerFile">
+    <setting file="mock://E:/UnityProjects/LD51/Assets/Resources/Prefabs/Models/EndPoint.prefab" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/10B6135E-6343-4FDB-A4FC-6C109928AB3B/ae/0860b2b0/Assert.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/NUnits/Scenes/Workshops/Entities/MoldTest.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Scenes/Workshops/Models/FrameToggleCtlr.cs" root0="FORCE_HIGHLIGHTING" />
@@ -39,9 +40,7 @@
       <option value="$PROJECT_DIR$/Assets/NUnits/Scenes/Workshops/Entities/Ground.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/Scenes/Workshops/Models/FrameToggleCtlr.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/Scenes/Workshops/Entites/ToolType.cs" />
-      <option value="$PROJECT_DIR$/Assets/Scripts/Scenes/Workshops/Models/ToolsCtlr.cs" />
       <option value="$PROJECT_DIR$/Assets/GroundCtlr.cs" />
-      <option value="$PROJECT_DIR$/Assets/Scripts/Scenes/Workshops/Entities/ToolType.cs" />
       <option value="$PROJECT_DIR$/Assets/Cores/Seg.cs" />
       <option value="$PROJECT_DIR$/Assets/NUnits/SegTest.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/Scenes/Workshops/Models/FramesCtlr.cs" />
@@ -85,6 +84,8 @@
       <option value="$PROJECT_DIR$/Assets/Scripts/Models/EndPointCtlr.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/Models/StartPointCtlr.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/Scenes/Workshops/Models/MoldCtlr.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/Scenes/Workshops/Entities/ToolType.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/Scenes/Workshops/Models/ToolsCtlr.cs" />
     </changedPaths>
   </component>
   <component name="ProjectId" id="2FVREpCwaKszvdF2CvzY1OD9OH9" />
@@ -136,14 +137,7 @@
       <workItem from="1664582240199" duration="39067000" />
       <workItem from="1664639650102" duration="5714000" />
       <workItem from="1664665722532" duration="8475000" />
-      <workItem from="1664675899925" duration="2707000" />
-    </task>
-    <task id="LOCAL-00005" summary="nunit works.">
-      <created>1664583484611</created>
-      <option name="number" value="00005" />
-      <option name="presentableId" value="LOCAL-00005" />
-      <option name="project" value="LOCAL" />
-      <updated>1664583484611</updated>
+      <workItem from="1664675899925" duration="3118000" />
     </task>
     <task id="LOCAL-00006" summary="nunit works.">
       <created>1664583613840</created>
@@ -481,7 +475,14 @@
       <option name="project" value="LOCAL" />
       <updated>1664696358607</updated>
     </task>
-    <option name="localTasksCounter" value="54" />
+    <task id="LOCAL-00054" summary="insert ground skip start end point.">
+      <created>1664696764797</created>
+      <option name="number" value="00054" />
+      <option name="presentableId" value="LOCAL-00054" />
+      <option name="project" value="LOCAL" />
+      <updated>1664696764797</updated>
+    </task>
+    <option name="localTasksCounter" value="55" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -503,7 +504,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
-    <MESSAGE value="Mold2Map." />
     <MESSAGE value="map." />
     <MESSAGE value="map insert works." />
     <MESSAGE value="game load grounds works." />
@@ -528,6 +528,7 @@
     <MESSAGE value="cyclesCtlr move into workshopCtlr." />
     <MESSAGE value="load mold: start end." />
     <MESSAGE value="gen start point in mold." />
-    <option name="LAST_COMMIT_MESSAGE" value="gen start point in mold." />
+    <MESSAGE value="insert ground skip start end point." />
+    <option name="LAST_COMMIT_MESSAGE" value="insert ground skip start end point." />
   </component>
 </project>

@@ -11,7 +11,28 @@ namespace Scenes.Workshops.Models
         public void OnGroundClick(bool on)
         {
             Debug.Log("OnGroundClick on:" + on);
-            currentToolType = ToolType.Ground;
+            if (on)
+            {
+                currentToolType = ToolType.Ground;
+            }
+        }
+
+        public void OnStartPointClick(bool on)
+        {
+            Debug.Log("OnStartPointClick on:" + on);
+            if (on)
+            {
+                currentToolType = ToolType.StartPoint;
+            }
+        }
+
+        public void OnEndPointClick(bool on)
+        {
+            Debug.Log("OnEndPointClick on:" + on);
+            if (on)
+            {
+                currentToolType = ToolType.EndPoint;
+            }
         }
     }
 }
