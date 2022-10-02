@@ -258,6 +258,12 @@ namespace Scenes.Games.Models
             Destroy(this);
         }
 
+        protected override void Caught()
+        {
+            cd.enabled = false;
+            GameCtlr.Instance.LoseGame();
+        }
+
         public void Dead()
         {
             Destroy(gameObject);

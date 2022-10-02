@@ -89,6 +89,11 @@ namespace Scenes.Games.Models
         {
             text.text = "WIN";
         }
+
+        public void SetLose()
+        {
+            text.text = "LOSE";
+        }
     }
 
     public interface ICountdownFlow

@@ -78,6 +78,13 @@ namespace Scenes.Games.Physicses
             int count = cd.Cast(movement, contactFilter, hitBuffer, distance + ShellRadius);
             for (int i = 0; i < count; i++)
             {
+                // Debug.Log("cd.Cast distance:" + hitBuffer[i].distance);
+                if (hitBuffer[i].distance == 0f)
+                {
+                    Caught();
+                    break;
+                }
+
                 Vector2 currentNormal = hitBuffer[i].normal;
                 if (currentNormal.y > MinGroundNormalY)
                 {
@@ -101,5 +108,7 @@ namespace Scenes.Games.Physicses
 
             rb.position += movement.normalized * distance;
         }
+
+        protected abstract void Caught();
     }
 }

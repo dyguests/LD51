@@ -76,6 +76,7 @@ namespace Scenes.Games
         {
             Debug.Log("LoseGame");
             timerCtlr.EndCountdown();
+            timerCtlr.SetLose();
             PlayerCtlr.Instance.Dead();
         }
 
