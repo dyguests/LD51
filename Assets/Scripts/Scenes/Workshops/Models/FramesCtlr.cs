@@ -2,11 +2,15 @@ using System;
 using Cores.Scenes.Workshops.Entities;
 using Cysharp.Threading.Tasks;
 using UnityEngine;
+using UnityEngine.UI;
 
 namespace Scenes.Workshops.Models
 {
     public class FramesCtlr : MonoBehaviour
     {
+        [SerializeField] private Slider slider;
+        [SerializeField] private FrameToggleCtlr[] frameToggleCtlrs;
+
         private int currentFrame = 0;
         private int frameLength = 1;
 
@@ -34,6 +38,9 @@ namespace Scenes.Workshops.Models
         public async UniTask LoadMold(Mold mold)
         {
             this.mold = mold;
+
+            slider.value = mold.FrameLength;
+            frameToggleCtlrs[mold.CurrentFrame].Check(true);
         }
 
         public void OnFrameLengthChanged(Single single)

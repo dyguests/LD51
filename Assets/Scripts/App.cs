@@ -1,4 +1,5 @@
 using Cores.Scenes.Games.Entities;
+using Cores.Scenes.Workshops.Entities;
 using Tools;
 using UnityEngine;
 using UnityEngine.InputSystem;
@@ -11,6 +12,7 @@ public class App : MonoBehaviour
     public static App Instance => sInstance;
 
     public Map map;
+    public Mold mold;
 
     void Awake()
     {

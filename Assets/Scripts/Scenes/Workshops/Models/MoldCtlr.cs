@@ -41,10 +41,22 @@ namespace Scenes.Workshops.Models
         {
             this.mold = mold;
 
-            var startPoint = mold.StartPoint;
-            StartPointCtlr.Generate(mold, this);
+            var size = mold.Size;
+            for (int x = 0; x < size.x; x++)
+            {
+                for (int y = 0; y < size.y; y++)
+                {
+                    var tileRings = mold.GetRing(x, y);
+                    if (tileRings == null) continue;
+                    foreach (var tile in tileRings.Values)
+                    {
+                        InsertTile(tile);
+                        // await UniTask.DelayFrame(1);
+                    }
+                }
+            }
 
-            var endPoint = mold.EndPoint;
+            StartPointCtlr.Generate(mold, this);
             EndPointCtlr.Generate(mold, this);
 
             inputCtlr.inputHandler = inputHandler;

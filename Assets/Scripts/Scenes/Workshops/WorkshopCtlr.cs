@@ -27,9 +27,13 @@ namespace Scenes.Workshops
 
         public async void PrepareWorkshop()
         {
-            mold = new Mold();
+            mold = App.Instance.mold;
+            if (mold == null)
+            {
+                mold = new Mold();
+            }
 
-            
+
             await framesCtlr.LoadMold(mold);
             await cyclesCtlr.LoadMold(mold);
             await moldCtlr.LoadMold(mold);
@@ -46,6 +50,7 @@ namespace Scenes.Workshops
             Debug.Log("OnPlayClick");
 
             App.Instance.map = mold.ToMap();
+            App.Instance.mold = mold;
             Debug.Log("Play map cipher:\n" + MapEncoder.Encode(App.Instance.map));
             SceneStacker.LoadScene(SceneNames.Game);
         }

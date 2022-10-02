@@ -1,11 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="a13c8a84-d1f4-49cf-adec-02808396d102" name="Default Changelist" comment="text in slider works.">
+    <list default="true" id="a13c8a84-d1f4-49cf-adec-02808396d102" name="Default Changelist" comment="App back click.">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.LD51/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.LD51/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/App.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/App.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Scenes/Workshops/FrameToggle.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Scenes/Workshops/FrameToggle.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Workshop.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Workshop.unity" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/App.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/App.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Inputs/InputActions.inputactions" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Inputs/InputActions.inputactions" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Scenes/Workshops/Models/FrameToggleCtlr.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Scenes/Workshops/Models/FrameToggleCtlr.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Scenes/Workshops/Models/FramesCtlr.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Scenes/Workshops/Models/FramesCtlr.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Scenes/Workshops/Models/MoldCtlr.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Scenes/Workshops/Models/MoldCtlr.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Scenes/Workshops/WorkshopCtlr.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Scenes/Workshops/WorkshopCtlr.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -47,7 +51,6 @@
   </component>
   <component name="IdeDocumentHistory">
     <changedPaths>
-      <option value="$PROJECT_DIR$/Assets/Scripts/Scenes/Workshops/Models/FrameToggleCtlr.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/Scenes/Workshops/Entites/ToolType.cs" />
       <option value="$PROJECT_DIR$/Assets/GroundCtlr.cs" />
       <option value="$PROJECT_DIR$/Assets/Cores/Seg.cs" />
@@ -91,13 +94,14 @@
       <option value="$PROJECT_DIR$/Assets/Scripts/Models/EndPointCtlr.cs" />
       <option value="$PROJECT_DIR$/Assets/Cores/Scenes/Games/Entities/Map.cs" />
       <option value="$PROJECT_DIR$/Assets/Cores/Entities/Area.cs" />
-      <option value="$PROJECT_DIR$/Assets/Scripts/Scenes/Workshops/WorkshopCtlr.cs" />
-      <option value="$PROJECT_DIR$/Assets/Scripts/Scenes/Workshops/Models/FramesCtlr.cs" />
       <option value="$PROJECT_DIR$/README.md" />
       <option value="$PROJECT_DIR$/Assets/Scripts/Scenes/Workshops/Models/LengthCtlr.cs" />
       <option value="$PROJECT_DIR$/Assets/Cores/Scenes/Workshops/Entities/Mold.cs" />
-      <option value="$PROJECT_DIR$/Assets/Scripts/Scenes/Workshops/Models/MoldCtlr.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/App.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/Scenes/Workshops/WorkshopCtlr.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/Scenes/Workshops/Models/MoldCtlr.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/Scenes/Workshops/Models/FramesCtlr.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/Scenes/Workshops/Models/FrameToggleCtlr.cs" />
     </changedPaths>
   </component>
   <component name="ProjectId" id="2FVREpCwaKszvdF2CvzY1OD9OH9" />
@@ -149,14 +153,7 @@
       <workItem from="1664582240199" duration="39067000" />
       <workItem from="1664639650102" duration="5714000" />
       <workItem from="1664665722532" duration="8475000" />
-      <workItem from="1664675899925" duration="15795000" />
-    </task>
-    <task id="LOCAL-00019" summary="seg">
-      <created>1664604992424</created>
-      <option name="number" value="00019" />
-      <option name="presentableId" value="LOCAL-00019" />
-      <option name="project" value="LOCAL" />
-      <updated>1664604992424</updated>
+      <workItem from="1664675899925" duration="16640000" />
     </task>
     <task id="LOCAL-00020" summary="Seg sub.">
       <created>1664606909293</created>
@@ -494,7 +491,14 @@
       <option name="project" value="LOCAL" />
       <updated>1664711316853</updated>
     </task>
-    <option name="localTasksCounter" value="68" />
+    <task id="LOCAL-00068" summary="App back click.">
+      <created>1664719320655</created>
+      <option name="number" value="00068" />
+      <option name="presentableId" value="LOCAL-00068" />
+      <option name="project" value="LOCAL" />
+      <updated>1664719320655</updated>
+    </task>
+    <option name="localTasksCounter" value="69" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -526,7 +530,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
-    <MESSAGE value="player IPlayerInputActions." />
     <MESSAGE value="CountdownCtlr." />
     <MESSAGE value="countdown." />
     <MESSAGE value="next Frame" />
@@ -551,6 +554,7 @@
     <MESSAGE value="tile frameLength." />
     <MESSAGE value="insert multi frames." />
     <MESSAGE value="text in slider works." />
-    <option name="LAST_COMMIT_MESSAGE" value="text in slider works." />
+    <MESSAGE value="App back click." />
+    <option name="LAST_COMMIT_MESSAGE" value="App back click." />
   </component>
 </project>
