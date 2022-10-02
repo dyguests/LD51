@@ -307,7 +307,9 @@
           </e>
           <e p="Models" t="Include">
             <e p="AreaCtlr.cs" t="Include" />
+            <e p="EndPointCtlr.cs" t="Include" />
             <e p="GroundCtlr.cs" t="Include" />
+            <e p="StartPointCtlr.cs" t="Include" />
             <e p="TileCtlr.cs" t="Include" />
           </e>
           <e p="Scenes" t="Include">
