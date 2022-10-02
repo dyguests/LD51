@@ -1,13 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="a13c8a84-d1f4-49cf-adec-02808396d102" name="Default Changelist" comment="update frames when back.">
+    <list default="true" id="a13c8a84-d1f4-49cf-adec-02808396d102" name="Default Changelist" comment="update cycle.">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.LD51/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.LD51/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Cores/Entities/Tile.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Cores/Entities/Tile.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Scenes/Workshops/CycleToggle.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Scenes/Workshops/CycleToggle.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Cores/Entities/Area.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Cores/Entities/Area.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Cores/Scenes/Workshops/Entities/Mold.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Cores/Scenes/Workshops/Entities/Mold.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scenes/Workshop.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Workshop.unity" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/Scenes/Workshops/Models/CyclesCtlr.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Scenes/Workshops/Models/CyclesCtlr.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Scenes/Workshops/Models/CyclesToggleCtlr.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Scenes/Workshops/Models/CyclesToggleCtlr.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/Scenes/Workshops/Models/FramesCtlr.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Scenes/Workshops/Models/FramesCtlr.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -24,29 +23,38 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="HighlightingSettingsPerFile">
-    <setting file="mock://E:/UnityProjects/LD51/Assets/Resources/Prefabs/Models/EndPoint.prefab" root0="SKIP_HIGHLIGHTING" />
-    <setting file="mock://E:/UnityProjects/LD51/Assets/Scripts/Scenes/Workshops/Models/MoldCtlr.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/10B6135E-6343-4FDB-A4FC-6C109928AB3B/ae/0860b2b0/Assert.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="mock://E:/UnityProjects/LD51/Assets/Scripts/Scenes/Games/Models/PlayerCtlr.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Models/GroundCtlr.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="mock://E:/UnityProjects/LD51/Assets/Scripts/Scenes/Games/Models/PlayerCtlr.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock://E:/UnityProjects/LD51/Assets/Cores/Entities/Tile.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock://E:/UnityProjects/LD51/Assets/Scripts/Scenes/Workshops/Models/FramesCtlr.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="mock://E:/UnityProjects/LD51/Assets/Scripts/Scenes/Workshops/Models/LengthCtlr.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="mock://E:/UnityProjects/LD51/Assets/Scripts/Scenes/Games/Models/PlayerCtlr.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="mock://E:/UnityProjects/LD51/Assets/Scripts/Scenes/Games/Models/PlayerCtlr.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/861E23C6-7270-4A4A-8ECA-9C234AF0CAC5/fa/d11280e0/Single.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="mock://E:/UnityProjects/LD51/Assets/Scenes/Game.unity" root0="SKIP_HIGHLIGHTING" />
-    <setting file="mock://E:/UnityProjects/LD51/UserSettings/EditorUserSettings.asset" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock://E:/UnityProjects/LD51/Assets/Scenes/Workshop.unity" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Scenes/Games/Models/PlayerCtlr.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="mock://E:/UnityProjects/LD51/Assets/Scripts/Scenes/Games/Models/PlayerCtlr.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Scenes/Workshops/MoldInputCtlr.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/C6B52566-F59B-49FC-861A-7812A1EA2F6B/10/b6c5ef13/Vector2Int.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="mock://E:/UnityProjects/LD51/Assets/Scripts/Scenes/Workshops/Models/CyclesCtlr.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/NUnits/Scenes/Workshops/Entities/MoldTest.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Scenes/Workshops/Models/FrameToggleCtlr.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/898512DD-B9B7-4303-996C-5D2E8D378F73/41/39b6fe53/SortedList`2.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock://E:/UnityProjects/LD51/Assets/Cores/Entities/Area.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/861E23C6-7270-4A4A-8ECA-9C234AF0CAC5/2b/5aee02e2/Int32.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="mock://E:/UnityProjects/LD51/Assets/Scenes/Game.unity" root0="SKIP_HIGHLIGHTING" />
     <setting file="mock://E:/UnityProjects/LD51/Assets/Scripts/Scenes/Games/Models/PlayerCtlr.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock://E:/UnityProjects/LD51/Assets/Resources/Prefabs/Models/EndPoint.prefab" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock://E:/UnityProjects/LD51/Assets/Scripts/Scenes/Workshops/Models/MoldCtlr.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock://E:/UnityProjects/LD51/Assets/Cores/Entities/Area.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Models/GroundCtlr.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="mock://E:/UnityProjects/LD51/Assets/Scripts/Scenes/Games/Models/PlayerCtlr.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock://E:/UnityProjects/LD51/Assets/Scripts/Scenes/Games/Models/PlayerCtlr.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock://E:/UnityProjects/LD51/Assets/Scripts/Scenes/Games/Models/PlayerCtlr.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock://E:/UnityProjects/LD51/Assets/Scripts/Scenes/Workshops/Models/CyclesToggleCtlr.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/861E23C6-7270-4A4A-8ECA-9C234AF0CAC5/fa/d11280e0/Single.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock://E:/UnityProjects/LD51/Assets/Scenes/Game.unity" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock://E:/UnityProjects/LD51/UserSettings/EditorUserSettings.asset" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock://E:/UnityProjects/LD51/Assets/Scripts/Scenes/Games/Models/PlayerCtlr.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock://E:/UnityProjects/LD51/Assets/Prefabs/Scenes/Workshops/CycleToggle.prefab" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/C6B52566-F59B-49FC-861A-7812A1EA2F6B/10/b6c5ef13/Vector2Int.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock://E:/UnityProjects/LD51/Assets/Cores/Entities/Area.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Scenes/Workshops/Models/FrameToggleCtlr.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/898512DD-B9B7-4303-996C-5D2E8D378F73/41/39b6fe53/SortedList`2.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock://E:/UnityProjects/LD51/Assets/Scripts/Scenes/Workshops/Models/CyclesCtlr.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="mock://E:/UnityProjects/LD51/Assets/Scripts/Scenes/Workshops/Models/LengthCtlr.cs" root0="SKIP_HIGHLIGHTING" />
   </component>
   <component name="IdeDocumentHistory">
@@ -90,18 +98,18 @@
       <option value="$PROJECT_DIR$/Assets/Scripts/Scenes/Games/GameCtlr.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/Models/EndPointCtlr.cs" />
       <option value="$PROJECT_DIR$/Assets/Cores/Scenes/Games/Entities/Map.cs" />
-      <option value="$PROJECT_DIR$/Assets/Cores/Entities/Area.cs" />
       <option value="$PROJECT_DIR$/README.md" />
       <option value="$PROJECT_DIR$/Assets/Scripts/Scenes/Workshops/Models/LengthCtlr.cs" />
-      <option value="$PROJECT_DIR$/Assets/Cores/Scenes/Workshops/Entities/Mold.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/App.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/Scenes/Workshops/WorkshopCtlr.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/Scenes/Workshops/Models/MoldCtlr.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/Scenes/Workshops/Models/FrameToggleCtlr.cs" />
-      <option value="$PROJECT_DIR$/Assets/Scripts/Scenes/Workshops/Models/FramesCtlr.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/Scenes/Workshops/Models/CyclesToggleCtlr.cs" />
-      <option value="$PROJECT_DIR$/Assets/Scripts/Scenes/Workshops/Models/CyclesCtlr.cs" />
       <option value="$PROJECT_DIR$/Assets/Cores/Entities/Tile.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/Scenes/Workshops/Models/CyclesCtlr.cs" />
+      <option value="$PROJECT_DIR$/Assets/Cores/Entities/Area.cs" />
+      <option value="$PROJECT_DIR$/Assets/Cores/Scenes/Workshops/Entities/Mold.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/Scenes/Workshops/Models/FramesCtlr.cs" />
     </changedPaths>
   </component>
   <component name="ProjectId" id="2FVREpCwaKszvdF2CvzY1OD9OH9" />
@@ -153,14 +161,7 @@
       <workItem from="1664582240199" duration="39067000" />
       <workItem from="1664639650102" duration="5714000" />
       <workItem from="1664665722532" duration="8475000" />
-      <workItem from="1664675899925" duration="18157000" />
-    </task>
-    <task id="LOCAL-00021" summary="seg test ok.">
-      <created>1664607645269</created>
-      <option name="number" value="00021" />
-      <option name="presentableId" value="LOCAL-00021" />
-      <option name="project" value="LOCAL" />
-      <updated>1664607645269</updated>
+      <workItem from="1664675899925" duration="19273000" />
     </task>
     <task id="LOCAL-00022" summary="frames.">
       <created>1664608607985</created>
@@ -498,7 +499,14 @@
       <option name="project" value="LOCAL" />
       <updated>1664720119474</updated>
     </task>
-    <option name="localTasksCounter" value="70" />
+    <task id="LOCAL-00070" summary="update cycle.">
+      <created>1664721710318</created>
+      <option name="number" value="00070" />
+      <option name="presentableId" value="LOCAL-00070" />
+      <option name="project" value="LOCAL" />
+      <updated>1664721710318</updated>
+    </task>
+    <option name="localTasksCounter" value="71" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -530,7 +538,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
-    <MESSAGE value="countdown." />
     <MESSAGE value="next Frame" />
     <MESSAGE value="prePreviousSprite" />
     <MESSAGE value="update frameState." />
@@ -555,7 +562,8 @@
     <MESSAGE value="text in slider works." />
     <MESSAGE value="App back click." />
     <MESSAGE value="update frames when back." />
-    <option name="LAST_COMMIT_MESSAGE" value="update frames when back." />
+    <MESSAGE value="update cycle." />
+    <option name="LAST_COMMIT_MESSAGE" value="update cycle." />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

@@ -12,7 +12,7 @@ namespace Scenes.Workshops.Models
         [SerializeField] private FrameToggleCtlr[] frameToggleCtlrs;
 
         private int currentFrame = 0;
-        private int frameLength = 2;
+        private int frameLength = 10;
 
         public int CurrentFrame
         {
@@ -21,6 +21,8 @@ namespace Scenes.Workshops.Models
             {
                 currentFrame = value;
                 mold.CurrentFrame = currentFrame;
+
+                Debug.Log("FramesCtlr CurrentFrame changed:"+CurrentFrame);
             }
         }
         public int FrameLength
@@ -39,23 +41,27 @@ namespace Scenes.Workshops.Models
         {
             this.mold = mold;
 
-            slider.value = mold.FrameLength;
-            frameToggleCtlrs[mold.CurrentFrame].Check(true);
+            // slider.value = mold.FrameLength;
+            // frameToggleCtlrs[mold.CurrentFrame].Check(true);
+            slider.value = mold.CurrentFrame;
         }
 
         public void OnFrameClick(int index, bool on)
         {
             if (on)
             {
+                slider.value = index;
                 CurrentFrame = index;
             }
         }
 
-        public void OnFrameLengthChanged(Single single)
+        public void OnCurrentFrameChanged(Single single)
         {
-            FrameLength = (int) single;
+            var currentFrame = (int) single;
 
-            Debug.Log("frameLength:" + FrameLength);
+            Debug.Log("OnCurrentFrameChanged currentFrame:" + currentFrame);
+
+            frameToggleCtlrs[currentFrame].Check(true);
         }
     }
 }

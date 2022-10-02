@@ -15,7 +15,7 @@ namespace Cores.Entities
     public abstract class Area<T> : IArea<T>, ISubject<Area<T>.IUpdater>
         where T : IElement
     {
-        protected const int MaxFrames = 8;
+        protected const int MaxFrames = 10;
 
         private Vector2Int size;
         /// <summary>
@@ -31,7 +31,11 @@ namespace Cores.Entities
             set => frameLength = value;
         }
 
-        private int cycle = 10;
+        /// <summary>
+        /// 每一帧的持续时间
+        /// TODO cycle这个名字不好，有空换一个
+        /// </summary>
+        private int cycle = 1;
         public int Cycle
         {
             get => cycle;

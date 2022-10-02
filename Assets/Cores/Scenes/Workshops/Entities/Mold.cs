@@ -7,7 +7,7 @@ namespace Cores.Scenes.Workshops.Entities
 {
     public class Mold : Area<Tile>, ISubject<Mold.IUpdater>
     {
-        public Mold(int width = 32, int height = 18, int frameLength = 2) : base(width, height, frameLength) { }
+        public Mold(int width = 32, int height = 18, int frameLength = 10) : base(width, height, frameLength) { }
 
         public override void Insert(in int x, in int y, Tile tile)
         {

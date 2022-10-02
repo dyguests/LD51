@@ -26,7 +26,7 @@ namespace Scenes.Workshops.Models
         {
             this.mold = mold;
 
-            cyclesToggleCtlrs[CycleToCycleToggleIndex(mold.Cycle)].Check(true);
+            cyclesToggleCtlrs[mold.Cycle - 1].Check(true);
         }
 
         public void UnloadMold()
@@ -40,18 +40,6 @@ namespace Scenes.Workshops.Models
             {
                 this.Cycle = cycle;
             }
-        }
-
-        private static int CycleToCycleToggleIndex(int cycle)
-        {
-            return cycle switch
-            {
-                10 => 0,
-                5 => 1,
-                2 => 2,
-                1 => 3,
-                _ => 0
-            };
         }
     }
 }
