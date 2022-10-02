@@ -11,6 +11,11 @@ namespace Scenes.Workshops.Models
     {
         private Mold mold;
 
+        public async Task LoadMold(Mold mold)
+        {
+            this.mold = mold;
+        }
+
         public void OnPlayClick()
         {
             Debug.Log("OnPlayClick");
@@ -24,16 +29,17 @@ namespace Scenes.Workshops.Models
         public void OnCopyClick()
         {
             Debug.Log("OnCopyClick");
+            var map = mold.ToMap();
+            var cipher = MapEncoder.Encode(map);
+            Debug.Log("Copy map cipher:\n" + cipher);
+            ClipboardUtils.CopyToClipboard(cipher);
         }
 
         public void OnPasteClick()
         {
             Debug.Log("OnPasteClick");
-        }
-
-        public async Task LoadMold(Mold mold)
-        {
-            this.mold = mold;
+            var cipher = ClipboardUtils.PasteFromClipboard();
+            Debug.Log("Paste map cipher:\n" + cipher);
         }
     }
 }

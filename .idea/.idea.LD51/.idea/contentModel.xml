@@ -344,7 +344,7 @@
             </e>
           </e>
           <e p="Tools" t="Include">
-            <e p="Clipboard.cs" t="Include" />
+            <e p="ClipboardUtils.cs" t="Include" />
             <e p="ColorEx.cs" t="Include" />
             <e p="FloatEx.cs" t="Include" />
             <e p="SceneNames.cs" t="Include" />

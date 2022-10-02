@@ -24,3 +24,4 @@ Theme: Every 10 seconds
 -[ ] trapped on the ground.
 -[ ] trapped out of screen.
 -[ ] workshop insert tile, will delete other tile in ring, not truncate.
+-[ ] workshop copy/paste validate.

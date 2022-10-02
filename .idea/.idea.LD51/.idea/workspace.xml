@@ -1,12 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="a13c8a84-d1f4-49cf-adec-02808396d102" name="Default Changelist" comment="cipher.">
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.LD51/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.LD51/.idea/contentModel.xml" afterDir="false" />
+    <list default="true" id="a13c8a84-d1f4-49cf-adec-02808396d102" name="Default Changelist" comment="clipboard.">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.LD51/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.LD51/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Workshop.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Workshop.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Scenes/Workshops/WorkshopCtlr.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Scenes/Workshops/WorkshopCtlr.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/UserSettings/EditorUserSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/UserSettings/EditorUserSettings.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Scenes/Workshops/Models/MenuCtlr.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Scenes/Workshops/Models/MenuCtlr.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -62,7 +60,6 @@
   </component>
   <component name="IdeDocumentHistory">
     <changedPaths>
-      <option value="$PROJECT_DIR$/Assets/GroundCtlr.cs" />
       <option value="$PROJECT_DIR$/Assets/Cores/Seg.cs" />
       <option value="$PROJECT_DIR$/Assets/NUnits/SegTest.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/Tools/SceneNames.cs" />
@@ -109,9 +106,10 @@
       <option value="$PROJECT_DIR$/Assets/Scripts/Scenes/Workshops/Models/FramesCtlr.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/Models/GroundCtlr.cs" />
       <option value="$PROJECT_DIR$/Assets/Cores/Scenes/Workshops/Entities/Mold.cs" />
-      <option value="$PROJECT_DIR$/README.md" />
       <option value="$PROJECT_DIR$/Assets/Scripts/Databases/Datas/MapCiphers.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/Scenes/Workshops/WorkshopCtlr.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/Tools/Clipboard.cs" />
+      <option value="$PROJECT_DIR$/README.md" />
       <option value="$PROJECT_DIR$/Assets/Scripts/Scenes/Workshops/Models/MenuCtlr.cs" />
     </changedPaths>
   </component>
@@ -164,21 +162,7 @@
       <workItem from="1664582240199" duration="39067000" />
       <workItem from="1664639650102" duration="5714000" />
       <workItem from="1664665722532" duration="8475000" />
-      <workItem from="1664675899925" duration="22432000" />
-    </task>
-    <task id="LOCAL-00026" summary="play.">
-      <created>1664612926542</created>
-      <option name="number" value="00026" />
-      <option name="presentableId" value="LOCAL-00026" />
-      <option name="project" value="LOCAL" />
-      <updated>1664612926542</updated>
-    </task>
-    <task id="LOCAL-00027" summary="load map.">
-      <created>1664613991889</created>
-      <option name="number" value="00027" />
-      <option name="presentableId" value="LOCAL-00027" />
-      <option name="project" value="LOCAL" />
-      <updated>1664613991889</updated>
+      <workItem from="1664675899925" duration="22984000" />
     </task>
     <task id="LOCAL-00028" summary="Mold2Map.">
       <created>1664615464645</created>
@@ -509,7 +493,21 @@
       <option name="project" value="LOCAL" />
       <updated>1664725574078</updated>
     </task>
-    <option name="localTasksCounter" value="75" />
+    <task id="LOCAL-00075" summary="clipboard.">
+      <created>1664726189606</created>
+      <option name="number" value="00075" />
+      <option name="presentableId" value="LOCAL-00075" />
+      <option name="project" value="LOCAL" />
+      <updated>1664726189606</updated>
+    </task>
+    <task id="LOCAL-00076" summary="clipboard.">
+      <created>1664726364470</created>
+      <option name="number" value="00076" />
+      <option name="presentableId" value="LOCAL-00076" />
+      <option name="project" value="LOCAL" />
+      <updated>1664726364471</updated>
+    </task>
+    <option name="localTasksCounter" value="77" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -541,7 +539,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
-    <MESSAGE value="mold -&gt; map : cycle." />
     <MESSAGE value="start end point." />
     <MESSAGE value="cyclesCtlr move into workshopCtlr." />
     <MESSAGE value="load mold: start end." />
@@ -566,7 +563,8 @@
     <MESSAGE value="tile gen success." />
     <MESSAGE value="可以显示。" />
     <MESSAGE value="cipher." />
-    <option name="LAST_COMMIT_MESSAGE" value="cipher." />
+    <MESSAGE value="clipboard." />
+    <option name="LAST_COMMIT_MESSAGE" value="clipboard." />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
