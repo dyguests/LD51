@@ -1,7 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="a13c8a84-d1f4-49cf-adec-02808396d102" name="Default Changelist" comment="tools click." />
+    <list default="true" id="a13c8a84-d1f4-49cf-adec-02808396d102" name="Default Changelist" comment="update sprites.">
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.LD51/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.LD51/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Scenes/Workshops/Models/MoldCtlr.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Scenes/Workshops/Models/MoldCtlr.cs" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -78,9 +81,9 @@
       <option value="$PROJECT_DIR$/Assets/Scripts/Models/GroundCtlr.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/Models/EndPointCtlr.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/Models/StartPointCtlr.cs" />
-      <option value="$PROJECT_DIR$/Assets/Scripts/Scenes/Workshops/Models/MoldCtlr.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/Scenes/Workshops/Entities/ToolType.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/Scenes/Workshops/Models/ToolsCtlr.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/Scenes/Workshops/Models/MoldCtlr.cs" />
     </changedPaths>
   </component>
   <component name="ProjectId" id="2FVREpCwaKszvdF2CvzY1OD9OH9" />
@@ -132,14 +135,7 @@
       <workItem from="1664582240199" duration="39067000" />
       <workItem from="1664639650102" duration="5714000" />
       <workItem from="1664665722532" duration="8475000" />
-      <workItem from="1664675899925" duration="3478000" />
-    </task>
-    <task id="LOCAL-00007" summary="mold input.">
-      <created>1664584941762</created>
-      <option name="number" value="00007" />
-      <option name="presentableId" value="LOCAL-00007" />
-      <option name="project" value="LOCAL" />
-      <updated>1664584941762</updated>
+      <workItem from="1664675899925" duration="3906000" />
     </task>
     <task id="LOCAL-00008" summary="mold indicator works.">
       <created>1664587319658</created>
@@ -477,7 +473,14 @@
       <option name="project" value="LOCAL" />
       <updated>1664697344037</updated>
     </task>
-    <option name="localTasksCounter" value="56" />
+    <task id="LOCAL-00056" summary="update sprites.">
+      <created>1664697718193</created>
+      <option name="number" value="00056" />
+      <option name="presentableId" value="LOCAL-00056" />
+      <option name="project" value="LOCAL" />
+      <updated>1664697718193</updated>
+    </task>
+    <option name="localTasksCounter" value="57" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -499,7 +502,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
-    <MESSAGE value="map insert works." />
     <MESSAGE value="game load grounds works." />
     <MESSAGE value="Mold Element." />
     <MESSAGE value="map encoder." />
@@ -524,6 +526,7 @@
     <MESSAGE value="gen start point in mold." />
     <MESSAGE value="insert ground skip start end point." />
     <MESSAGE value="tools click." />
-    <option name="LAST_COMMIT_MESSAGE" value="tools click." />
+    <MESSAGE value="update sprites." />
+    <option name="LAST_COMMIT_MESSAGE" value="update sprites." />
   </component>
 </project>

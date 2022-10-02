@@ -114,6 +114,29 @@ namespace Scenes.Workshops.Models
 
             private void Insert(Vector2Int pos, int frameStart, int frameLength, ToolType toolType)
             {
+                if (toolType == ToolType.StartPoint)
+                {
+                    if (pos == moldCtlr.mold.StartPoint)
+                    {
+                        return;
+                    }
+
+                    moldCtlr.mold.StartPoint = pos;
+
+                    return;
+                }
+                else if (toolType == ToolType.EndPoint)
+                {
+                    if (pos == moldCtlr.mold.EndPoint)
+                    {
+                        return;
+                    }
+
+                    moldCtlr.mold.EndPoint = pos;
+
+                    return;
+                }
+
                 if (pos == moldCtlr.mold.StartPoint || pos == moldCtlr.mold.EndPoint)
                 {
                     return;
@@ -132,6 +155,7 @@ namespace Scenes.Workshops.Models
                     }
 
                     moldCtlr.mold.Insert(pos.x, pos.y, new Ground(frameStart));
+                    return;
                 }
             }
         }
