@@ -28,16 +28,16 @@ Theme: Every 10 seconds
 
 -[ ] mold undo
 -[ ] map undo
--[ ] background countdown format type.
--[ ] countdown 10 shown too short.
+-[x] background countdown format type.
+-[x] countdown 10 shown too short.
 -[ ] workshop input
     - arrow to next/previous frame.
--[ ] workshop start/end point can move over on ground.
--[ ] trapped on the ground.
+-[x] workshop start/end point can move over on ground.
+-[x] trapped on the ground.
 -[ ] trapped out of screen.
--[ ] workshop insert tile, will delete other tile in ring, not truncate.
--[ ] workshop copy/paste validate.
--[ ] R to restart.
--[ ] Level complete logo in level Item. cache
--[ ] mold cache.
--[ ] mold clear logic.
+-[x] workshop insert tile, will delete other tile in ring, not truncate.
+-[x] workshop copy/paste validate.
+-[x] R to restart.
+-[x] Level complete logo in level Item. cache
+-[x] mold cache.
+-[x] mold clear logic.
