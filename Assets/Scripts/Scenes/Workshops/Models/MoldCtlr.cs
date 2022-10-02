@@ -160,6 +160,13 @@ namespace Scenes.Workshops.Models
                     return;
                 }
 
+                if (toolType == ToolType.Clear)
+                {
+                    // var tile = moldCtlr.mold.Get(pos.x, pos.y, frameStart);
+                    moldCtlr.mold.Remove(pos.x, pos.y, frameStart, frameLength);
+                    return;
+                }
+
                 if (toolType == ToolType.Ground)
                 {
                     Debug.Log("Insert ground pos:" + pos);

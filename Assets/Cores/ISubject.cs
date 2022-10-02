@@ -6,28 +6,28 @@ namespace Cores
 {
     public interface ISubject<T>
     {
-        void AddObserver(Cores.IObserver<T> observer);
-        void RemoveObserver(Cores.IObserver<T> observer);
+        void AddObserver(IObserver<T> observer);
+        void RemoveObserver(IObserver<T> observer);
         void NotifyObserver([NotNull] Action<T> action);
     }
 
     public class DefaultSubject<T> : ISubject<T>
     {
-        private readonly List<Cores.IObserver<T>> observers = new();
+        private readonly List<IObserver<T>> observers = new();
 
-        public void AddObserver(Cores.IObserver<T> observer)
+        public void AddObserver(IObserver<T> observer)
         {
             observers.Add(observer);
         }
 
-        public void RemoveObserver(Cores.IObserver<T> observer)
+        public void RemoveObserver(IObserver<T> observer)
         {
             observers.Remove(observer);
         }
 
         public void NotifyObserver(Action<T> action)
         {
-            foreach (var observer in observers)
+            foreach (var observer in observers.ToArray())
             {
                 action(observer.Updater);
             }

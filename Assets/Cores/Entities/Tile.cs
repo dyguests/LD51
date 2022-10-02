@@ -59,7 +59,10 @@ namespace Cores.Entities
             pos = new Vector2Int(x, y);
         }
 
-        public void Removed() { }
+        public void Removed()
+        {
+            NotifyObserver(updater => updater.OnRemoved());
+        }
 
         /// <summary>
         /// 
@@ -122,6 +125,7 @@ namespace Cores.Entities
         public interface IUpdater
         {
             void OnFrameStateChanged(FrameState oldFrameState, FrameState newFrameState);
+            void OnRemoved();
         }
 
         internal readonly ISubject<IUpdater> subjectImplementation = new DefaultSubject<IUpdater>();

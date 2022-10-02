@@ -4923,6 +4923,10 @@ PrefabInstance:
       propertyPath: onValueChanged.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
       objectReference: {fileID: 525164643}
+    - target: {fileID: 6363263616829480399, guid: 3699f86b36cfe2045b7d1ca6fb24b921, type: 3}
+      propertyPath: onValueChanged.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: OnClearClick
+      objectReference: {fileID: 0}
     - target: {fileID: 6363263616829480401, guid: 3699f86b36cfe2045b7d1ca6fb24b921, type: 3}
       propertyPath: m_Sprite
       value: 

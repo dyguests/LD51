@@ -73,6 +73,11 @@ namespace Models
             {
                 groundCtlr.UpdateFrameState(newFrameState);
             }
+
+            public void OnRemoved()
+            {
+                Destroy(groundCtlr.gameObject);
+            }
         }
 
         private void UpdateFrameState(FrameState frameState)

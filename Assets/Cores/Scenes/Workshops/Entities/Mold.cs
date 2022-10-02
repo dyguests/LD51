@@ -2,7 +2,6 @@
 using System.Collections.Generic;
 using System.Linq;
 using Cores.Entities;
-using UnityEngine;
 
 namespace Cores.Scenes.Workshops.Entities
 {
@@ -28,7 +27,7 @@ namespace Cores.Scenes.Workshops.Entities
             subjectImplementation.NotifyObserver(updater => updater.OnTileInserted(tile)); //todo ? 把监听 移动到 Tile.inserted中去?
         }
 
-        private void Remove(in int x, in int y, in int framesStart, in int framesLength)
+        public void Remove(in int x, in int y, in int framesStart, in int framesLength)
         {
             var tileRing = tileRings[x, y];
             if (tileRing == null)
@@ -67,13 +66,14 @@ namespace Cores.Scenes.Workshops.Entities
                 if (tile.Frames.start == removedFrames.start)
                 {
                     tile.Frames = removedFrames;
+                    tile.UpdateFrameState(CurrentFrame, FrameLength);
                 }
                 else
                 {
                     tileRing.Remove(tile.Frames.start);
                     tile.Frames = removedFrames;
                     tileRing.Add(tile.Frames.start, tile);
-                    // todo notify tile start changed.
+                    tile.UpdateFrameState(CurrentFrame, FrameLength);
                 }
 
                 // tile.Frames.x

@@ -8,15 +8,15 @@ namespace Scenes.Workshops.Models
         private ToolType currentToolType = ToolType.None;
         public ToolType CurrentToolType => currentToolType;
 
-        public void OnGroundClick(bool on)
+        public void OnClearClick(bool on)
         {
             Debug.Log("OnGroundClick on:" + on);
             if (on)
             {
-                currentToolType = ToolType.Ground;
+                currentToolType = ToolType.Clear;
             }
         }
-
+        
         public void OnStartPointClick(bool on)
         {
             Debug.Log("OnStartPointClick on:" + on);
@@ -32,6 +32,15 @@ namespace Scenes.Workshops.Models
             if (on)
             {
                 currentToolType = ToolType.EndPoint;
+            }
+        }
+
+        public void OnGroundClick(bool on)
+        {
+            Debug.Log("OnGroundClick on:" + on);
+            if (on)
+            {
+                currentToolType = ToolType.Ground;
             }
         }
     }
