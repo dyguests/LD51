@@ -81,33 +81,34 @@ namespace Models
             {
                 case FrameState.None:
                 {
-                    gameObject.SetActive(false);
+                    sr.enabled = false;
+                    cd.enabled = false;
                     break;
                 }
                 case FrameState.PrePrevious:
                 {
-                    gameObject.SetActive(true);
+                    sr.enabled = true;
                     sr.sprite = prePreviousSprite;
                     cd.enabled = false;
                     break;
                 }
                 case FrameState.Previous:
                 {
-                    gameObject.SetActive(true);
+                    sr.enabled = true;
                     sr.sprite = previousSprite;
                     cd.enabled = false;
                     break;
                 }
                 case FrameState.Current:
                 {
-                    gameObject.SetActive(true);
+                    sr.enabled = true;
                     sr.sprite = currentSprite;
                     cd.enabled = true;
                     break;
                 }
                 case FrameState.Keep:
                 {
-                    gameObject.SetActive(true);
+                    sr.enabled = true;
                     sr.sprite = keepSprite;
                     cd.enabled = true;
                     break;

@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 using Cores.Entities;
+using UnityEngine;
 
 namespace Cores.Scenes.Workshops.Entities
 {
@@ -37,8 +38,14 @@ namespace Cores.Scenes.Workshops.Entities
 
             var removingFrames = new Seg(framesStart, framesLength);
 
-            for (var i = 0; i < tileRing.Count; i++)
+            for (var i = 0; i < 10; i++)
             {
+                if (!tileRing.ContainsKey(i))
+                {
+                    Debug.Log("remove empty:(" + x + "," + y + ") " + i);
+                    continue;
+                }
+
                 var tile = tileRing[i];
                 if (tile == null) continue;
 
