@@ -26,10 +26,5 @@ namespace Cores.Scenes.Games.Entities
 
             // todo, 由于 map 不是游戏开始后加载的，所以这里先暂时不需要监听
         }
-
-        public void NextFrame()
-        {
-            CurrentFrame = (CurrentFrame + 1) % FrameLength;
-        }
     }
 }

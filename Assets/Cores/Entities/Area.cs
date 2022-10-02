@@ -115,5 +115,15 @@ namespace Cores.Entities
         public void AddObserver(IObserver<IUpdater> observer) => subjectImplementation.AddObserver(observer);
         public void RemoveObserver(IObserver<IUpdater> observer) => subjectImplementation.RemoveObserver(observer);
         public void NotifyObserver(Action<IUpdater> action) => subjectImplementation.NotifyObserver(action);
+
+        public void NextFrame()
+        {
+            SetCurrentFrame((CurrentFrame + 1) % FrameLength);
+        }
+
+        private void SetCurrentFrame(int newFrame)
+        {
+            CurrentFrame = newFrame;
+        }
     }
 }
