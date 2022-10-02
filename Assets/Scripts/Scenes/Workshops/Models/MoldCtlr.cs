@@ -114,6 +114,11 @@ namespace Scenes.Workshops.Models
 
             private void Insert(Vector2Int pos, int frameStart, int frameLength, ToolType toolType)
             {
+                if (pos == moldCtlr.mold.StartPoint || pos == moldCtlr.mold.EndPoint)
+                {
+                    return;
+                }
+
                 if (toolType == ToolType.Ground)
                 {
                     Debug.Log("Insert ground pos:" + pos);
