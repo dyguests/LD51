@@ -1,9 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="a13c8a84-d1f4-49cf-adec-02808396d102" name="Default Changelist" comment="next Frame">
+    <list default="true" id="a13c8a84-d1f4-49cf-adec-02808396d102" name="Default Changelist" comment="prePreviousSprite">
+      <change afterPath="$PROJECT_DIR$/Assets/Cores/Entities/FrameState.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Cores/Entities/FrameState.cs.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.LD51/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.LD51/.idea/contentModel.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.LD51/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.LD51/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Models/GroundCtlr.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Models/GroundCtlr.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Cores/Entities/Tile.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Cores/Entities/Tile.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Cores/Scenes/Workshops/Entities/Mold.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Cores/Scenes/Workshops/Entities/Mold.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -28,7 +33,6 @@
   </component>
   <component name="IdeDocumentHistory">
     <changedPaths>
-      <option value="$PROJECT_DIR$/Assets/Scripts/Scenes/Workshops/Entites/Mold.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/Scenes/Workshops/Entities/Mold.cs" />
       <option value="$PROJECT_DIR$/Assets/IndicatorCtlr.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/Tools/FloatEx.cs" />
@@ -59,10 +63,8 @@
       <option value="$PROJECT_DIR$/Assets/Scripts/Databases/Tables.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/Databases/Tables/MapTable.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/Databases/Ciphers.cs" />
-      <option value="$PROJECT_DIR$/Assets/Cores/Entities/Ground.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/Scenes/Workshops/WorkshopCtlr.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/Ciphers/MapCipher.cs" />
-      <option value="$PROJECT_DIR$/Assets/Cores/Entities/Tile.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/Tools/StringEx.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/Scenes/Workshops/Models/CyclesToggleCtlr.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/Scenes/Workshops/Models/MoldCtlr.cs" />
@@ -73,12 +75,15 @@
       <option value="$PROJECT_DIR$/Assets/Scripts/Scenes/Games/Models/PlayerCtlr.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/Scenes/Games/GameCtlr.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/Scenes/Games/Models/MapCtlr.cs" />
-      <option value="$PROJECT_DIR$/README.md" />
       <option value="$PROJECT_DIR$/Assets/Scripts/Scenes/Games/Models/CountdownCtlr.cs" />
-      <option value="$PROJECT_DIR$/Assets/Cores/Scenes/Workshops/Entities/Mold.cs" />
       <option value="$PROJECT_DIR$/Assets/Cores/Scenes/Games/Entities/Map.cs" />
       <option value="$PROJECT_DIR$/Assets/Cores/Entities/Area.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/Models/GroundCtlr.cs" />
+      <option value="$PROJECT_DIR$/Assets/Cores/Entities/Ground.cs" />
+      <option value="$PROJECT_DIR$/Assets/Cores/Entities/FrameState.cs" />
+      <option value="$PROJECT_DIR$/Assets/Cores/Scenes/Workshops/Entities/Mold.cs" />
+      <option value="$PROJECT_DIR$/README.md" />
+      <option value="$PROJECT_DIR$/Assets/Cores/Entities/Tile.cs" />
     </changedPaths>
   </component>
   <component name="ProjectId" id="2FVREpCwaKszvdF2CvzY1OD9OH9" />
@@ -129,7 +134,7 @@
       <workItem from="1664575160683" duration="2683000" />
       <workItem from="1664582240199" duration="39067000" />
       <workItem from="1664639650102" duration="5714000" />
-      <workItem from="1664665722532" duration="2038000" />
+      <workItem from="1664665722532" duration="5346000" />
     </task>
     <task id="LOCAL-00001" summary="Init.">
       <created>1664575238165</created>
@@ -446,7 +451,14 @@
       <option name="project" value="LOCAL" />
       <updated>1664667486479</updated>
     </task>
-    <option name="localTasksCounter" value="46" />
+    <task id="LOCAL-00046" summary="prePreviousSprite">
+      <created>1664667934926</created>
+      <option name="number" value="00046" />
+      <option name="presentableId" value="LOCAL-00046" />
+      <option name="project" value="LOCAL" />
+      <updated>1664667934926</updated>
+    </task>
+    <option name="localTasksCounter" value="47" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -468,7 +480,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
-    <MESSAGE value="seg" />
     <MESSAGE value="Seg sub." />
     <MESSAGE value="seg test ok." />
     <MESSAGE value="frames." />
@@ -493,6 +504,7 @@
     <MESSAGE value="CountdownCtlr." />
     <MESSAGE value="countdown." />
     <MESSAGE value="next Frame" />
-    <option name="LAST_COMMIT_MESSAGE" value="next Frame" />
+    <MESSAGE value="prePreviousSprite" />
+    <option name="LAST_COMMIT_MESSAGE" value="prePreviousSprite" />
   </component>
 </project>

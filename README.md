@@ -18,3 +18,5 @@ Theme: Every 10 seconds
 -[ ] map undo
 -[ ] background countdown format type.
 -[ ] countdown 10 shown too short.
+-[ ] workshop input
+  - arrow to next/previous frame.

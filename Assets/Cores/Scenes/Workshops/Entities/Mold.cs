@@ -21,6 +21,7 @@ namespace Cores.Scenes.Workshops.Entities
             }
 
             tileRing.Add(tile.Frames.start, tile);
+            tile.UpdateFrameState(CurrentFrame, FrameLength);
             tile.Inserted(x, y);
 
             subjectImplementation.NotifyObserver(updater => updater.OnTileInserted(tile)); //todo ? 把监听 移动到 Tile.inserted中去?

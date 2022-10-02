@@ -12,6 +12,7 @@
           <e p="Cores.asmdef" t="Include" />
           <e p="Entities" t="Include">
             <e p="Area.cs" t="Include" />
+            <e p="FrameState.cs" t="Include" />
             <e p="Ground.cs" t="Include" />
             <e p="Tile.cs" t="Include" />
           </e>
