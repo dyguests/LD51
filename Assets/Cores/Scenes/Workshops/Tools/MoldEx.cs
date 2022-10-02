@@ -9,7 +9,10 @@ namespace Cores.Scenes.Workshops.Tools
         {
             var size = mold.Size;
 
-            var map = new Map(size.x, size.y, mold.FrameLength);
+            var map = new Map(size.x, size.y, mold.FrameLength)
+            {
+                Cycle = mold.Cycle,
+            };
 
             for (int mX = 0; mX < size.x; mX++)
             {

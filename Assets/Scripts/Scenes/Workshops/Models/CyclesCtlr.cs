@@ -13,6 +13,7 @@ namespace Scenes.Workshops.Models
             {
                 cycle = value;
                 mold.Cycle = cycle;
+                Debug.Log("Cycle changed: mold.Cycle:" + mold.Cycle);
             }
         }
 
