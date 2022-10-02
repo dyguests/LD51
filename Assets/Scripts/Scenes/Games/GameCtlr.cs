@@ -31,7 +31,7 @@ namespace Scenes.Games
 #if UNITY_EDITOR
             if (map == null)
             {
-                map = MapEncoder.Decode(MapCiphers.Test);
+                map = MapEncoder.Decode(MapCiphers.Template);
             }
 #endif
 
