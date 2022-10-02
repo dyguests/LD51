@@ -267,6 +267,7 @@ namespace Scenes.Games.Models
         public void Dead()
         {
             Destroy(gameObject);
+            DeadParticleCtlr.Generate(transform.position);
         }
     }
 
