@@ -334,6 +334,7 @@
                 <e p="FrameToggleCtlr.cs" t="Include" />
                 <e p="IndicatorCtlr.cs" t="Include" />
                 <e p="LengthCtlr.cs" t="Include" />
+                <e p="MenuCtlr.cs" t="Include" />
                 <e p="MoldCtlr.cs" t="Include" />
                 <e p="MoldElementCtlr.cs" t="Include" />
                 <e p="ToolsCtlr.cs" t="Include" />
@@ -343,6 +344,7 @@
             </e>
           </e>
           <e p="Tools" t="Include">
+            <e p="Clipboard.cs" t="Include" />
             <e p="ColorEx.cs" t="Include" />
             <e p="FloatEx.cs" t="Include" />
             <e p="SceneNames.cs" t="Include" />

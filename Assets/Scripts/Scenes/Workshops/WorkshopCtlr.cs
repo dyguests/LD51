@@ -11,6 +11,7 @@ namespace Scenes.Workshops
     {
         [SerializeField] private FramesCtlr framesCtlr;
         [SerializeField] private CyclesCtlr cyclesCtlr;
+        [SerializeField] private MenuCtlr menuCtlr;
         [SerializeField] private MoldCtlr moldCtlr;
 
         private Mold mold;
@@ -36,6 +37,7 @@ namespace Scenes.Workshops
 
             await framesCtlr.LoadMold(mold);
             await cyclesCtlr.LoadMold(mold);
+            await menuCtlr.LoadMold(mold);
             await moldCtlr.LoadMold(mold);
 
             StartWorkshop();
@@ -45,15 +47,15 @@ namespace Scenes.Workshops
 
         public void EndWorkshop() { }
 
-        public void OnPlayClick()
-        {
-            Debug.Log("OnPlayClick");
-
-            App.Instance.map = mold.ToMap();
-            App.Instance.mold = mold;
-            Debug.Log("Play map cipher:\n" + MapEncoder.Encode(App.Instance.map));
-            SceneStacker.LoadScene(SceneNames.Game);
-        }
+        // public void OnPlayClick()
+        // {
+        //     Debug.Log("OnPlayClick");
+        //
+        //     App.Instance.map = mold.ToMap();
+        //     App.Instance.mold = mold;
+        //     Debug.Log("Play map cipher:\n" + MapEncoder.Encode(App.Instance.map));
+        //     SceneStacker.LoadScene(SceneNames.Game);
+        // }
     }
 
     interface IWorkshopFlow
