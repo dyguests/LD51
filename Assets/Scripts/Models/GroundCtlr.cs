@@ -22,17 +22,17 @@ namespace Models
 
         private GroundObserver groundObserver;
 
-        public static GroundCtlr Generate(Ground ground, AreaCtlr moldCtlr)
+        public static GroundCtlr Generate(Ground ground, AreaCtlr areaCtlr)
         {
             if (sPrefab == null)
             {
                 sPrefab = Resources.Load<GroundCtlr>("Prefabs/Models/Ground");
             }
 
-            var instantiate = Instantiate(sPrefab, moldCtlr.Pos2Position(ground.Pos), Quaternion.identity, moldCtlr.transform);
+            var instantiate = Instantiate(sPrefab, areaCtlr.Pos2Position(ground.Pos), Quaternion.identity, areaCtlr.transform);
             instantiate.name = "Ground" + ground.Pos;
             instantiate.ground = ground;
-            instantiate.areaCtlr = moldCtlr;
+            instantiate.areaCtlr = areaCtlr;
 
             instantiate.Created();
 

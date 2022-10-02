@@ -1,14 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="a13c8a84-d1f4-49cf-adec-02808396d102" name="Default Changelist" comment="start end point.">
+    <list default="true" id="a13c8a84-d1f4-49cf-adec-02808396d102" name="Default Changelist" comment="cyclesCtlr move into workshopCtlr.">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.LD51/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.LD51/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Cores/Entities/Area.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Cores/Entities/Area.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Cores/Scenes/Games/Entities/Map.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Cores/Scenes/Games/Entities/Map.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Models/EndPointCtlr.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Models/EndPointCtlr.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Models/GroundCtlr.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Models/GroundCtlr.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/Models/StartPointCtlr.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Models/StartPointCtlr.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Scenes/Workshops/Models/CyclesCtlr.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Scenes/Workshops/Models/CyclesCtlr.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/Scenes/Workshops/Models/MoldCtlr.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Scenes/Workshops/Models/MoldCtlr.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Scenes/Workshops/WorkshopCtlr.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Scenes/Workshops/WorkshopCtlr.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -77,17 +75,17 @@
       <option value="$PROJECT_DIR$/Assets/Cores/Entities/Ground.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/Models/TileCtlr.cs" />
       <option value="$PROJECT_DIR$/Assets/Cores/Entities/Tile.cs" />
-      <option value="$PROJECT_DIR$/Assets/Scripts/Models/GroundCtlr.cs" />
       <option value="$PROJECT_DIR$/Assets/Cores/Scenes/Workshops/Tools/MoldEx.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/Models/EndPoint.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/Models/StartPoint.cs" />
-      <option value="$PROJECT_DIR$/Assets/Scripts/Models/EndPointCtlr.cs" />
       <option value="$PROJECT_DIR$/Assets/Cores/Scenes/Games/Entities/Map.cs" />
       <option value="$PROJECT_DIR$/Assets/Cores/Entities/Area.cs" />
-      <option value="$PROJECT_DIR$/Assets/Scripts/Models/StartPointCtlr.cs" />
-      <option value="$PROJECT_DIR$/Assets/Scripts/Scenes/Workshops/Models/MoldCtlr.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/Scenes/Workshops/WorkshopCtlr.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/Scenes/Workshops/Models/CyclesCtlr.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/Scenes/Workshops/Models/MoldCtlr.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/Models/GroundCtlr.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/Models/EndPointCtlr.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/Models/StartPointCtlr.cs" />
     </changedPaths>
   </component>
   <component name="ProjectId" id="2FVREpCwaKszvdF2CvzY1OD9OH9" />
@@ -139,14 +137,7 @@
       <workItem from="1664582240199" duration="39067000" />
       <workItem from="1664639650102" duration="5714000" />
       <workItem from="1664665722532" duration="8475000" />
-      <workItem from="1664675899925" duration="1458000" />
-    </task>
-    <task id="LOCAL-00002" summary="game scene.">
-      <created>1664580780011</created>
-      <option name="number" value="00002" />
-      <option name="presentableId" value="LOCAL-00002" />
-      <option name="project" value="LOCAL" />
-      <updated>1664580780011</updated>
+      <workItem from="1664675899925" duration="2028000" />
     </task>
     <task id="LOCAL-00003" summary="workshop flow.">
       <created>1664581948563</created>
@@ -484,7 +475,14 @@
       <option name="project" value="LOCAL" />
       <updated>1664695097766</updated>
     </task>
-    <option name="localTasksCounter" value="51" />
+    <task id="LOCAL-00051" summary="cyclesCtlr move into workshopCtlr.">
+      <created>1664695516373</created>
+      <option name="number" value="00051" />
+      <option name="presentableId" value="LOCAL-00051" />
+      <option name="project" value="LOCAL" />
+      <updated>1664695516373</updated>
+    </task>
+    <option name="localTasksCounter" value="52" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -506,7 +504,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
-    <MESSAGE value="frames slider works." />
     <MESSAGE value="play." />
     <MESSAGE value="load map." />
     <MESSAGE value="Mold2Map." />
@@ -531,6 +528,7 @@
     <MESSAGE value="tile change by frame change works." />
     <MESSAGE value="mold -&gt; map : cycle." />
     <MESSAGE value="start end point." />
-    <option name="LAST_COMMIT_MESSAGE" value="start end point." />
+    <MESSAGE value="cyclesCtlr move into workshopCtlr." />
+    <option name="LAST_COMMIT_MESSAGE" value="cyclesCtlr move into workshopCtlr." />
   </component>
 </project>

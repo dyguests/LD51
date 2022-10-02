@@ -40,6 +40,12 @@ namespace Scenes.Workshops.Models
         {
             this.mold = mold;
 
+            var startPoint = mold.StartPoint;
+            StartPointCtlr.Generate(startPoint, this);
+
+            var endPoint = mold.EndPoint;
+            EndPointCtlr.Generate(startPoint, this);
+
             inputCtlr.inputHandler = inputHandler;
             mold.AddObserver(moldObserver);
         }
