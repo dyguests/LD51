@@ -12,7 +12,7 @@ namespace Scenes.Workshops.Models
         [SerializeField] private FrameToggleCtlr[] frameToggleCtlrs;
 
         private int currentFrame = 0;
-        private int frameLength = 1;
+        private int frameLength = 2;
 
         public int CurrentFrame
         {
@@ -23,17 +23,17 @@ namespace Scenes.Workshops.Models
                 mold.CurrentFrame = currentFrame;
             }
         }
-        public int FrameLength => frameLength;
-
-        private Mold mold;
-
-        public void OnFrameClick(int index, bool on)
+        public int FrameLength
         {
-            if (on)
+            get => frameLength;
+            set
             {
-                CurrentFrame = index;
+                frameLength = value;
+                mold.FrameLength = frameLength;
             }
         }
+
+        private Mold mold;
 
         public async UniTask LoadMold(Mold mold)
         {
@@ -43,11 +43,19 @@ namespace Scenes.Workshops.Models
             frameToggleCtlrs[mold.CurrentFrame].Check(true);
         }
 
+        public void OnFrameClick(int index, bool on)
+        {
+            if (on)
+            {
+                CurrentFrame = index;
+            }
+        }
+
         public void OnFrameLengthChanged(Single single)
         {
-            frameLength = (int) single;
+            FrameLength = (int) single;
 
-            Debug.Log("frameLength:" + frameLength);
+            Debug.Log("frameLength:" + FrameLength);
         }
     }
 }

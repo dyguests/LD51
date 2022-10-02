@@ -6,6 +6,8 @@ namespace Scenes.Workshops.Models
 {
     public class CyclesCtlr : MonoBehaviour
     {
+        [SerializeField] private CyclesToggleCtlr[] cyclesToggleCtlrs;
+
         private int cycle;
         public int Cycle
         {
@@ -20,6 +22,18 @@ namespace Scenes.Workshops.Models
 
         private Mold mold;
 
+        public async UniTask LoadMold(Mold mold)
+        {
+            this.mold = mold;
+
+            cyclesToggleCtlrs[CycleToCycleToggleIndex(mold.Cycle)].Check(true);
+        }
+
+        public void UnloadMold()
+        {
+            this.mold = null;
+        }
+
         public void OnCycleClick(int cycle, bool on)
         {
             if (on)
@@ -28,16 +42,16 @@ namespace Scenes.Workshops.Models
             }
         }
 
-        public async UniTask LoadMold(Mold mold)
+        private static int CycleToCycleToggleIndex(int cycle)
         {
-            this.mold = mold;
-
-            // todo 初次加载要不要更新 cycle toggle？暂时先不更新
-        }
-
-        public void UnloadMold()
-        {
-            this.mold = null;
+            return cycle switch
+            {
+                10 => 0,
+                5 => 1,
+                2 => 2,
+                1 => 3,
+                _ => 0
+            };
         }
     }
 }

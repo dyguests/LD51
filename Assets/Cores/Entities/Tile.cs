@@ -68,9 +68,13 @@ namespace Cores.Entities
         /// <param name="frameLength">map的总帧数</param>
         public void UpdateFrameState(in int currentFrame, in int frameLength)
         {
-            // todo 此方法在 map 中 currentFrame 变化时也应用被调用。 done
-            // todo 此方法在 mold 中 currentFrame 变化时也应用被调用。 done
             // todo 此方法在 mold 中 frameLength 变化时也应用被调用。
+
+            if (currentFrame >= frameLength)
+            {
+                FrameState = FrameState.None;
+                return;
+            }
 
             var nextFrame = (currentFrame + 1) % frameLength;
             if (

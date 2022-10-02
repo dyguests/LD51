@@ -152,6 +152,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e9c302716a28ba74cb8fd2f2ae47b2df, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  toggle: {fileID: 3422167323068842912}
   text: {fileID: 3422167324587609620}
   cycle: 10
   onValueChanged:

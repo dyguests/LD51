@@ -1,11 +1,13 @@
 using TMPro;
 using UnityEngine;
 using UnityEngine.Events;
+using UnityEngine.UI;
 
 namespace Scenes.Workshops.Models
 {
     public class CyclesToggleCtlr : MonoBehaviour
     {
+        [SerializeField] private Toggle toggle;
         [SerializeField] private TMP_Text text;
 
         [Space] [SerializeField] private int cycle;
@@ -22,6 +24,11 @@ namespace Scenes.Workshops.Models
         private void SetDirty()
         {
             text.text = "" + cycle;
+        }
+
+        public void Check(bool check)
+        {
+            toggle.isOn = check;
         }
 
         public void OnToggleChanged(bool on)
