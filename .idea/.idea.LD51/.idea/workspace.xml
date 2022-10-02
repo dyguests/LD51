@@ -1,13 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="a13c8a84-d1f4-49cf-adec-02808396d102" name="Default Changelist" comment="hide change cycle.">
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Tools/CacheUtils.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Tools/CacheUtils.cs.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.LD51/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.LD51/.idea/contentModel.xml" afterDir="false" />
+    <list default="true" id="a13c8a84-d1f4-49cf-adec-02808396d102" name="Default Changelist" comment="save level completed.">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.LD51/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.LD51/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Cores/Scenes/Games/Entities/Map.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Cores/Scenes/Games/Entities/Map.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Scenes/Games/GameCtlr.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Scenes/Games/GameCtlr.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Scenes/Mains/LevelItem.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Scenes/Mains/LevelItem.prefab" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/Scenes/Mains/Models/LevelItemCtlr.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Scenes/Mains/Models/LevelItemCtlr.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/UserSettings/EditorUserSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/UserSettings/EditorUserSettings.asset" afterDir="false" />
     </list>
@@ -171,13 +167,6 @@
       <workItem from="1664639650102" duration="5714000" />
       <workItem from="1664665722532" duration="8475000" />
       <workItem from="1664675899925" duration="26081000" />
-    </task>
-    <task id="LOCAL-00038" summary="HandleGraphics.">
-      <created>1664642617882</created>
-      <option name="number" value="00038" />
-      <option name="presentableId" value="LOCAL-00038" />
-      <option name="project" value="LOCAL" />
-      <updated>1664642617882</updated>
     </task>
     <task id="LOCAL-00039" summary="HandleKinematics.">
       <created>1664643277480</created>
@@ -515,7 +504,14 @@
       <option name="project" value="LOCAL" />
       <updated>1664732518213</updated>
     </task>
-    <option name="localTasksCounter" value="87" />
+    <task id="LOCAL-00087" summary="save level completed.">
+      <created>1664733044072</created>
+      <option name="number" value="00087" />
+      <option name="presentableId" value="LOCAL-00087" />
+      <option name="project" value="LOCAL" />
+      <updated>1664733044074</updated>
+    </task>
+    <option name="localTasksCounter" value="88" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -547,7 +543,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
-    <MESSAGE value="update sprites." />
     <MESSAGE value="moldCtlr change point." />
     <MESSAGE value="change point works." />
     <MESSAGE value="update ciphers." />
@@ -572,7 +567,8 @@
     <MESSAGE value="add scroller." />
     <MESSAGE value="main show levels." />
     <MESSAGE value="hide change cycle." />
-    <option name="LAST_COMMIT_MESSAGE" value="hide change cycle." />
+    <MESSAGE value="save level completed." />
+    <option name="LAST_COMMIT_MESSAGE" value="save level completed." />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
