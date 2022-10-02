@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="a13c8a84-d1f4-49cf-adec-02808396d102" name="Default Changelist" comment="timer works.">
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Scenes/Games/GameCtlr.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Scenes/Games/GameCtlr.cs" afterDir="false" />
+    <list default="true" id="a13c8a84-d1f4-49cf-adec-02808396d102" name="Default Changelist" comment="Main.">
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.LD51/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.LD51/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -59,7 +59,6 @@
   </component>
   <component name="IdeDocumentHistory">
     <changedPaths>
-      <option value="$PROJECT_DIR$/Assets/Scripts/Tools/SceneNames.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/Tools/SceneStacker.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/Scenes/Workshops/MenuCtlr.cs" />
       <option value="$PROJECT_DIR$/Assets/NUnits/Scenes/Workshops/Entities/MoldTest.cs" />
@@ -106,10 +105,11 @@
       <option value="$PROJECT_DIR$/Assets/Scripts/Scenes/Workshops/Models/MenuCtlr.cs" />
       <option value="$PROJECT_DIR$/Assets/Cores/Scenes/Workshops/Tools/MoldEx.cs" />
       <option value="$PROJECT_DIR$/Assets/Cores/Scenes/Workshops/Tools/MapEx.cs" />
-      <option value="$PROJECT_DIR$/README.md" />
       <option value="$PROJECT_DIR$/Assets/Scripts/Scenes/Games/Models/CountdownCtlr.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/Scenes/Games/Models/TimerCtlr.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/Scenes/Games/GameCtlr.cs" />
+      <option value="$PROJECT_DIR$/README.md" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/Scenes/Mains/MainCtlr.cs" />
     </changedPaths>
   </component>
   <component name="ProjectId" id="2FVREpCwaKszvdF2CvzY1OD9OH9" />
@@ -161,21 +161,7 @@
       <workItem from="1664582240199" duration="39067000" />
       <workItem from="1664639650102" duration="5714000" />
       <workItem from="1664665722532" duration="8475000" />
-      <workItem from="1664675899925" duration="25294000" />
-    </task>
-    <task id="LOCAL-00033" summary="map encoder.">
-      <created>1664636933016</created>
-      <option name="number" value="00033" />
-      <option name="presentableId" value="LOCAL-00033" />
-      <option name="project" value="LOCAL" />
-      <updated>1664636933016</updated>
-    </task>
-    <task id="LOCAL-00034" summary="mold.cycle.">
-      <created>1664638508045</created>
-      <option name="number" value="00034" />
-      <option name="presentableId" value="LOCAL-00034" />
-      <option name="project" value="LOCAL" />
-      <updated>1664638508045</updated>
+      <workItem from="1664675899925" duration="26081000" />
     </task>
     <task id="LOCAL-00035" summary="map.cycle.">
       <created>1664638567625</created>
@@ -506,7 +492,21 @@
       <option name="project" value="LOCAL" />
       <updated>1664728692723</updated>
     </task>
-    <option name="localTasksCounter" value="82" />
+    <task id="LOCAL-00082" summary="timer works.">
+      <created>1664728941388</created>
+      <option name="number" value="00082" />
+      <option name="presentableId" value="LOCAL-00082" />
+      <option name="project" value="LOCAL" />
+      <updated>1664728941388</updated>
+    </task>
+    <task id="LOCAL-00083" summary="Main.">
+      <created>1664729558360</created>
+      <option name="number" value="00083" />
+      <option name="presentableId" value="LOCAL-00083" />
+      <option name="project" value="LOCAL" />
+      <updated>1664729558360</updated>
+    </task>
+    <option name="localTasksCounter" value="84" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -538,7 +538,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
-    <MESSAGE value="load mold: start end." />
     <MESSAGE value="gen start point in mold." />
     <MESSAGE value="insert ground skip start end point." />
     <MESSAGE value="tools click." />
@@ -563,7 +562,8 @@
     <MESSAGE value="copy/paste." />
     <MESSAGE value="copy/paste." />
     <MESSAGE value="timer works." />
-    <option name="LAST_COMMIT_MESSAGE" value="timer works." />
+    <MESSAGE value="Main." />
+    <option name="LAST_COMMIT_MESSAGE" value="Main." />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
