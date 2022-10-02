@@ -1,6 +1,7 @@
 using System;
 using Cysharp.Threading.Tasks;
 using Scenes.Games.Physicses;
+using Tools;
 using UnityEngine;
 using UnityEngine.InputSystem;
 
@@ -268,6 +269,15 @@ namespace Scenes.Games.Models
         {
             Destroy(gameObject);
             DeadParticleCtlr.Generate(transform.position);
+        }
+        
+        public void RestartGame(InputAction.CallbackContext ctx)
+        {
+            if (ctx.phase == InputActionPhase.Performed)
+            {
+                Debug.Log("RestartGame");
+                SceneStacker.ReloadScene();
+            }
         }
     }
 

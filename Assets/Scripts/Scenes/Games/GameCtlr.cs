@@ -5,6 +5,7 @@ using Databases.Encoders;
 using Scenes.Games.Models;
 using Tools;
 using UnityEngine;
+using UnityEngine.InputSystem;
 
 namespace Scenes.Games
 {
@@ -85,9 +86,13 @@ namespace Scenes.Games
             timerCtlr.EndCountdown();
         }
 
-        public void RestartGame()
+        public void RestartGame(InputAction.CallbackContext ctx)
         {
-            SceneStacker.ReloadScene();
+            if (ctx.phase == InputActionPhase.Performed)
+            {
+                Debug.Log("RestartGame");
+                SceneStacker.ReloadScene();
+            }
         }
     }
 

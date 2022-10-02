@@ -1,12 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="a13c8a84-d1f4-49cf-adec-02808396d102" name="Default Changelist" comment="lose.">
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.LD51/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.LD51/.idea/contentModel.xml" afterDir="false" />
+    <list default="true" id="a13c8a84-d1f4-49cf-adec-02808396d102" name="Default Changelist" comment="player dead.">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.LD51/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.LD51/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Resources/Prefabs/Models/Player.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/Prefabs/Models/Player.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Game.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Game.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Inputs/InputActions.inputactions" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Inputs/InputActions.inputactions" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Scenes/Games/GameCtlr.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Scenes/Games/GameCtlr.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/Scenes/Games/Models/PlayerCtlr.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Scenes/Games/Models/PlayerCtlr.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProjectSettings/TagManager.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/TagManager.asset" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/UserSettings/EditorUserSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/UserSettings/EditorUserSettings.asset" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -120,10 +121,10 @@
       <option value="$PROJECT_DIR$/Assets/Scripts/Scenes/Workshops/Models/MoldCtlr.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/Databases/Datas/MapCiphers.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/Scenes/Games/Physicses/PhysicsObject.cs" />
-      <option value="$PROJECT_DIR$/Assets/Scripts/Scenes/Games/GameCtlr.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/Scenes/Games/Models/TimerCtlr.cs" />
-      <option value="$PROJECT_DIR$/Assets/Scripts/Scenes/Games/Models/PlayerCtlr.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/Scenes/Games/Models/DeadParticleCtlr.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/Scenes/Games/GameCtlr.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/Scenes/Games/Models/PlayerCtlr.cs" />
     </changedPaths>
   </component>
   <component name="ProjectId" id="2FVREpCwaKszvdF2CvzY1OD9OH9" />
@@ -184,13 +185,6 @@
       <workItem from="1664639650102" duration="5714000" />
       <workItem from="1664665722532" duration="8475000" />
       <workItem from="1664675899925" duration="26081000" />
-    </task>
-    <task id="LOCAL-00043" summary="CountdownCtlr.">
-      <created>1664644501922</created>
-      <option name="number" value="00043" />
-      <option name="presentableId" value="LOCAL-00043" />
-      <option name="project" value="LOCAL" />
-      <updated>1664644501922</updated>
     </task>
     <task id="LOCAL-00044" summary="countdown.">
       <created>1664666988744</created>
@@ -528,7 +522,14 @@
       <option name="project" value="LOCAL" />
       <updated>1664736395456</updated>
     </task>
-    <option name="localTasksCounter" value="92" />
+    <task id="LOCAL-00092" summary="player dead.">
+      <created>1664737222481</created>
+      <option name="number" value="00092" />
+      <option name="presentableId" value="LOCAL-00092" />
+      <option name="project" value="LOCAL" />
+      <updated>1664737222481</updated>
+    </task>
+    <option name="localTasksCounter" value="93" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -560,7 +561,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
-    <MESSAGE value="template." />
     <MESSAGE value="win." />
     <MESSAGE value="next frame." />
     <MESSAGE value="tile frameLength." />
@@ -585,6 +585,7 @@
     <MESSAGE value="fix bugs." />
     <MESSAGE value="map ciphers." />
     <MESSAGE value="lose." />
-    <option name="LAST_COMMIT_MESSAGE" value="lose." />
+    <MESSAGE value="player dead." />
+    <option name="LAST_COMMIT_MESSAGE" value="player dead." />
   </component>
 </project>
