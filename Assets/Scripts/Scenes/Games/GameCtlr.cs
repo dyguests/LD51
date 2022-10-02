@@ -9,10 +9,19 @@ namespace Scenes.Games
 {
     public class GameCtlr : MonoBehaviour, IGameFlow
     {
+        private static GameCtlr sInstance;
+        public static GameCtlr Instance => sInstance;
+
+
         [SerializeField] private MapCtlr mapCtlr;
         [SerializeField] private CountdownCtlr countdownCtlr;
 
         private Map map;
+
+        void Awake()
+        {
+            sInstance = this;
+        }
 
         private void Start()
         {
@@ -51,6 +60,19 @@ namespace Scenes.Games
             mapCtlr.SpawnPlayer();
         }
 
+        public void WinGame()
+        {
+            Debug.Log("WinGame");
+            countdownCtlr.EndCountdown();
+        }
+
+        public void LoseGame()
+        {
+            Debug.Log("LoseGame");
+            countdownCtlr.EndCountdown();
+            PlayerCtlr.Instance.Dead();
+        }
+
         public void EndGame()
         {
             countdownCtlr.EndCountdown();
@@ -62,6 +84,8 @@ namespace Scenes.Games
         void RunGameFlow();
         void PrepareGame();
         void StartGame();
+        void WinGame();
+        void LoseGame();
         void EndGame();
     }
 }

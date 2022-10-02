@@ -24,7 +24,7 @@ namespace Models
 
         public static GroundCtlr Generate(Ground ground, AreaCtlr areaCtlr)
         {
-            if (sPrefab == null)
+            if ((object) sPrefab == null)
             {
                 sPrefab = Resources.Load<GroundCtlr>("Prefabs/Models/Ground");
             }
@@ -46,6 +46,8 @@ namespace Models
 
         private void Start()
         {
+            UpdateFrameState(ground.FrameState);
+
             ground.AddObserver(groundObserver);
         }
 
@@ -69,43 +71,48 @@ namespace Models
 
             public void OnFrameStateChanged(FrameState oldFrameState, FrameState newFrameState)
             {
-                switch (newFrameState)
+                groundCtlr.UpdateFrameState(newFrameState);
+            }
+        }
+
+        private void UpdateFrameState(FrameState frameState)
+        {
+            switch (frameState)
+            {
+                case FrameState.None:
                 {
-                    case FrameState.None:
-                    {
-                        groundCtlr.gameObject.SetActive(false);
-                        break;
-                    }
-                    case FrameState.PrePrevious:
-                    {
-                        groundCtlr.gameObject.SetActive(true);
-                        groundCtlr.sr.sprite = groundCtlr.prePreviousSprite;
-                        groundCtlr.cd.enabled = false;
-                        break;
-                    }
-                    case FrameState.Previous:
-                    {
-                        groundCtlr.gameObject.SetActive(true);
-                        groundCtlr.sr.sprite = groundCtlr.previousSprite;
-                        groundCtlr.cd.enabled = false;
-                        break;
-                    }
-                    case FrameState.Current:
-                    {
-                        groundCtlr.gameObject.SetActive(true);
-                        groundCtlr.sr.sprite = groundCtlr.currentSprite;
-                        groundCtlr.cd.enabled = true;
-                        break;
-                    }
-                    case FrameState.Keep:
-                    {
-                        groundCtlr.gameObject.SetActive(true);
-                        groundCtlr.sr.sprite = groundCtlr.keepSprite;
-                        groundCtlr.cd.enabled = true;
-                        break;
-                    }
-                    default: throw new InvalidDataException("error FrameState");
+                    gameObject.SetActive(false);
+                    break;
                 }
+                case FrameState.PrePrevious:
+                {
+                    gameObject.SetActive(true);
+                    sr.sprite = prePreviousSprite;
+                    cd.enabled = false;
+                    break;
+                }
+                case FrameState.Previous:
+                {
+                    gameObject.SetActive(true);
+                    sr.sprite = previousSprite;
+                    cd.enabled = false;
+                    break;
+                }
+                case FrameState.Current:
+                {
+                    gameObject.SetActive(true);
+                    sr.sprite = currentSprite;
+                    cd.enabled = true;
+                    break;
+                }
+                case FrameState.Keep:
+                {
+                    gameObject.SetActive(true);
+                    sr.sprite = keepSprite;
+                    cd.enabled = true;
+                    break;
+                }
+                default: throw new InvalidDataException("error FrameState");
             }
         }
     }

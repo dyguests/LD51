@@ -52,6 +52,7 @@ namespace Scenes.Games.Models
         {
             if (tile is Ground ground)
             {
+                tile.UpdateFrameState(map.CurrentFrame, map.FrameLength);
                 GroundCtlr.Generate(ground, this);
             }
         }

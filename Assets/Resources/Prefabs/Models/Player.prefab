@@ -14,9 +14,9 @@ GameObject:
   - component: {fileID: 4873166532986835289}
   - component: {fileID: 1951972114880918044}
   - component: {fileID: 1249085465}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Player
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -226,3 +226,4 @@ MonoBehaviour:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+  dropSpeed: 20

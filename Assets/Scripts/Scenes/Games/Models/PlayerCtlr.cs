@@ -1,16 +1,18 @@
 using System;
+using Cysharp.Threading.Tasks;
 using Scenes.Games.Physicses;
 using UnityEngine;
 using UnityEngine.InputSystem;
 
 namespace Scenes.Games.Models
 {
-    public class PlayerCtlr : PhysicsObject, IPlayerInputActions
+    public class PlayerCtlr : PhysicsObject, IPlayerInputActions, IPlayerActions
     {
         private const float Epsilon = 0.001f;
 
         private static PlayerCtlr sPrefab;
         private static PlayerCtlr sInstance;
+        public static PlayerCtlr Instance => sInstance;
 
 
         [Space] [SerializeField] private SpriteRenderer sr;
@@ -29,7 +31,7 @@ namespace Scenes.Games.Models
 
         [SerializeField] private float jumpHeight = 3.2f;
         private float jumpSpeed;
-        [SerializeField] private float jumpSpoolTime = 3 * 0.02f;
+        [SerializeField] private float jumpSpoolTime = 4 * 0.02f;
         [SerializeField] private float jumpCoyoteTime = 3 * 0.02f;
         [SerializeField] private int jumpMaxTimes = 1;
         private int jumpRemainingTimes = 1;
@@ -74,14 +76,14 @@ namespace Scenes.Games.Models
                 sPrefab = Resources.Load<PlayerCtlr>("Prefabs/Models/Player");
             }
 
-            if (sInstance != null)
-            {
-                Destroy(sInstance.gameObject);
-            }
+            var instantiate = Instantiate(sPrefab, position, Quaternion.identity);
+            instantiate.name = "Player";
+            return instantiate;
+        }
 
-            sInstance = Instantiate(sPrefab, position, Quaternion.identity);
-            sInstance.name = "Player";
-            return sInstance;
+        private void Awake()
+        {
+            sInstance = this;
         }
 
         protected override void Start()
@@ -248,6 +250,18 @@ namespace Scenes.Games.Models
                 // Debug.Log("HandleJumpInput jump:" + jump);
             }
         }
+
+        public async void Disable()
+        {
+            // Destroy(cd);
+            await UniTask.Delay(250);
+            Destroy(this);
+        }
+
+        public void Dead()
+        {
+            Destroy(gameObject);
+        }
     }
 
     public interface IPlayerInputActions
@@ -255,4 +269,6 @@ namespace Scenes.Games.Models
         void HandleMoveInput(InputAction.CallbackContext ctx);
         void HandleJumpInput(InputAction.CallbackContext ctx);
     }
+
+    public interface IPlayerActions { }
 }

@@ -1,5 +1,6 @@
 using Cores;
 using Cores.Entities;
+using Scenes.Games;
 using UnityEngine;
 
 namespace Models
@@ -7,6 +8,8 @@ namespace Models
     public class EndPointCtlr : TileCtlr
     {
         private static EndPointCtlr sPrefab;
+
+        [Space] [SerializeField] private BoxCollider2D cd;
 
         private Area<Tile> area;
 
@@ -48,7 +51,7 @@ namespace Models
 
         private class AreaObserver : IObserver<Area<Tile>.IUpdater>, Area<Tile>.IUpdater
         {
-            private EndPointCtlr endPointCtlr;
+            private readonly EndPointCtlr endPointCtlr;
 
             public AreaObserver(EndPointCtlr endPointCtlr)
             {
@@ -62,6 +65,17 @@ namespace Models
             {
                 endPointCtlr.transform.localPosition = endPointCtlr.areaCtlr.Pos2Position(newEndPoint);
             }
+        }
+
+        private void OnTriggerEnter2D(Collider2D other)
+        {
+            Debug.Log("OnTriggerEnter2D other:" + other.gameObject.name);
+
+            if (!other.gameObject.CompareTag("Player")) return;
+
+            cd.enabled = false;
+
+            GameCtlr.Instance.WinGame();
         }
     }
 }
