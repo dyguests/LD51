@@ -42,7 +42,7 @@ namespace Cores.Scenes.Workshops.Entities
             {
                 if (!tileRing.ContainsKey(i))
                 {
-                    Debug.Log("remove empty:(" + x + "," + y + ") " + i);
+                    // Debug.Log("remove empty:(" + x + "," + y + ") " + i);
                     continue;
                 }
 

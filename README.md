@@ -23,3 +23,4 @@ Theme: Every 10 seconds
 -[ ] workshop start/end point can move over on ground.
 -[ ] trapped on the ground.
 -[ ] trapped out of screen.
+-[ ] workshop insert tile, will delete other tile in ring, not truncate.
