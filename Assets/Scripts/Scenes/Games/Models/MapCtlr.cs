@@ -10,6 +10,9 @@ namespace Scenes.Games.Models
     {
         private Map map;
 
+        private StartPointCtlr startPointCtlr;
+        private EndPointCtlr endPointCtlr;
+
         protected override Vector2Int Size => map.Size;
 
         public async UniTask LoadMap(Map map)
@@ -26,16 +29,16 @@ namespace Scenes.Games.Models
                     foreach (var tile in tileRings.Values)
                     {
                         InsertTile(tile);
-                        await UniTask.DelayFrame(1);
+                        // await UniTask.DelayFrame(1);
                     }
                 }
             }
 
             var startPoint = map.StartPoint;
-            StartPointCtlr.Generate(map, this);
+            startPointCtlr = StartPointCtlr.Generate(map, this);
 
             var endPoint = map.EndPoint;
-            EndPointCtlr.Generate(map, this);
+            endPointCtlr = EndPointCtlr.Generate(map, this);
 
             await UniTask.Delay(250);
         }
@@ -51,6 +54,11 @@ namespace Scenes.Games.Models
             {
                 GroundCtlr.Generate(ground, this);
             }
+        }
+
+        public void SpawnPlayer()
+        {
+            startPointCtlr.SpawnPlayer();
         }
     }
 

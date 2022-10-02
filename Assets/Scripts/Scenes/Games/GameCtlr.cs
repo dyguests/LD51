@@ -1,6 +1,5 @@
 using Cores.Scenes.Games.Entities;
 using Cysharp.Threading.Tasks;
-using Databases;
 using Databases.Datas;
 using Databases.Encoders;
 using Scenes.Games.Models;
@@ -49,6 +48,7 @@ namespace Scenes.Games
         public void StartGame()
         {
             countdownCtlr.StartCountdown();
+            mapCtlr.SpawnPlayer();
         }
 
         public void EndGame()

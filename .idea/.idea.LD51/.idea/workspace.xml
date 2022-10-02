@@ -1,23 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="a13c8a84-d1f4-49cf-adec-02808396d102" name="Default Changelist" comment="change point works.">
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.LD51/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.LD51/.idea/contentModel.xml" afterDir="false" />
+    <list default="true" id="a13c8a84-d1f4-49cf-adec-02808396d102" name="Default Changelist" comment="update ciphers.">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.LD51/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.LD51/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Cores/Entities/Area.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Cores/Entities/Area.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Cores/Scenes/Workshops/Tools/MoldEx.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Cores/Scenes/Workshops/Tools/MoldEx.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Ciphers.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Databases/Encoders.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Ciphers/MapEncoder.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Databases/Encoders/MapEncoder.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Ciphers/MapEncoder.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Databases/Encoders/MapEncoder.cs.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Databases/Converters.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Databases/Converters/MapConverter.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Databases/Converters/MapConverter.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Databases/MapCiphers.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Databases/Datas/MapCiphers.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Databases/MapCiphers.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Databases/Datas/MapCiphers.cs.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Models/Player.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Models/Player.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Game.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Game.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Models/StartPointCtlr.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Models/StartPointCtlr.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/Scenes/Games/GameCtlr.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Scenes/Games/GameCtlr.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/Scenes/Games/Models/MapCtlr.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Scenes/Games/Models/MapCtlr.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Scenes/Workshops/WorkshopCtlr.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Scenes/Workshops/WorkshopCtlr.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/UserSettings/EditorUserSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/UserSettings/EditorUserSettings.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Scenes/Games/Models/PlayerCtlr.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Scenes/Games/Models/PlayerCtlr.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -74,8 +66,6 @@
       <option value="$PROJECT_DIR$/Assets/Scripts/Ciphers/MapEncoder.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/Databases/MapCiphers.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/Scenes/Games/Physicses/PhysicsObject.cs" />
-      <option value="$PROJECT_DIR$/Assets/Scripts/Scenes/Games/Models/PlayerCtlr.cs" />
-      <option value="$PROJECT_DIR$/Assets/Scripts/Scenes/Games/GameCtlr.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/Scenes/Games/Models/CountdownCtlr.cs" />
       <option value="$PROJECT_DIR$/Assets/Cores/Entities/FrameState.cs" />
       <option value="$PROJECT_DIR$/Assets/Cores/Entities/IElement.cs" />
@@ -92,14 +82,16 @@
       <option value="$PROJECT_DIR$/Assets/Scripts/Scenes/Workshops/Models/ToolsCtlr.cs" />
       <option value="$PROJECT_DIR$/Assets/Cores/Scenes/Workshops/Entities/Mold.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/Scenes/Workshops/Models/MoldCtlr.cs" />
-      <option value="$PROJECT_DIR$/Assets/Scripts/Models/StartPointCtlr.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/Models/EndPointCtlr.cs" />
       <option value="$PROJECT_DIR$/README.md" />
-      <option value="$PROJECT_DIR$/Assets/Scripts/Scenes/Games/Models/MapCtlr.cs" />
       <option value="$PROJECT_DIR$/Assets/Cores/Entities/Area.cs" />
       <option value="$PROJECT_DIR$/Assets/Cores/Scenes/Workshops/Tools/MoldEx.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/Databases/Encoders/MapEncoder.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/Databases/Datas/MapCiphers.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/Scenes/Games/GameCtlr.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/Scenes/Games/Models/MapCtlr.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/Models/StartPointCtlr.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/Scenes/Games/Models/PlayerCtlr.cs" />
     </changedPaths>
   </component>
   <component name="ProjectId" id="2FVREpCwaKszvdF2CvzY1OD9OH9" />
@@ -151,14 +143,7 @@
       <workItem from="1664582240199" duration="39067000" />
       <workItem from="1664639650102" duration="5714000" />
       <workItem from="1664665722532" duration="8475000" />
-      <workItem from="1664675899925" duration="6627000" />
-    </task>
-    <task id="LOCAL-00010" summary="mold get.">
-      <created>1664592294826</created>
-      <option name="number" value="00010" />
-      <option name="presentableId" value="LOCAL-00010" />
-      <option name="project" value="LOCAL" />
-      <updated>1664592294826</updated>
+      <workItem from="1664675899925" duration="7932000" />
     </task>
     <task id="LOCAL-00011" summary="mold get test.">
       <created>1664592474425</created>
@@ -496,7 +481,14 @@
       <option name="project" value="LOCAL" />
       <updated>1664699959424</updated>
     </task>
-    <option name="localTasksCounter" value="59" />
+    <task id="LOCAL-00059" summary="update ciphers.">
+      <created>1664700699571</created>
+      <option name="number" value="00059" />
+      <option name="presentableId" value="LOCAL-00059" />
+      <option name="project" value="LOCAL" />
+      <updated>1664700699571</updated>
+    </task>
+    <option name="localTasksCounter" value="60" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -518,7 +510,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
-    <MESSAGE value="map encoder." />
     <MESSAGE value="mold.cycle." />
     <MESSAGE value="map.cycle." />
     <MESSAGE value="player input." />
@@ -543,6 +534,7 @@
     <MESSAGE value="update sprites." />
     <MESSAGE value="moldCtlr change point." />
     <MESSAGE value="change point works." />
-    <option name="LAST_COMMIT_MESSAGE" value="change point works." />
+    <MESSAGE value="update ciphers." />
+    <option name="LAST_COMMIT_MESSAGE" value="update ciphers." />
   </component>
 </project>

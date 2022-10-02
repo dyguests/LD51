@@ -1,5 +1,6 @@
 using Cores;
 using Cores.Entities;
+using Scenes.Games.Models;
 using UnityEngine;
 
 namespace Models
@@ -62,6 +63,11 @@ namespace Models
             {
                 startPointCtlr.transform.localPosition = startPointCtlr.areaCtlr.Pos2Position(newStartPoint);
             }
+        }
+
+        public void SpawnPlayer()
+        {
+            PlayerCtlr.Generate(transform.position);
         }
     }
 }

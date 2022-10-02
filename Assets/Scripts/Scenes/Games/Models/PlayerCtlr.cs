@@ -9,6 +9,10 @@ namespace Scenes.Games.Models
     {
         private const float Epsilon = 0.001f;
 
+        private static PlayerCtlr sPrefab;
+        private static PlayerCtlr sInstance;
+
+
         [Space] [SerializeField] private SpriteRenderer sr;
 
         #region Define Variants
@@ -62,6 +66,29 @@ namespace Scenes.Games.Models
         public float LastGroundedTime { get; private set; }
 
         #endregion
+
+        public static PlayerCtlr Generate(Vector3 position)
+        {
+            if (sPrefab == null)
+            {
+                sPrefab = Resources.Load<PlayerCtlr>("Prefabs/Models/Player");
+            }
+
+            if (sInstance != null)
+            {
+                Destroy(sInstance.gameObject);
+            }
+
+            sInstance = Instantiate(sPrefab, position, Quaternion.identity);
+            sInstance.name = "Player";
+            return sInstance;
+        }
+
+        protected override void Start()
+        {
+            base.Start();
+            SetDirty();
+        }
 
 #if UNITY_EDITOR
         private void OnValidate()
