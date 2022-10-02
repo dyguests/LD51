@@ -64,6 +64,9 @@ namespace Scenes.Games
         public void WinGame()
         {
             Debug.Log("WinGame");
+
+            CacheUtils.SetLevelCompleted(map.levelId);
+
             timerCtlr.EndCountdown();
             timerCtlr.SetWin();
             PlayerCtlr.Instance.Disable();
