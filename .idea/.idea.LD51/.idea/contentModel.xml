@@ -286,6 +286,36 @@
               <e p="UnityWebRequestException.cs" t="Include" />
             </e>
           </e>
+          <e p="UnlimitedScrollUI" t="Include">
+            <e p="Editor" t="Include">
+              <e p="GridUnlimitedScrollerEditor.cs" t="Include" />
+              <e p="HorizontalUnlimitedScrollerEditor.cs" t="Include" />
+              <e p="UnlimitedScrollUIEditor.asmdef" t="Include" />
+              <e p="VerticalUnlimitedScrollerEditor.cs" t="Include" />
+            </e>
+            <e p="Runtime" t="Include">
+              <e p="GridUnlimitedScroller.cs" t="Include" />
+              <e p="HorizontalUnlimitedScroller.cs" t="Include" />
+              <e p="ICell.cs" t="Include" />
+              <e p="IUnlimitedScroller.cs" t="Include" />
+              <e p="LRUCache.cs" t="Include" />
+              <e p="RegularCell.cs" t="Include" />
+              <e p="UnlimitedScroller.cs" t="Include" />
+              <e p="UnlimitedScrollUI.asmdef" t="Include" />
+              <e p="VerticalUnlimitedScroller.cs" t="Include" />
+            </e>
+            <e p="Samples" t="Include">
+              <e p="ScrollerSamples" t="Include">
+                <e p="Scripts" t="Include">
+                  <e p="CellTest.cs" t="Include" />
+                  <e p="InfoDisplay.cs" t="Include" />
+                  <e p="Popup.cs" t="Include" />
+                  <e p="ScrollerTest.cs" t="Include" />
+                  <e p="UnlimitedScrollUIExample.asmdef" t="Include" />
+                </e>
+              </e>
+            </e>
+          </e>
         </e>
         <e p="Scripts" t="Include">
           <e p="App.cs" t="Include" />
@@ -326,6 +356,9 @@
             </e>
             <e p="Mains" t="Include">
               <e p="MainCtlr.cs" t="Include" />
+              <e p="Models" t="Include">
+                <e p="LevelsCtlr.cs" t="Include" />
+              </e>
             </e>
             <e p="Workshops" t="Include">
               <e p="Entities" t="Include">
@@ -371,6 +404,9 @@
       <e p="UniTask.Editor.csproj" t="IncludeRecursive" />
       <e p="UniTask.Linq.csproj" t="IncludeRecursive" />
       <e p="UniTask.TextMeshPro.csproj" t="IncludeRecursive" />
+      <e p="UnlimitedScrollUI.csproj" t="IncludeRecursive" />
+      <e p="UnlimitedScrollUIEditor.csproj" t="IncludeRecursive" />
+      <e p="UnlimitedScrollUIExample.csproj" t="IncludeRecursive" />
     </e>
   </component>
 </project>
