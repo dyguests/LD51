@@ -30,6 +30,7 @@
                 <e p="Mold.cs" t="Include" />
               </e>
               <e p="Tools" t="Include">
+                <e p="MapEx.cs" t="Include" />
                 <e p="MoldEx.cs" t="Include" />
               </e>
             </e>
@@ -315,9 +316,9 @@
             <e p="Games" t="Include">
               <e p="GameCtlr.cs" t="Include" />
               <e p="Models" t="Include">
-                <e p="CountdownCtlr.cs" t="Include" />
                 <e p="MapCtlr.cs" t="Include" />
                 <e p="PlayerCtlr.cs" t="Include" />
+                <e p="TimerCtlr.cs" t="Include" />
               </e>
               <e p="Physicses" t="Include">
                 <e p="PhysicsObject.cs" t="Include" />

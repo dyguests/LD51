@@ -137,7 +137,7 @@ GameObject:
   - component: {fileID: 275003211}
   - component: {fileID: 275003215}
   m_Layer: 5
-  m_Name: CountdownUi
+  m_Name: TimerUi
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -410,7 +410,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   mapCtlr: {fileID: 581159462}
-  countdownCtlr: {fileID: 1640091166}
+  timerCtlr: {fileID: 1640091166}
 --- !u!1001 &1579915077
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -481,7 +481,7 @@ GameObject:
   - component: {fileID: 1640091164}
   - component: {fileID: 1640091166}
   m_Layer: 5
-  m_Name: Countdown
+  m_Name: Timer
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -527,7 +527,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 10
+  m_text: 1
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 47d0dc0c28e70a444af08b965e668bdf, type: 2}
   m_sharedMaterial: {fileID: 6081260647145834869, guid: 47d0dc0c28e70a444af08b965e668bdf, type: 2}
@@ -554,15 +554,15 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 120
-  m_fontSizeBase: 120
+  m_fontSize: 180
+  m_fontSizeBase: 180
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
   m_fontSizeMax: 72
   m_fontStyle: 0
   m_HorizontalAlignment: 2
-  m_VerticalAlignment: 512
+  m_VerticalAlignment: 4096
   m_textAlignment: 65535
   m_characterSpacing: 0
   m_wordSpacing: 0

@@ -5,7 +5,7 @@ using UnityEngine;
 
 namespace Scenes.Games.Models
 {
-    public class CountdownCtlr : MonoBehaviour, ICountdownFlow
+    public class TimerCtlr : MonoBehaviour, ICountdownFlow
     {
         [SerializeField] private TMP_Text text;
 
@@ -15,28 +15,39 @@ namespace Scenes.Games.Models
 
         #region temp varaints
 
-        private float countdown;
-        private bool isCountdowning = false;
+        private float time;
+        private int timeInt;
+        private bool isCounting = false;
 
         #endregion
 
         private void FixedUpdate()
         {
-            if (isCountdowning)
+            if (isCounting)
             {
-                if (countdown <= 0f)
+                if (time >= map.FrameLength)
                 {
-                    countdown += cycle;
+                    time -= map.FrameLength;
+                    timeInt = 0;
+                }
+
+                if ((int) time > timeInt)
+                {
+                    timeInt = (int) time;
                     map.NextFrame();
                 }
 
-                countdown -= Time.fixedDeltaTime;
+                time += Time.fixedDeltaTime;
+                // Debug.Log("TimerCtlr FixedUpdate time:" + time);
             }
         }
 
         private void Update()
         {
-            UpdateText();
+            if (isCounting)
+            {
+                UpdateText();
+            }
         }
 
         public async UniTask LoadMap(Map map)
@@ -44,7 +55,7 @@ namespace Scenes.Games.Models
             this.map = map;
 
             cycle = this.map.Cycle;
-            countdown = cycle;
+            time = cycle;
             // text.text = "" + cycle;
             // text.text = string.Format("", countdown);
             UpdateText();
@@ -57,18 +68,26 @@ namespace Scenes.Games.Models
 
         public void StartCountdown()
         {
-            isCountdowning = true;
+            isCounting = true;
         }
 
         public void EndCountdown()
         {
-            isCountdowning = false;
+            isCounting = false;
         }
 
         private void UpdateText()
         {
             // text.text = Mathf.Max(0f, countdown).ToString("#0.000");
-            text.text = Mathf.Max(0f, countdown).ToString("#0");
+            text.text = "" + (timeInt + 1);
+        }
+
+        /// <summary>
+        /// TODO tmp win
+        /// </summary>
+        public void SetWin()
+        {
+            text.text = "WIN";
         }
     }
 

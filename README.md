@@ -1,5 +1,17 @@
 ﻿# LD51
 
+## Operates
+
+- Global
+    - Esc Back
+
+- Game
+    - R Restart
+
+- Player
+    - Left/Right Z
+    - A/D J
+
 ## Theme
 
 Theme: Every 10 seconds

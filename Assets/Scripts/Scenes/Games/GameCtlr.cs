@@ -3,6 +3,7 @@ using Cysharp.Threading.Tasks;
 using Databases.Datas;
 using Databases.Encoders;
 using Scenes.Games.Models;
+using Tools;
 using UnityEngine;
 
 namespace Scenes.Games
@@ -14,7 +15,7 @@ namespace Scenes.Games
 
 
         [SerializeField] private MapCtlr mapCtlr;
-        [SerializeField] private CountdownCtlr countdownCtlr;
+        [SerializeField] private TimerCtlr timerCtlr;
 
         private Map map;
 
@@ -48,7 +49,7 @@ namespace Scenes.Games
             // await countdownCtlr.LoadMap(map);
             await UniTask.WhenAll(
                 mapCtlr.LoadMap(map),
-                countdownCtlr.LoadMap(map)
+                timerCtlr.LoadMap(map)
             );
 
             StartGame();
@@ -56,26 +57,33 @@ namespace Scenes.Games
 
         public void StartGame()
         {
-            countdownCtlr.StartCountdown();
+            timerCtlr.StartCountdown();
             mapCtlr.SpawnPlayer();
         }
 
         public void WinGame()
         {
             Debug.Log("WinGame");
-            countdownCtlr.EndCountdown();
+            timerCtlr.EndCountdown();
+            timerCtlr.SetWin();
+            PlayerCtlr.Instance.Disable();
         }
 
         public void LoseGame()
         {
             Debug.Log("LoseGame");
-            countdownCtlr.EndCountdown();
+            timerCtlr.EndCountdown();
             PlayerCtlr.Instance.Dead();
         }
 
         public void EndGame()
         {
-            countdownCtlr.EndCountdown();
+            timerCtlr.EndCountdown();
+        }
+
+        public void RestartGame()
+        {
+            SceneStacker.ReloadScene();
         }
     }
 

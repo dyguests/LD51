@@ -1,3 +1,4 @@
+using System;
 using System.Threading.Tasks;
 using Cores.Scenes.Workshops.Entities;
 using Cores.Scenes.Workshops.Tools;
@@ -40,6 +41,19 @@ namespace Scenes.Workshops.Models
             Debug.Log("OnPasteClick");
             var cipher = ClipboardUtils.PasteFromClipboard();
             Debug.Log("Paste map cipher:\n" + cipher);
+
+            try
+            {
+                var map = MapEncoder.Decode(cipher);
+                var mold = map.ToMold();
+                App.Instance.mold = mold;
+                SceneStacker.ReloadScene();
+            }
+            catch (Exception e)
+            {
+                Debug.Log("Paste map cipher failed!\n" + cipher);
+                // todo toast failed.
+            }
         }
     }
 }

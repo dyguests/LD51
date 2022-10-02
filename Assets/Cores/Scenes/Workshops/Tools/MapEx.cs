@@ -3,33 +3,31 @@ using Cores.Scenes.Workshops.Entities;
 
 namespace Cores.Scenes.Workshops.Tools
 {
-    public static class MoldEx
+    public static class MapEx
     {
-        public static Map ToMap(this Mold mold)
+        public static Mold ToMold(this Map map)
         {
-            var size = mold.Size;
-
-            var map = new Map(size.x, size.y, mold.FrameLength)
+            var size = map.Size;
+            var mold = new Mold(size.x, size.y, map.FrameLength)
             {
-                Cycle = mold.Cycle,
-                StartPoint = mold.StartPoint,
-                EndPoint = mold.EndPoint,
+                Cycle = map.Cycle,
+                StartPoint = map.StartPoint,
+                EndPoint = map.EndPoint
             };
-
             for (int mX = 0; mX < size.x; mX++)
             {
                 for (int mY = 0; mY < size.y; mY++)
                 {
-                    var tileRings = mold.GetRing(mX, mY);
+                    var tileRings = map.GetRing(mX, mY);
                     if (tileRings == null) continue;
                     foreach (var pair in tileRings)
                     {
-                        map.Insert(mX, mY, pair.Value);
+                        mold.Insert(mX, mY, pair.Value);
                     }
                 }
             }
 
-            return map;
+            return mold;
         }
     }
 }
