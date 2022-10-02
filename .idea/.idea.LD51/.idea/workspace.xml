@@ -1,16 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="a13c8a84-d1f4-49cf-adec-02808396d102" name="Default Changelist" comment="save/show level completed.">
+    <list default="true" id="a13c8a84-d1f4-49cf-adec-02808396d102" name="Default Changelist" comment="fix bugs.">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.LD51/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.LD51/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Cores/Seg.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Cores/Seg.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Mian.unity" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Mian.unity.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Scenes/Workshops/Models/MenuCtlr.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Scenes/Workshops/Models/MenuCtlr.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Scenes/Workshops/Models/MoldCtlr.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Scenes/Workshops/Models/MoldCtlr.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Scenes/Workshops/WorkshopCtlr.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Scenes/Workshops/WorkshopCtlr.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProjectSettings/EditorBuildSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/EditorBuildSettings.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/UserSettings/EditorUserSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/UserSettings/EditorUserSettings.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Databases/Datas/MapCiphers.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Databases/Datas/MapCiphers.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -114,7 +107,6 @@
       <option value="$PROJECT_DIR$/Assets/Scripts/Scenes/Games/Models/CountdownCtlr.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/Scenes/Games/Models/TimerCtlr.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/Scenes/Mains/MainCtlr.cs" />
-      <option value="$PROJECT_DIR$/Assets/Scripts/Databases/Datas/MapCiphers.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/Scenes/Mains/Models/LevelsCtlr.cs" />
       <option value="$PROJECT_DIR$/README.md" />
       <option value="$PROJECT_DIR$/Assets/Scripts/Tools/PlayerPrefs.cs" />
@@ -122,10 +114,11 @@
       <option value="$PROJECT_DIR$/Assets/Scripts/Scenes/Games/GameCtlr.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/Tools/CacheUtils.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/Scenes/Mains/Models/LevelItemCtlr.cs" />
-      <option value="$PROJECT_DIR$/Assets/Scripts/Scenes/Workshops/Models/MoldCtlr.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/Scenes/Workshops/Models/MenuCtlr.cs" />
       <option value="$PROJECT_DIR$/Assets/Cores/Seg.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/Scenes/Workshops/WorkshopCtlr.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/Scenes/Workshops/Models/MoldCtlr.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/Databases/Datas/MapCiphers.cs" />
     </changedPaths>
   </component>
   <component name="ProjectId" id="2FVREpCwaKszvdF2CvzY1OD9OH9" />
@@ -186,13 +179,6 @@
       <workItem from="1664639650102" duration="5714000" />
       <workItem from="1664665722532" duration="8475000" />
       <workItem from="1664675899925" duration="26081000" />
-    </task>
-    <task id="LOCAL-00040" summary="player move success.">
-      <created>1664643563475</created>
-      <option name="number" value="00040" />
-      <option name="presentableId" value="LOCAL-00040" />
-      <option name="project" value="LOCAL" />
-      <updated>1664643563475</updated>
     </task>
     <task id="LOCAL-00041" summary="player IPlayerInputActions.">
       <created>1664643831814</created>
@@ -530,7 +516,14 @@
       <option name="project" value="LOCAL" />
       <updated>1664733584624</updated>
     </task>
-    <option name="localTasksCounter" value="89" />
+    <task id="LOCAL-00089" summary="fix bugs.">
+      <created>1664735598081</created>
+      <option name="number" value="00089" />
+      <option name="presentableId" value="LOCAL-00089" />
+      <option name="project" value="LOCAL" />
+      <updated>1664735598081</updated>
+    </task>
+    <option name="localTasksCounter" value="90" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -562,7 +555,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
-    <MESSAGE value="change point works." />
     <MESSAGE value="update ciphers." />
     <MESSAGE value="player spawned from startPoint." />
     <MESSAGE value="template." />
@@ -587,6 +579,7 @@
     <MESSAGE value="hide change cycle." />
     <MESSAGE value="save level completed." />
     <MESSAGE value="save/show level completed." />
-    <option name="LAST_COMMIT_MESSAGE" value="save/show level completed." />
+    <MESSAGE value="fix bugs." />
+    <option name="LAST_COMMIT_MESSAGE" value="fix bugs." />
   </component>
 </project>
