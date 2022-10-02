@@ -333,6 +333,7 @@
                 <e p="FramesCtlr.cs" t="Include" />
                 <e p="FrameToggleCtlr.cs" t="Include" />
                 <e p="IndicatorCtlr.cs" t="Include" />
+                <e p="LengthCtlr.cs" t="Include" />
                 <e p="MoldCtlr.cs" t="Include" />
                 <e p="MoldElementCtlr.cs" t="Include" />
                 <e p="ToolsCtlr.cs" t="Include" />

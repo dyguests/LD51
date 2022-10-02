@@ -17,6 +17,7 @@ namespace Scenes.Workshops.Models
 
         [Space] [SerializeField] private FramesCtlr framesCtlr;
         [SerializeField] private ToolsCtlr toolsCtlr;
+        [SerializeField] private LengthCtlr lengthCtlr;
 
         private InputHandler inputHandler;
         private MoldObserver moldObserver;
@@ -101,8 +102,9 @@ namespace Scenes.Workshops.Models
 
                 var currentFrame = moldCtlr.framesCtlr.CurrentFrame;
                 var currentToolType = moldCtlr.toolsCtlr.CurrentToolType;
+                var frameLength = moldCtlr.lengthCtlr.FrameLength;
 
-                Insert(pos, currentFrame, 1, currentToolType);
+                Insert(pos, currentFrame, frameLength, currentToolType);
             }
 
             public void OnRelease(Vector3 position)
